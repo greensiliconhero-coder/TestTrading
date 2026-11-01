@@ -1,0 +1,12 @@
+{
+  "study": "post_hoc_minimum_trade_count_sensitivity",
+  "new_training": false,
+  "minimum_trade_requirement": "removed",
+  "zero_trade_handling": "No observations cannot provide an estimated per-trade return; zero activity is not evidence of profit.",
+  "unchanged": ["fitted weights and preprocessing", "original datasets and periods", "existing classifier thresholds 0.50/0.55/0.60", "costs and slippage", "forecast hurdles", "execution and capital constraints", "positive validation return and execution eligibility gates"],
+  "scope": ["v1 preserved tree and historical logistic validation summaries", "v2 best CNN checkpoint", "v3 final saved models and rule baselines", "v3 saved earlier diagnostic models"],
+  "selection": "Rank using the original selection-period metric; remove only sample-count eligibility. Keep positive net-return and execution checks. Do not choose using later comparison results.",
+  "limitation": "The v1 logistic model weights were not preserved; report its historical validation results without recreating or retraining it. All later-period comparisons are already observed, not fresh holdouts. Diagnostic-v3 selection is hypothetical, not an original deployed strategy.",
+  "reserved_2025_access": false,
+  "deployment": "disabled"
+}
