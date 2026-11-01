@@ -1,0 +1,6 @@
+{
+  "archive_model_restore_passed": true,
+  "example_rows": 2,
+  "training_data_required_for_inference": false,
+  "authentication_required_for_inference": false
+}

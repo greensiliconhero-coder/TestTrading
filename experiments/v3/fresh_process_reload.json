@@ -1,0 +1,7 @@
+{
+  "max_prediction_difference": 0.0,
+  "model_count": 6,
+  "example_rows": 2,
+  "retraining": false,
+  "passed": true
+}

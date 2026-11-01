@@ -1,5 +1,11 @@
 # Research roadmap and versioning
 
+## Current completed state: context v3
+
+The source collection, independent daily-index comparison, exact feature-table preservation, nine-candidate study and saved-model restore checks are complete. See `CONTEXT_V3_PROTOCOL.md`, `experiments/v3/report.md` and `BACKUP.md`. No candidate met the validation gate, so cash was selected. Processing and training use separate branches. 2025 remains reserved; data-identity and execution limitations remain unresolved. This completion is a research milestone, not a profitable trading-product certification.
+
+The v0.2/v0.3 sequencing below records the original plan; sequence preparation and the first neural network are now complete and preserved.
+
 ## Completed: v0.1.0-baseline
 
 First Git snapshot of the work already completed: data audit, staged Kite downloads and browser login, data comparison, copied screened minute files, logistic/tree models and exploratory results. Earlier development was not individually committed; this snapshot does not invent earlier history. No useful after-cost edge was demonstrated.
@@ -33,7 +39,7 @@ Only after freezing the research choices should the reserved 2025 window be eval
 - Commit compact results under `experiments/vN/` separately from implementation. Include command, dependency versions, data fingerprint, config, metrics and limitations.
 - Tag completed milestones. Keep unsuccessful versions; never rewrite them into successes.
 - Data copies, raw downloads, credentials, generated caches and large model weights remain local and ignored. A Git checkout alone does not recreate excluded data; use dataset manifests and local artifacts.
-- No remote repository is configured. Publishing requires a destination and review for private paths/data and licensing.
+- The configured remote is the private `greensiliconhero-coder/TestTrading` repository. Completed code/model branches and dataset-release artifacts are backed up there; credentials and environments remain excluded.
 
 Useful local commands:
 

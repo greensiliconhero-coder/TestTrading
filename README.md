@@ -1,6 +1,14 @@
 # TradingResearch
 
-This is a local Git repository. The initial completed-work snapshot is tagged `v0.1.0-baseline`. See `ROADMAP.md` for the neural-network plan and commit/versioning workflow. Compact baseline evidence is tracked in `experiments/v1/`; large datasets remain outside Git; the small trained model binaries are versioned for restoration.
+This repository is backed up privately at https://github.com/greensiliconhero-coder/TestTrading. The initial completed-work snapshot is tagged `v0.1.0-baseline`. See `ROADMAP.md` for the research history and commit/versioning workflow. Large training datasets are preserved in private release archives; small trained model binaries and compact evidence are versioned in Git.
+
+## Context v3 completed and preserved
+
+The bounded study used 326,880 rows and 58 features across 37 companies. Six final supervised models (ridge regression and boosted trees) and three rule baselines were compared, with earlier chronological diagnostic fits also saved. No candidate met the frozen validation requirements; the selected outcome is cash. No real orders or 2025 outcomes were used.
+
+Processing is on `processing/context-features-v3`; completed models and results are on `experiment/context-v3-trained`. See `experiments/v3/report.md` and `CONTEXT_V3_PROTOCOL.md`. Exact model inputs, labels, splits, predictions and original source payloads are preserved in the private release https://github.com/greensiliconhero-coder/TestTrading/releases/tag/context-v3-trained. The pre-quality-screen table is retained separately. Full-day retrospective source screening remains a material limitation.
+
+`python src/context_predict.py --csv examples/context_v3_features.csv` loads the saved models without training. The example contains prepared numeric features, not raw candles. `models/context_v3/bundle.json` records versions and hashes; `candidates.joblib` and `diagnostic_2021.joblib` preserve final and diagnostic fits.
 
 ## Neural network v2 completed and preserved
 
@@ -8,7 +16,7 @@ The first actual sequence CNN is saved in `models/neural_v2/weights.pt`, with in
 
 `python src/neural_v2.py predict --csv examples/neural_v2_window.csv` loads the saved model without training. `train` also skips retraining when completed results and a valid model bundle exist. See `NEURAL_V2.md` and `experiments/v2/report.md`. The trained models and optimizer checkpoint are now stored in Git. See BACKUP.md for restore instructions and backup coverage.
 
-Personal Indian cash-equity research. Includes a reproducible dataset audit and a staged, data-only Kite repair pilot. No live trading, stored broker credentials, neural network or return claims are included.
+Personal Indian cash-equity research, including data audits, staged historical downloads and saved learning models. Live trading is disabled. Simulated results do not establish deployable profitability.
 
 ## First learning experiment completed
 
