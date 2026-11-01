@@ -15,3 +15,8 @@ credentials*.json
 *.pt
 *.pending
 .pytest_cache/
+
+# Preserve these small, versioned trained models in repository backups.
+!models/research_v1.joblib
+!models/neural_v2/weights.pt
+!models/neural_v2/resume.pt

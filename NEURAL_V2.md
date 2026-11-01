@@ -10,7 +10,7 @@ This experiment inherits the screened survivor cohort, retrospective data-qualit
 
 ## Preserved model
 
-`models/neural_v2/weights.pt` contains the best validation epoch. `bundle.json` saves scaling, architecture, data/code fingerprints, Git commit, dependency versions and weight checksum. `resume.pt` preserves the last completed epoch and optimizer state for an interrupted run. Weights/checkpoints are ignored by Git; compact configuration, history, metrics and model cards are committed. An artifact ZIP is the portable backup containing actual weights.
+`models/neural_v2/weights.pt` contains the best validation epoch. `bundle.json` saves scaling, architecture, data/code fingerprints, Git commit, dependency versions and weight checksum. `resume.pt` preserves the last completed epoch and optimizer state for an interrupted run. The named v1/v2 model weights and v2 checkpoint are tracked in Git alongside configuration, history, metrics and model cards. Other generated binaries stay ignored. An artifact ZIP provides an additional portable backup.
 
 ```powershell
 python src/neural_v2.py prepare

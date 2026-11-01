@@ -1,12 +1,12 @@
 # TradingResearch
 
-This is a local Git repository. The initial completed-work snapshot is tagged `v0.1.0-baseline`. See `ROADMAP.md` for the neural-network plan and commit/versioning workflow. Compact baseline evidence is tracked in `experiments/v1/`; large data and model binaries remain outside Git.
+This is a local Git repository. The initial completed-work snapshot is tagged `v0.1.0-baseline`. See `ROADMAP.md` for the neural-network plan and commit/versioning workflow. Compact baseline evidence is tracked in `experiments/v1/`; large datasets remain outside Git; the small trained model binaries are versioned for restoration.
 
 ## Neural network v2 completed and preserved
 
 The first actual sequence CNN is saved in `models/neural_v2/weights.pt`, with input scaling and provenance in `bundle.json`. Training stopped after three epochs; epoch one was best on validation. Its 2024 development-comparison AUC was 0.5054 versus 0.5155 for the existing tree on identical examples. No threshold met the predefined minimum validation sample size; no trading rule is approved. 2025 remains unused.
 
-`python src/neural_v2.py predict --csv work/neural_v2/example_window.csv` loads the saved model without training. `train` also skips retraining when completed results and a valid model bundle exist. See `NEURAL_V2.md` and `experiments/v2/report.md`. The model and optimizer checkpoint are local binary artifacts, not stored in Git; retain the portable model archive as a backup.
+`python src/neural_v2.py predict --csv examples/neural_v2_window.csv` loads the saved model without training. `train` also skips retraining when completed results and a valid model bundle exist. See `NEURAL_V2.md` and `experiments/v2/report.md`. The trained models and optimizer checkpoint are now stored in Git. See BACKUP.md for restore instructions and backup coverage.
 
 Personal Indian cash-equity research. Includes a reproducible dataset audit and a staged, data-only Kite repair pilot. No live trading, stored broker credentials, neural network or return claims are included.
 

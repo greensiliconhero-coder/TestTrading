@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-11-01T10:52:13.926308+00:00",
+  "python": "3.10.8",
+  "pandas": "2.2.2",
+  "sources": {
+    "daily": "C:/Users/mayan/IdeaProjects/Trading_data/Data_v1",
+    "minute": "C:/Users/mayan/IdeaProjects/Zerodha_Trading/minute_data"
+  },
+  "datasets": {
+    "daily": {
+      "files": 490,
+      "symbols": 49,
+      "rows": 116710,
+      "empty_files": 4,
+      "error_files": 0,
+      "invalid_timestamps": 0,
+      "timestamps_without_offset": 0,
+      "duplicate_timestamps": 0,
+      "out_of_order_steps": 0,
+      "invalid_numeric_rows": 0,
+      "nonpositive_price_rows": 0,
+      "invalid_ohlc_rows": 0,
+      "negative_volume_rows": 0,
+      "zero_volume_rows": 5,
+      "outside_regular_session_rows": 0,
+      "sessions_short_of_375_reference": 0,
+      "first_day": "2015-01-01",
+      "last_day": "2025-10-03"
+    },
+    "minute": {
+      "files": 374,
+      "symbols": 49,
+      "rows": 32729261,
+      "empty_files": 2,
+      "error_files": 0,
+      "invalid_timestamps": 0,
+      "timestamps_without_offset": 0,
+      "duplicate_timestamps": 0,
+      "out_of_order_steps": 0,
+      "invalid_numeric_rows": 0,
+      "nonpositive_price_rows": 16864,
+      "invalid_ohlc_rows": 7,
+      "negative_volume_rows": 0,
+      "zero_volume_rows": 76137,
+      "outside_regular_session_rows": 21423,
+      "sessions_short_of_375_reference": 1129,
+      "first_day": "2015-02-02",
+      "last_day": "2025-10-03"
+    }
+  },
+  "ambiguous_symbol_days": {
+    "daily": 0,
+    "minute": 0
+  },
+  "comparison": {
+    "matched_symbol_days": 87516,
+    "daily_only_days": 29192,
+    "minute_only_days": 122,
+    "open_different_days": 18901,
+    "high_different_days": 22159,
+    "low_different_days": 24211,
+    "close_different_days": 84318,
+    "volume_different_days": 87503
+  }
+}
