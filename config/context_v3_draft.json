@@ -1,0 +1,31 @@
+{
+  "status": "draft_not_ready_for_training",
+  "data_branch": "data/context-sources-v1",
+  "data_staging_folder": "data/context_sources_v1",
+  "reference_manifest": "experiments/context_sources_v1/public_manifest.json",
+  "previous_models_preserved": true,
+  "automatic_training": false,
+  "live_execution": false,
+  "study_years": [2021, 2022, 2023, 2024],
+  "reserved_year": 2025,
+  "holding_minutes": 30,
+  "position_types": ["long", "cash"],
+  "hypothesis_families": ["continuation", "reversal", "market_sector_relative_move"],
+  "competitors_per_family": ["explicit_rule", "regularized_linear", "gradient_boosted_tree"],
+  "proposed_candidate_budget": 9,
+  "not_yet_specified": [
+    "Numerical event and feature definitions",
+    "Point-in-time valid sector and universe mapping",
+    "Chronological fold boundaries and purge rules",
+    "Historical fee schedule and execution stress scenarios",
+    "Capital, allocation, exposure caps and fill assumptions",
+    "Model hyperparameters, thresholds, seeds and total trial ledger",
+    "Predeclared evidence and rejection criteria"
+  ],
+  "training_gate": [
+    "Authenticated index histories downloaded and coverage reviewed",
+    "Historical identity and action reconciliation reviewed",
+    "Feature inputs audited for availability at decision time",
+    "Fully specified protocol committed before fitting"
+  ]
+}
