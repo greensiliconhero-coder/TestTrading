@@ -30,3 +30,9 @@ Tests: `python -m unittest discover -s tests -p test_five_year_download.py`
 Acquisition branch: data/five-year-v4. Processing and training will use separate subsequent branches. Large raw data remains outside Git and will be archived with checksums; source, configs, documentation and compact manifests belong in Git. Final training and testing commands will be added when implemented and verified.
 
 No results or profitability claims exist for this version yet. More history can improve estimation or reveal failure; success is not guaranteed.
+
+## Acquisition fix: Tata Motors identity
+
+Initial authenticated attempt stopped before candle requests because TATAMOTORS is no longer a current symbol. NSE circular CML70875 establishes the rename to TMPV effective 2025-10-24. The saved current Kite snapshot maps TMPV to token 884737; TMCV is a different instrument. The downloader uses this explicit, token-checked alias for acquisition and records the original requested symbol, current symbol, evidence and identity-review flag on every response. This does not certify economic continuity through restructuring. Its data requires review before training. Unresolved identities are recorded in the manifest and do not block other instruments.
+
+Source: https://nsearchives.nseindia.com/content/circulars/CML70875.pdf

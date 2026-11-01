@@ -17,6 +17,19 @@ STAGE = ROOT / 'data/five_year_v4'
 LOG = ROOT / 'experiments/five_year_v4/download_manifest.json'
 
 
+def resolve_instrument(symbol, kind, stocks, indices, aliases):
+    mapping = stocks if kind == 'stock' else indices
+    alias = aliases.get(symbol, {}) if kind == 'stock' else {}
+    current = alias.get('current_symbol', symbol)
+    item = mapping.get(current)
+    if item is None:
+        return None
+    if alias.get('expected_token') and item['instrument_token'] != alias['expected_token']:
+        return None
+    return dict(instrument_token=item['instrument_token'], current_symbol=current,
+                identity_review_required=bool(alias), identity_evidence=alias.get('source'))
+
+
 def ranges(start, end, interval):
     while start <= end:
         stop = min(start + timedelta(days=58 if interval == 'minute' else 364), end)
@@ -65,22 +78,26 @@ def main():
     atomic_write(snapshot, instruments)
     stocks = instrument_map(instruments)
     indices = {r['tradingsymbol']: r for r in csv.DictReader(io.StringIO(instruments.decode('utf-8-sig'))) if r['segment'] == 'INDICES' and r['exchange'] == 'NSE'}
-    missing = [s for s in config['stocks'] if s not in stocks] + [s for s in config['indices'] if s not in indices]
-    if missing:
-        raise ValueError('Resolve instrument identity before downloading: ' + ', '.join(missing))
+    aliases = config.get('symbol_aliases', {})
     records = json.loads(LOG.read_text())['requests'] if LOG.exists() else {}
     def save():
         atomic_write(LOG, encoded({'dataset': 'five_year_v4', 'training_started': False,
                                   'requests': records, 'updated_utc': datetime.now(timezone.utc).isoformat()}))
     for number, job in enumerate(planned, 1):
         name = f"{job['symbol'].replace(' ', '_')}_{job['interval']}_{job['from']}_{job['to']}"
-        token = (stocks if job['kind'] == 'stock' else indices)[job['symbol']]['instrument_token']
+        identity = resolve_instrument(job['symbol'], job['kind'], stocks, indices, aliases)
+        if identity is None:
+            records[name] = dict(job, status='unresolved_identity', instrument_snapshot=snapshot.relative_to(ROOT).as_posix())
+            save()
+            print(f'{number}/{len(planned)} unresolved identity: {name}; continuing other instruments', flush=True)
+            continue
+        token = identity['instrument_token']
         old = records.get(name, {})
         oldpath = ROOT / old.get('path', 'nonexistent')
         if old.get('status') == 'staged_unverified' and old.get('instrument_token') == token and oldpath.is_file() and hashlib.sha256(oldpath.read_bytes()).hexdigest() == old['sha256']:
             print(f'{number}/{len(planned)} reuse {name}', flush=True)
             continue
-        rec = dict(job, instrument_token=token, instrument_snapshot=snapshot.relative_to(ROOT).as_posix(), retrieved_utc=datetime.now(timezone.utc).isoformat())
+        rec = dict(job, **identity, instrument_snapshot=snapshot.relative_to(ROOT).as_posix(), retrieved_utc=datetime.now(timezone.utc).isoformat())
         try:
             body = client.get(f'/instruments/historical/{token}/{job["interval"]}', {'from': job['from'] + ' 00:00:00', 'to': job['to'] + ' 23:59:59', 'oi': 0})
             digest = hashlib.sha256(body).hexdigest()

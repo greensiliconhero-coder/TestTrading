@@ -5,10 +5,20 @@ from datetime import date, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
-from five_year_download import ranges, validate_response
+from five_year_download import ranges, validate_response, resolve_instrument
 
 
 class FiveYearDownloadTests(unittest.TestCase):
+    def test_alias_requires_verified_token_and_keeps_review_flag(self):
+        stocks = {'TMPV': {'instrument_token': '884737'}, 'TMCV': {'instrument_token': '194504193'}}
+        aliases = {'TATAMOTORS': {'current_symbol': 'TMPV', 'expected_token': '884737', 'source': 'NSE circular'}}
+        result = resolve_instrument('TATAMOTORS', 'stock', stocks, {}, aliases)
+        self.assertEqual(result['current_symbol'], 'TMPV')
+        self.assertTrue(result['identity_review_required'])
+        self.assertIsNone(resolve_instrument('TATAMOTORS', 'stock', stocks, {}, {}))
+        stocks['TMPV']['instrument_token'] = '123'
+        self.assertIsNone(resolve_instrument('TATAMOTORS', 'stock', stocks, {}, aliases))
+
     def test_complete_nonoverlapping_calendar_ranges(self):
         for interval, maximum in [('minute', 59), ('day', 365)]:
             pairs = list(ranges(date(2021, 1, 1), date(2025, 12, 31), interval))

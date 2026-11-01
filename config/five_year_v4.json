@@ -79,5 +79,14 @@
     "report all results and update branch README",
     "back up exact training datasets and models"
   ],
-  "deployment": "disabled"
+  "deployment": "disabled",
+  "symbol_aliases": {
+    "TATAMOTORS": {
+      "current_symbol": "TMPV",
+      "expected_token": "884737",
+      "effective_date": "2025-10-24",
+      "source": "https://nsearchives.nseindia.com/content/circulars/CML70875.pdf",
+      "constraint": "Acquisition alias only. Corporate restructuring and adjusted-history continuity require review before training; do not substitute TMCV."
+    }
+  }
 }
