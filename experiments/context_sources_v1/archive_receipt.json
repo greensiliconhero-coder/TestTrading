@@ -1,0 +1,11 @@
+{
+  "archive": "Context_index_minute_v1.zip",
+  "bytes": 45137029,
+  "sha256": "37d9afa31c6555088f0b5fb271af53e0dc70e7ef59dc2182ddb755a1668a8997",
+  "raw_payloads": 225,
+  "total_zip_entries": 227,
+  "release_tag": "context-data-v1",
+  "release_url": "https://github.com/greensiliconhero-coder/TestTrading/releases/tag/context-data-v1",
+  "contents": "225 raw Kite minute responses, request manifest, index mapping",
+  "credentials_included": false
+}
