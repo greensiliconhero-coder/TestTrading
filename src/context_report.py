@@ -11,6 +11,7 @@ def main():
         '## Exact preserved learning inputs','',
         f'{desc["rows"]:,} rows, {len(desc["features"])} feature columns, {len(desc["symbols"])} companies.',
         f'Split rows: {desc["split_rows"]}. Split sessions: {desc["split_sessions"]}.',
+        f'Independent-source quality quarantine removed {desc.get("quality_removed_rows",0):,} rows. The pre-quarantine table is preserved separately and was not the fitted input.',
         '`data/context_training_v3/samples.csv.gz` contains exact features, targets, split assignments and execution fields used for fitting and evaluation. `source_manifest.csv` fingerprints original source payloads; `dataset.json` fingerprints configuration, builder and table.', '',
         '## All nine candidates','',
         '| Candidate | 2022 diagnostic net | 2023 net | Validation trades | 2024 development net | 2024 stressed net |',
@@ -32,7 +33,7 @@ def main():
         '- `python src/context_predict.py --csv examples/context_v3_features.csv` loads saved models without fitting.',
         '- `python src/context_models.py` detects completed results and checks model hash instead of retraining.', '',
         '## Material limitations','',
-        'The cohort survives to the modern instrument list and was screened using its history. Corporate-action ex-dates, zero-volume stock sessions and incomplete index sessions are excluded retrospectively. Historical membership and all security adjustments are not independently certified. Four official daily-index samples provide checks, not complete historical verification. The comparison CSV records differences between official daily values and intraday aggregates; the official close need not equal the final minute quote.', '',
+        'The cohort survives to the modern instrument list and was screened using its history. Corporate-action ex-dates, zero-volume stock sessions, incomplete index sessions and independent-source high/low disagreement dates are excluded retrospectively. Historical membership and all security adjustments are not independently certified. Official daily histories for all nine indices over four years provide calendar/price checks; these do not certify intraday observations. Full-day quality quarantines would not be knowable at decision time and can remove volatile dates. The screen therefore prevents an unbiased live-performance claim. The comparison CSV records differences between official daily values and intraday aggregates; the official close need not equal the final minute quote.', '',
         'Bar-volume participation is an ex-post execution feasibility proxy. Historical spread, queue, market impact, exchange halts and actual fill availability are not known. Exit-capacity failures are counted rather than silently omitted. Estimated fees omit full contract-note reconciliation and may omit minor levies. Reported drawdowns use daily closes, not full intraday marks. These limitations prohibit treating a positive result as demonstrated deployable profitability.', '',
         'No hyperparameter sweep, reinforcement learning, neural-network retraining, paid compute or live orders was performed. The next decision must follow the evidence; a failed experiment should be retained and not retuned against the same comparison period.']
     (RESULTS/'report.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
