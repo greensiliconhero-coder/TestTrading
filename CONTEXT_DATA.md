@@ -23,6 +23,12 @@ After collection: verify calendar, align timestamps with stock candles, inspect 
 
 ## Still missing
 
+### Authenticated collection completed
+
+The first full download completed: 225/225 chunks, 3,324,949 index candles, 213,255,741 raw bytes. All payload hashes and structural checks passed. Each of the nine indices has 987 regular-session dates, and all 978 dates in the existing stock-study metadata are represented. Within that study, 2023-06-05 has 374 minutes and 2023-06-14 has 368 minutes for each index. Other short sessions and 240 out-of-regular-session rows per index are recorded in `experiments/context_sources_v1/index_audit.json`; their causes require calendar/source review. No forward filling or training merge was performed.
+
+The archive `Context_index_minute_v1.zip` contains all 225 raw responses plus the request manifest and index mapping. Its checksum and private GitHub release location are recorded in `experiments/context_sources_v1/archive_receipt.json`. The audit does not independently certify the exchange calendar, economic price accuracy or historical identity. No 2025 price outcomes were requested or accessed.
+
 - Point-in-time sector classifications and historical universe membership, including departures/delistings.
 - Corporate-action factor reconciliation and security identity across changes.
 - Independent historical price sample checks and verified exchange calendars.

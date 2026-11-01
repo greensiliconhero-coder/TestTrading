@@ -1,0 +1,231 @@
+{
+  "expected_chunks": 225,
+  "verified_chunks": 225,
+  "total_rows": 3324949,
+  "stock_study_sessions": 978,
+  "series": {
+    "NIFTY 50": {
+      "chunks": 25,
+      "rows": 369481,
+      "outside_regular_rows": 240,
+      "regular_sessions": 987,
+      "non_375_sessions": {
+        "2021-02-24": 54,
+        "2021-12-20": 374,
+        "2022-03-07": 372,
+        "2023-06-05": 374,
+        "2023-06-14": 368,
+        "2023-07-12": 374,
+        "2023-07-24": 372,
+        "2023-08-07": 374,
+        "2024-03-02": 105,
+        "2024-04-23": 369,
+        "2024-05-18": 105
+      },
+      "missing_stock_study_sessions": [],
+      "incomplete_stock_study_sessions": {
+        "2023-06-05": 374,
+        "2023-06-14": 368
+      }
+    },
+    "NIFTY AUTO": {
+      "chunks": 25,
+      "rows": 369434,
+      "outside_regular_rows": 240,
+      "regular_sessions": 987,
+      "non_375_sessions": {
+        "2021-02-24": 54,
+        "2021-12-20": 374,
+        "2022-03-07": 325,
+        "2023-06-05": 374,
+        "2023-06-14": 368,
+        "2023-07-12": 374,
+        "2023-07-24": 372,
+        "2023-08-07": 374,
+        "2024-03-02": 105,
+        "2024-04-23": 369,
+        "2024-05-18": 105
+      },
+      "missing_stock_study_sessions": [],
+      "incomplete_stock_study_sessions": {
+        "2023-06-05": 374,
+        "2023-06-14": 368
+      }
+    },
+    "NIFTY BANK": {
+      "chunks": 25,
+      "rows": 369434,
+      "outside_regular_rows": 240,
+      "regular_sessions": 987,
+      "non_375_sessions": {
+        "2021-02-24": 54,
+        "2021-12-20": 374,
+        "2022-03-07": 325,
+        "2023-06-05": 374,
+        "2023-06-14": 368,
+        "2023-07-12": 374,
+        "2023-07-24": 372,
+        "2023-08-07": 374,
+        "2024-03-02": 105,
+        "2024-04-23": 369,
+        "2024-05-18": 105
+      },
+      "missing_stock_study_sessions": [],
+      "incomplete_stock_study_sessions": {
+        "2023-06-05": 374,
+        "2023-06-14": 368
+      }
+    },
+    "NIFTY ENERGY": {
+      "chunks": 25,
+      "rows": 369433,
+      "outside_regular_rows": 240,
+      "regular_sessions": 987,
+      "non_375_sessions": {
+        "2021-02-24": 53,
+        "2021-12-20": 374,
+        "2022-03-07": 325,
+        "2023-06-05": 374,
+        "2023-06-14": 368,
+        "2023-07-12": 374,
+        "2023-07-24": 372,
+        "2023-08-07": 374,
+        "2024-03-02": 105,
+        "2024-04-23": 369,
+        "2024-05-18": 105
+      },
+      "missing_stock_study_sessions": [],
+      "incomplete_stock_study_sessions": {
+        "2023-06-05": 374,
+        "2023-06-14": 368
+      }
+    },
+    "NIFTY FIN SERVICE": {
+      "chunks": 25,
+      "rows": 369433,
+      "outside_regular_rows": 240,
+      "regular_sessions": 987,
+      "non_375_sessions": {
+        "2021-02-24": 53,
+        "2021-12-20": 374,
+        "2022-03-07": 325,
+        "2023-06-05": 374,
+        "2023-06-14": 368,
+        "2023-07-12": 374,
+        "2023-07-24": 372,
+        "2023-08-07": 374,
+        "2024-03-02": 105,
+        "2024-04-23": 369,
+        "2024-05-18": 105
+      },
+      "missing_stock_study_sessions": [],
+      "incomplete_stock_study_sessions": {
+        "2023-06-05": 374,
+        "2023-06-14": 368
+      }
+    },
+    "NIFTY FMCG": {
+      "chunks": 25,
+      "rows": 369433,
+      "outside_regular_rows": 240,
+      "regular_sessions": 987,
+      "non_375_sessions": {
+        "2021-02-24": 53,
+        "2021-12-20": 374,
+        "2022-03-07": 325,
+        "2023-06-05": 374,
+        "2023-06-14": 368,
+        "2023-07-12": 374,
+        "2023-07-24": 372,
+        "2023-08-07": 374,
+        "2024-03-02": 105,
+        "2024-04-23": 369,
+        "2024-05-18": 105
+      },
+      "missing_stock_study_sessions": [],
+      "incomplete_stock_study_sessions": {
+        "2023-06-05": 374,
+        "2023-06-14": 368
+      }
+    },
+    "NIFTY IT": {
+      "chunks": 25,
+      "rows": 369434,
+      "outside_regular_rows": 240,
+      "regular_sessions": 987,
+      "non_375_sessions": {
+        "2021-02-24": 54,
+        "2021-12-20": 374,
+        "2022-03-07": 325,
+        "2023-06-05": 374,
+        "2023-06-14": 368,
+        "2023-07-12": 374,
+        "2023-07-24": 372,
+        "2023-08-07": 374,
+        "2024-03-02": 105,
+        "2024-04-23": 369,
+        "2024-05-18": 105
+      },
+      "missing_stock_study_sessions": [],
+      "incomplete_stock_study_sessions": {
+        "2023-06-05": 374,
+        "2023-06-14": 368
+      }
+    },
+    "NIFTY METAL": {
+      "chunks": 25,
+      "rows": 369434,
+      "outside_regular_rows": 240,
+      "regular_sessions": 987,
+      "non_375_sessions": {
+        "2021-02-24": 54,
+        "2021-12-20": 374,
+        "2022-03-07": 325,
+        "2023-06-05": 374,
+        "2023-06-14": 368,
+        "2023-07-12": 374,
+        "2023-07-24": 372,
+        "2023-08-07": 374,
+        "2024-03-02": 105,
+        "2024-04-23": 369,
+        "2024-05-18": 105
+      },
+      "missing_stock_study_sessions": [],
+      "incomplete_stock_study_sessions": {
+        "2023-06-05": 374,
+        "2023-06-14": 368
+      }
+    },
+    "NIFTY PHARMA": {
+      "chunks": 25,
+      "rows": 369433,
+      "outside_regular_rows": 240,
+      "regular_sessions": 987,
+      "non_375_sessions": {
+        "2021-02-24": 53,
+        "2021-12-20": 374,
+        "2022-03-07": 325,
+        "2023-06-05": 374,
+        "2023-06-14": 368,
+        "2023-07-12": 374,
+        "2023-07-24": 372,
+        "2023-08-07": 374,
+        "2024-03-02": 105,
+        "2024-04-23": 369,
+        "2024-05-18": 105
+      },
+      "missing_stock_study_sessions": [],
+      "incomplete_stock_study_sessions": {
+        "2023-06-05": 374,
+        "2023-06-14": 368
+      }
+    }
+  },
+  "all_payload_hashes_verified": true,
+  "structural_validation_passed": true,
+  "independent_calendar_verified": false,
+  "independent_prices_verified": false,
+  "historical_identity_verified": false,
+  "training_merge": false,
+  "reserved_2025_prices_accessed": false
+}
