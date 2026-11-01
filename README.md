@@ -33,6 +33,7 @@ The following describes the original studies and their original acceptance rules
 
 | Branch | Purpose |
 |---|---|
+| [experiment/no-min-trades](https://github.com/greensiliconhero-coder/TestTrading/tree/experiment/no-min-trades) | Completed count-floor sensitivity; original models unchanged |
 | [main](https://github.com/greensiliconhero-coder/TestTrading/tree/main) | Project index; code snapshot through neural v2 |
 | [experiment/neural-v2](https://github.com/greensiliconhero-coder/TestTrading/tree/experiment/neural-v2) | Completed first neural-network experiment |
 | [data/context-sources-v1](https://github.com/greensiliconhero-coder/TestTrading/tree/data/context-sources-v1) | Completed context-source download and first structural audit |
