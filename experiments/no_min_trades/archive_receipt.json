@@ -1,0 +1,7 @@
+{
+  "archive": "No_minimum_trade_test.zip",
+  "bytes": 52986,
+  "sha256": "9c3719da40d317bf2ef984ee2886b36cb5937264f1123161f16b28e57cd8e583",
+  "scope": "Results, trade logs and sensitivity source; existing models/data reused, not duplicated.",
+  "release_url": "https://github.com/greensiliconhero-coder/TestTrading/releases/tag/v0.4.1-no-min-trades"
+}
