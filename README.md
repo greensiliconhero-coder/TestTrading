@@ -6,10 +6,17 @@ This branch contains the actual CNN, saved weights, preprocessing, earlier tree 
 
 Documentation audited on 2 November 2026. The sections below summarize completed studies across the repository; each source link identifies the branch that actually contains the artifact. All simulated strategies remain research-only. No live orders were placed. 2025 remains unused for model fitting/selection/evaluation.
 
+## Minimum-trade sensitivity follow-up
+
+A separate post-hoc replay removes only the minimum-trade-count requirement; weights, thresholds, costs and execution checks remain fixed. The CNN qualifies on one 2023 trade but has no 2024 trades. Final context relative_tree qualifies on 11 trades (+0.2804% in 2023), then loses 3.4463% over 22 trades in 2024. The earlier relative_ridge snapshot qualifies on 12 trades in 2022, then loses in both later years. Original model selections and artifacts are preserved; no retraining or 2025 access.
+
+See the [complete sensitivity report](https://github.com/greensiliconhero-coder/TestTrading/blob/experiment/no-min-trades/experiments/no_min_trades/report.md) on `experiment/no-min-trades`, including every original threshold, all final/diagnostic model snapshots and unchanged model hashes. These are already-observed comparison periods, not fresh validation.
+
 ## Branch directory
 
 | Branch | Purpose |
 |---|---|
+| [experiment/no-min-trades](https://github.com/greensiliconhero-coder/TestTrading/tree/experiment/no-min-trades) | Completed count-floor sensitivity; original models unchanged |
 | [main](https://github.com/greensiliconhero-coder/TestTrading/tree/main) | Project index; code snapshot through neural v2 |
 | [experiment/neural-v2](https://github.com/greensiliconhero-coder/TestTrading/tree/experiment/neural-v2) | Completed first neural-network experiment |
 | [data/context-sources-v1](https://github.com/greensiliconhero-coder/TestTrading/tree/data/context-sources-v1) | Completed context-source download and first structural audit |
