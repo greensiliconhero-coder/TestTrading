@@ -1,0 +1,60 @@
+{
+  "source_sha256": "513130a10ae18d7538c4615a393abf614bd0019a374bc6f0e842d32899b3b907",
+  "indices": [
+    {
+      "tradingsymbol": "NIFTY 50",
+      "instrument_token": "256265",
+      "segment": "INDICES",
+      "exchange": "NSE"
+    },
+    {
+      "tradingsymbol": "NIFTY BANK",
+      "instrument_token": "260105",
+      "segment": "INDICES",
+      "exchange": "NSE"
+    },
+    {
+      "tradingsymbol": "NIFTY IT",
+      "instrument_token": "259849",
+      "segment": "INDICES",
+      "exchange": "NSE"
+    },
+    {
+      "tradingsymbol": "NIFTY FMCG",
+      "instrument_token": "261897",
+      "segment": "INDICES",
+      "exchange": "NSE"
+    },
+    {
+      "tradingsymbol": "NIFTY AUTO",
+      "instrument_token": "263433",
+      "segment": "INDICES",
+      "exchange": "NSE"
+    },
+    {
+      "tradingsymbol": "NIFTY PHARMA",
+      "instrument_token": "262409",
+      "segment": "INDICES",
+      "exchange": "NSE"
+    },
+    {
+      "tradingsymbol": "NIFTY METAL",
+      "instrument_token": "263689",
+      "segment": "INDICES",
+      "exchange": "NSE"
+    },
+    {
+      "tradingsymbol": "NIFTY ENERGY",
+      "instrument_token": "261641",
+      "segment": "INDICES",
+      "exchange": "NSE"
+    },
+    {
+      "tradingsymbol": "NIFTY FIN SERVICE",
+      "instrument_token": "257801",
+      "segment": "INDICES",
+      "exchange": "NSE"
+    }
+  ],
+  "unresolved": []
+}

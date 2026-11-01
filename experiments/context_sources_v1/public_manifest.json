@@ -1,0 +1,113 @@
+{
+  "training_merge": false,
+  "reserved_2025_prices_requested": false,
+  "raw_folder": "C:\\Users\\mayan\\Documents\\Codex\\TradingResearch\\data\\context_sources_v1",
+  "sources": [
+    {
+      "name": "kite_nse_instruments",
+      "url": "https://api.kite.trade/instruments/NSE",
+      "retrieved_utc": "2026-11-01T20:24:04.933307+00:00",
+      "limitation": "Current security/index mapping; not historical identity.",
+      "http_status": 200,
+      "rows": 10412,
+      "status": "staged_unverified",
+      "sha256": "513130a10ae18d7538c4615a393abf614bd0019a374bc6f0e842d32899b3b907",
+      "bytes": 692510,
+      "path": "data/context_sources_v1/raw/kite_nse_instruments_513130a10ae18d75.csv"
+    },
+    {
+      "name": "nifty50_current",
+      "url": "https://www.niftyindices.com/IndexConstituent/ind_nifty50list.csv",
+      "retrieved_utc": "2026-11-01T20:24:04.933307+00:00",
+      "limitation": "Current constituents and industry labels; not point-in-time membership.",
+      "http_status": 200,
+      "rows": 50,
+      "status": "staged_unverified",
+      "sha256": "f5ba4027d935ae72879d5c24bbebf0e8439ec8ed504ffdf4175fde69206244b3",
+      "bytes": 3344,
+      "path": "data/context_sources_v1/raw/nifty50_current_f5ba4027d935ae72.csv"
+    },
+    {
+      "name": "nifty500_current",
+      "url": "https://www.niftyindices.com/IndexConstituent/ind_nifty500list.csv",
+      "retrieved_utc": "2026-11-01T20:24:04.933307+00:00",
+      "limitation": "Current constituents and industry labels; not point-in-time membership.",
+      "http_status": 200,
+      "rows": 501,
+      "status": "staged_unverified",
+      "sha256": "31b764a95cc03ad1d7ddb6c42340de9125ed2c78b3d436bf0dbc8440e4e38c5e",
+      "bytes": 32765,
+      "path": "data/context_sources_v1/raw/nifty500_current_31b764a95cc03ad1.csv"
+    },
+    {
+      "name": "nifty_history_page",
+      "url": "https://www.niftyindices.com/reports/historical-data",
+      "retrieved_utc": "2026-11-01T20:24:05.442313+00:00",
+      "limitation": "Source page, not a historical index-price dataset.",
+      "http_status": 200,
+      "status": "staged_unverified",
+      "sha256": "20c270382c51ed46c34c4ec7e75abcd4092ac41ef8c02a02b5ce154681209516",
+      "bytes": 111036,
+      "path": "data/context_sources_v1/raw/nifty_history_page_20c270382c51ed46.html"
+    },
+    {
+      "name": "nse_actions_page",
+      "url": "https://www.nseindia.com/companies-listing/corporate-filings-actions",
+      "retrieved_utc": "2026-11-01T20:24:05.463574+00:00",
+      "limitation": "Source page, not a corporate-action ledger.",
+      "http_status": 200,
+      "status": "staged_unverified",
+      "sha256": "d800a227eaea1007090199d79b45e645cc5f2c4723bc757ba50e01d535272810",
+      "bytes": 365591,
+      "path": "data/context_sources_v1/raw/nse_actions_page_d800a227eaea1007.html"
+    },
+    {
+      "name": "nse_actions_2021",
+      "url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=01-01-2021&to_date=31-12-2021",
+      "retrieved_utc": "2026-11-01T20:24:05.856561+00:00",
+      "limitation": "Historical ex-date actions; announcement availability and adjustment factors still require review.",
+      "http_status": 200,
+      "rows": 2325,
+      "status": "staged_unverified",
+      "sha256": "a7f68fce49d79408ca80662290289b6ef8d900776d7f7c0ba650cf1a3ed22b10",
+      "bytes": 715187,
+      "path": "data/context_sources_v1/raw/nse_actions_2021_a7f68fce49d79408.json"
+    },
+    {
+      "name": "nse_actions_2022",
+      "url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=01-01-2022&to_date=31-12-2022",
+      "retrieved_utc": "2026-11-01T20:24:05.950736+00:00",
+      "limitation": "Historical ex-date actions; announcement availability and adjustment factors still require review.",
+      "http_status": 200,
+      "rows": 2483,
+      "status": "staged_unverified",
+      "sha256": "1dc97928e1652b3fcbabcd9971291fa629725f25e73f0da0bc5f60f4225b53a6",
+      "bytes": 763708,
+      "path": "data/context_sources_v1/raw/nse_actions_2022_1dc97928e1652b3f.json"
+    },
+    {
+      "name": "nse_actions_2023",
+      "url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=01-01-2023&to_date=31-12-2023",
+      "retrieved_utc": "2026-11-01T20:24:06.138754+00:00",
+      "limitation": "Historical ex-date actions; announcement availability and adjustment factors still require review.",
+      "http_status": 200,
+      "rows": 2587,
+      "status": "staged_unverified",
+      "sha256": "2ae24a68ae73dbe94557dd4a0c096efe3eed4906e98f0947f878b9c11a10d156",
+      "bytes": 797300,
+      "path": "data/context_sources_v1/raw/nse_actions_2023_2ae24a68ae73dbe9.json"
+    },
+    {
+      "name": "nse_actions_2024",
+      "url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=01-01-2024&to_date=31-12-2024",
+      "retrieved_utc": "2026-11-01T20:24:06.854681+00:00",
+      "limitation": "Historical ex-date actions; announcement availability and adjustment factors still require review.",
+      "http_status": 200,
+      "rows": 2693,
+      "status": "staged_unverified",
+      "sha256": "bd1c34bbd8b199cb13dc85d0b0a35422e081d4d966c7fbed8c898a312e3fa62e",
+      "bytes": 828619,
+      "path": "data/context_sources_v1/raw/nse_actions_2024_bd1c34bbd8b199cb.json"
+    }
+  ]
+}

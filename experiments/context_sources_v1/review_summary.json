@@ -1,0 +1,14 @@
+{
+  "all_equity_action_rows": 10088,
+  "study_universe_action_rows": 258,
+  "study_symbols": 37,
+  "ex_date_years_verified": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "adjustments_verified": false,
+  "historical_membership_verified": false,
+  "training_merge": false
+}
