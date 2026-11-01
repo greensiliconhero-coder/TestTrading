@@ -1,0 +1,23 @@
+[
+  {
+    "elapsed_seconds": 11.75,
+    "epoch": 1,
+    "selected": true,
+    "training_loss": 0.6924822410385171,
+    "validation_log_loss": 0.6926051334608262
+  },
+  {
+    "elapsed_seconds": 11.0,
+    "epoch": 2,
+    "selected": false,
+    "training_loss": 0.6923196915998294,
+    "validation_log_loss": 0.6926110837169516
+  },
+  {
+    "elapsed_seconds": 12.281000000002678,
+    "epoch": 3,
+    "selected": false,
+    "training_loss": 0.6922589961418251,
+    "validation_log_loss": 0.6927391958450564
+  }
+]
