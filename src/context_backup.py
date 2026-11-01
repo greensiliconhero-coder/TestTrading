@@ -20,7 +20,7 @@ def main():
         if sha(path)!=record['sha256']:
             raise ValueError('Cannot archive changed source: '+record['path'])
         paths.add(path)
-    for folder in [FOLDER,MODELS,RESULTS,ROOT/'src',ROOT/'tests']:
+    for folder in [FOLDER,MODELS,ROOT/'experiments',ROOT/'src',ROOT/'tests',ROOT/'config',ROOT/'data/context_sources_v1/official_daily']:
         paths.update(p for p in folder.rglob('*') if p.is_file() and '__pycache__' not in p.parts)
     paths.update([ROOT/'config/context_v3.json',ROOT/'requirements.txt',ROOT/'CONTEXT_V3_PROTOCOL.md',ROOT/'examples/context_v3_features.csv'])
     checksums = {}

@@ -6,3 +6,4 @@
 # Raw reference payloads must round-trip byte-for-byte for provenance hashes.
 data/context_sources_v1/raw/** -text -diff
 data/context_sources_v1/independent_checks/** -text -diff
+data/context_sources_v1/official_daily/** -text -diff
