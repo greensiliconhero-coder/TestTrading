@@ -24,7 +24,7 @@ def main():
         paths.update(p for p in folder.rglob('*') if p.is_file() and '__pycache__' not in p.parts)
     paths.update([ROOT/'config/context_v3.json',ROOT/'requirements.txt',ROOT/'CONTEXT_V3_PROTOCOL.md',ROOT/'examples/context_v3_features.csv'])
     checksums = {}
-    with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED,compresslevel=6,allowZip64=True) as archive:
+    with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED,compresslevel=1,allowZip64=True) as archive:
         for number,path in enumerate(sorted(paths),1):
             name = path.relative_to(ROOT).as_posix()
             checksums[name] = sha(path)
