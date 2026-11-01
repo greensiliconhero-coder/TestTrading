@@ -4,6 +4,9 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import joblib
+import sklearn
+import platform
+import subprocess
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import Ridge
@@ -195,7 +198,9 @@ def main():
                 raise ValueError('Restored model changed predictions.')
     card = {'version':'context_v3','models_sha256':sha(MODELS/'candidates.joblib'),'dataset_sha256':desc['dataset_sha256'],
         'config_sha256':sha(CONFIG),'training_code_sha256':sha(Path(__file__)),'features':features,'selected_candidate':chosen,
-        'all_candidates_saved':list(models),'save_reload_max_difference':delta,'deployment':'disabled','2025_used':False}
+        'all_candidates_saved':list(models),'save_reload_max_difference':delta,'deployment':'disabled','2025_used':False,
+        'versions':{'python':platform.python_version(),'numpy':np.__version__,'pandas':pd.__version__,'sklearn':sklearn.__version__,'joblib':joblib.__version__},
+        'training_git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()}
     (MODELS/'bundle.json').write_text(json.dumps(card,indent=2)+'\n')
     result = {'selected_on_2023':chosen,'candidate_count':len(models),'candidates':outcomes,'dataset':desc,
         'deployment':'disabled','2025_used':False,'save_reload_max_difference':delta,
