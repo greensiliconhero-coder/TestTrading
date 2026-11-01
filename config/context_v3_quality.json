@@ -1,0 +1,9 @@
+{
+  "status": "frozen_before_any_context_model_fit",
+  "maximum_daily_index_high_low_disagreement_bps": 10,
+  "rule": "Exclude a full study date when any of the nine index series differs from its official Nifty daily high or low by more than 10 basis points.",
+  "observed_flagged_dates": 73,
+  "reason": "Independent-source price disagreement; not a claim the broker or official feed is necessarily wrong.",
+  "no_strategy_outcomes_used_to_set_rule": true,
+  "limitation": "Retrospective full-day quality screening can remove volatile dates and bias the study. Forward operation cannot know the final daily screen at signal time. Results remain exploratory and cannot be presented as an unbiased deployable strategy."
+}

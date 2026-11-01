@@ -1,0 +1,142 @@
+{
+  "downloaded_year_series": 36,
+  "requested_year_series": 36,
+  "series": {
+    "NIFTY 50": {
+      "official_daily_dates": 991,
+      "broker_regular_dates": 987,
+      "matched_dates": 987,
+      "official_dates_without_regular_broker_bars": [
+        "2021-11-04",
+        "2022-10-24",
+        "2023-11-12",
+        "2024-11-01"
+      ],
+      "broker_dates_not_in_official_daily": [],
+      "high_low_max_abs_difference_bps": 144.15538803105756,
+      "high_low_p95_abs_difference_bps": 3.210857852596002,
+      "high_low_dates_over_10bps": 7
+    },
+    "NIFTY BANK": {
+      "official_daily_dates": 991,
+      "broker_regular_dates": 987,
+      "matched_dates": 987,
+      "official_dates_without_regular_broker_bars": [
+        "2021-11-04",
+        "2022-10-24",
+        "2023-11-12",
+        "2024-11-01"
+      ],
+      "broker_dates_not_in_official_daily": [],
+      "high_low_max_abs_difference_bps": 254.44621133707045,
+      "high_low_p95_abs_difference_bps": 5.405386954655976,
+      "high_low_dates_over_10bps": 19
+    },
+    "NIFTY IT": {
+      "official_daily_dates": 991,
+      "broker_regular_dates": 987,
+      "matched_dates": 987,
+      "official_dates_without_regular_broker_bars": [
+        "2021-11-04",
+        "2022-10-24",
+        "2023-11-12",
+        "2024-11-01"
+      ],
+      "broker_dates_not_in_official_daily": [],
+      "high_low_max_abs_difference_bps": 76.5148781051339,
+      "high_low_p95_abs_difference_bps": 4.478033119342804,
+      "high_low_dates_over_10bps": 9
+    },
+    "NIFTY FMCG": {
+      "official_daily_dates": 991,
+      "broker_regular_dates": 987,
+      "matched_dates": 987,
+      "official_dates_without_regular_broker_bars": [
+        "2021-11-04",
+        "2022-10-24",
+        "2023-11-12",
+        "2024-11-01"
+      ],
+      "broker_dates_not_in_official_daily": [],
+      "high_low_max_abs_difference_bps": 30.327066450075435,
+      "high_low_p95_abs_difference_bps": 4.47882740999671,
+      "high_low_dates_over_10bps": 7
+    },
+    "NIFTY AUTO": {
+      "official_daily_dates": 991,
+      "broker_regular_dates": 987,
+      "matched_dates": 987,
+      "official_dates_without_regular_broker_bars": [
+        "2021-11-04",
+        "2022-10-24",
+        "2023-11-12",
+        "2024-11-01"
+      ],
+      "broker_dates_not_in_official_daily": [],
+      "high_low_max_abs_difference_bps": 79.60835016052492,
+      "high_low_p95_abs_difference_bps": 4.431472133381791,
+      "high_low_dates_over_10bps": 7
+    },
+    "NIFTY PHARMA": {
+      "official_daily_dates": 991,
+      "broker_regular_dates": 987,
+      "matched_dates": 987,
+      "official_dates_without_regular_broker_bars": [
+        "2021-11-04",
+        "2022-10-24",
+        "2023-11-12",
+        "2024-11-01"
+      ],
+      "broker_dates_not_in_official_daily": [],
+      "high_low_max_abs_difference_bps": 74.81035177228978,
+      "high_low_p95_abs_difference_bps": 4.012681206006834,
+      "high_low_dates_over_10bps": 10
+    },
+    "NIFTY METAL": {
+      "official_daily_dates": 991,
+      "broker_regular_dates": 987,
+      "matched_dates": 987,
+      "official_dates_without_regular_broker_bars": [
+        "2021-11-04",
+        "2022-10-24",
+        "2023-11-12",
+        "2024-11-01"
+      ],
+      "broker_dates_not_in_official_daily": [],
+      "high_low_max_abs_difference_bps": 98.6393648587236,
+      "high_low_p95_abs_difference_bps": 5.04159193013187,
+      "high_low_dates_over_10bps": 13
+    },
+    "NIFTY ENERGY": {
+      "official_daily_dates": 991,
+      "broker_regular_dates": 987,
+      "matched_dates": 987,
+      "official_dates_without_regular_broker_bars": [
+        "2021-11-04",
+        "2022-10-24",
+        "2023-11-12",
+        "2024-11-01"
+      ],
+      "broker_dates_not_in_official_daily": [],
+      "high_low_max_abs_difference_bps": 180.6059566250462,
+      "high_low_p95_abs_difference_bps": 5.408776950848846,
+      "high_low_dates_over_10bps": 17
+    },
+    "NIFTY FIN SERVICE": {
+      "official_daily_dates": 991,
+      "broker_regular_dates": 987,
+      "matched_dates": 987,
+      "official_dates_without_regular_broker_bars": [
+        "2021-11-04",
+        "2022-10-24",
+        "2023-11-12",
+        "2024-11-01"
+      ],
+      "broker_dates_not_in_official_daily": [],
+      "high_low_max_abs_difference_bps": 240.7438983519239,
+      "high_low_p95_abs_difference_bps": 5.354327710502579,
+      "high_low_dates_over_10bps": 13
+    }
+  },
+  "interpretation": "Independent provider-download/calendar comparison; daily final close need not equal final minute quote. High/low differences require review, not automatic correction. No strategy tuning."
+}

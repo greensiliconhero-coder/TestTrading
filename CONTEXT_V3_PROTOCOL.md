@@ -44,3 +44,9 @@ Sources for date-effective exchange-fee revisions:
 - https://nsearchives.nseindia.com/content/circulars/MSD60677.pdf
 
 Stop on source checksum mismatches or invalid numeric inputs. Missing independent certification limits conclusions and deployment; it does not justify inventing a successful validation. Existing models and all failed versions remain preserved.
+
+## Quality amendment before fitting
+
+Before any context-v3 model fit, an additional full-period official Nifty comparison obtained 36 year-series and found high/low discrepancies above 10 bps on 73 unique dates across the nine indices. The calendar comparison found no broker regular-session dates absent from official daily records; four official dates in each series correspond to dates without regular-hours broker bars. This extends the four-date sample, without changing the model search budget or using strategy outcomes.
+
+The frozen rule in `config/context_v3_quality.json` quarantines all study rows on dates with any index high/low disagreement above 10 bps. This is a conservative source-consistency screen, not a verified diagnosis of erroneous prices. It uses full-day information retrospectively and may remove difficult volatile dates; the resulting backtest is not a live-deployable simulation of when such defects could have been recognized. Preserve the pre-screen table, final table, quarantined-row list, official daily payloads and finalizer fingerprint. Do not claim unbiased profitability even if surviving results are positive.
