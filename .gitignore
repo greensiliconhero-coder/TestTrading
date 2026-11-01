@@ -12,4 +12,6 @@ data/
 zerodha_config.json
 credentials*.json
 *.log
+*.pt
+*.pending
 .pytest_cache/

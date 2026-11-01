@@ -1,0 +1,3 @@
+-r requirements.txt
+# CPU installation: python -m pip install torch==2.2.2 --index-url https://download.pytorch.org/whl/cpu
+torch==2.2.2
