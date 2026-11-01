@@ -1,0 +1,14 @@
+{
+  "artifact": "research_v1.joblib",
+  "purpose": "Exploratory prediction of positive next-30-minute quote return in a fixed screened stock cohort",
+  "model": "HistGradientBoostingClassifier",
+  "features_in_order": ["return_5", "return_15", "return_30", "volatility_30", "volume_ratio_5_30", "range_5", "return_since_open", "session_fraction"],
+  "training_years": [2021, 2022],
+  "selection_year": 2023,
+  "evaluation_year": 2024,
+  "reserved_year": 2025,
+  "status": "Not approved for trading. No demonstrated net edge in initial experiment.",
+  "causal_interpretation": false,
+  "automatic_live_retraining": false,
+  "warning": "Load joblib only from this trusted local project. Use identical feature definitions and compatible dependency versions."
+}

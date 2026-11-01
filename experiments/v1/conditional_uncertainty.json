@@ -1,0 +1,8 @@
+{
+  "net_bps_95_percent_interval": [
+    -20.79110942525019,
+    -18.51922359348135
+  ],
+  "method": "1000 moving-block resamples of five observed days",
+  "limitations": "Conditional on fixed model, universe and quote-fill assumptions; not protection against structural data errors or selection bias."
+}

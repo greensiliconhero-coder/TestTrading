@@ -1,0 +1,16 @@
+{
+  "name": "minute_direction_v1",
+  "training_years": [2021, 2022],
+  "validation_year": 2023,
+  "test_year": 2024,
+  "untouched_year": 2025,
+  "holding_minutes": 30,
+  "signal_spacing_minutes": 30,
+  "assumed_round_trip_cost_bps": 20,
+  "stress_cost_bps": [0, 10, 20, 50],
+  "thresholds": [0.50, 0.55, 0.60],
+  "minimum_validation_trades": 1000,
+  "extra_exclusions": {"ADANIENT": "Pilot revealed revised OHLCV history; do not mix data snapshots."},
+  "scope": "Exploratory fixed surviving-stock cohort, not historical index membership. Dataset eligibility uses the prior whole-dataset audit. This is not a point-in-time investable-universe backtest.",
+  "deployment": "Disabled; no live trading or automatic retraining/promotion."
+}

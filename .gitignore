@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+work/
+outputs/
+.env
+data/
+*.joblib
+*.pkl
+*.pickle
+.env.*
+!.env.example
+zerodha_config.json
+credentials*.json
+*.log
+.pytest_cache/

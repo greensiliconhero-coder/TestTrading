@@ -1,0 +1,210 @@
+{
+  "limitations": [
+    "Current instrument mapping does not establish historical identity.",
+    "These probes do not fill all gaps or establish a trading calendar.",
+    "No downloaded data is automatically merged into source or training files."
+  ],
+  "listing_dates": {
+    "HDFCLIFE": "2017-11-17"
+  },
+  "phase": "validation_pilot",
+  "prelisting_rows_excluded_from_requests": {
+    "HDFCLIFE": 7862
+  },
+  "requests": [
+    {
+      "day": "2015-06-19",
+      "interval": "minute",
+      "reason": "nonpositive_price",
+      "symbol": "BAJAJFINSV"
+    },
+    {
+      "day": "2015-06-19",
+      "interval": "day",
+      "reason": "nonpositive_price",
+      "symbol": "BAJAJFINSV"
+    },
+    {
+      "day": "2015-05-15",
+      "interval": "minute",
+      "reason": "nonpositive_price",
+      "symbol": "BAJFINANCE"
+    },
+    {
+      "day": "2015-05-15",
+      "interval": "day",
+      "reason": "nonpositive_price",
+      "symbol": "BAJFINANCE"
+    },
+    {
+      "day": "2024-06-25",
+      "interval": "minute",
+      "reason": "ohlc_inconsistency",
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "day": "2024-06-25",
+      "interval": "day",
+      "reason": "ohlc_inconsistency",
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "day": "2024-06-25",
+      "interval": "minute",
+      "reason": "ohlc_inconsistency",
+      "symbol": "BRITANNIA"
+    },
+    {
+      "day": "2024-06-25",
+      "interval": "day",
+      "reason": "ohlc_inconsistency",
+      "symbol": "BRITANNIA"
+    },
+    {
+      "day": "2024-06-25",
+      "interval": "minute",
+      "reason": "ohlc_inconsistency",
+      "symbol": "DIVISLAB"
+    },
+    {
+      "day": "2024-06-25",
+      "interval": "day",
+      "reason": "ohlc_inconsistency",
+      "symbol": "DIVISLAB"
+    },
+    {
+      "day": "2024-06-25",
+      "interval": "minute",
+      "reason": "ohlc_inconsistency",
+      "symbol": "HDFCBANK"
+    },
+    {
+      "day": "2024-06-25",
+      "interval": "day",
+      "reason": "ohlc_inconsistency",
+      "symbol": "HDFCBANK"
+    },
+    {
+      "day": "2015-04-27",
+      "interval": "minute",
+      "reason": "nonpositive_price",
+      "symbol": "ICICIBANK"
+    },
+    {
+      "day": "2015-04-27",
+      "interval": "day",
+      "reason": "nonpositive_price",
+      "symbol": "ICICIBANK"
+    },
+    {
+      "day": "2024-06-25",
+      "interval": "minute",
+      "reason": "ohlc_inconsistency",
+      "symbol": "ICICIBANK"
+    },
+    {
+      "day": "2024-06-25",
+      "interval": "day",
+      "reason": "ohlc_inconsistency",
+      "symbol": "ICICIBANK"
+    },
+    {
+      "day": "2015-04-27",
+      "interval": "minute",
+      "reason": "nonpositive_price",
+      "symbol": "ITC"
+    },
+    {
+      "day": "2015-04-27",
+      "interval": "day",
+      "reason": "nonpositive_price",
+      "symbol": "ITC"
+    },
+    {
+      "day": "2024-06-25",
+      "interval": "minute",
+      "reason": "ohlc_inconsistency",
+      "symbol": "SBILIFE"
+    },
+    {
+      "day": "2024-06-25",
+      "interval": "day",
+      "reason": "ohlc_inconsistency",
+      "symbol": "SBILIFE"
+    },
+    {
+      "day": "2024-06-25",
+      "interval": "minute",
+      "reason": "ohlc_inconsistency",
+      "symbol": "UPL"
+    },
+    {
+      "day": "2024-06-25",
+      "interval": "day",
+      "reason": "ohlc_inconsistency",
+      "symbol": "UPL"
+    },
+    {
+      "day": "2025-10-03",
+      "interval": "minute",
+      "reason": "overlap_control",
+      "symbol": "ADANIENT"
+    },
+    {
+      "day": "2025-10-03",
+      "interval": "day",
+      "reason": "overlap_control",
+      "symbol": "ADANIENT"
+    },
+    {
+      "day": "2025-10-03",
+      "interval": "minute",
+      "reason": "overlap_control",
+      "symbol": "ICICIBANK"
+    },
+    {
+      "day": "2025-10-03",
+      "interval": "day",
+      "reason": "overlap_control",
+      "symbol": "ICICIBANK"
+    },
+    {
+      "day": "2020-06-15",
+      "interval": "minute",
+      "reason": "missing_year_probe",
+      "symbol": "ADANIENT"
+    },
+    {
+      "day": "2020-06-15",
+      "interval": "day",
+      "reason": "missing_year_probe",
+      "symbol": "ADANIENT"
+    },
+    {
+      "day": "2020-06-15",
+      "interval": "minute",
+      "reason": "missing_year_probe",
+      "symbol": "ICICIBANK"
+    },
+    {
+      "day": "2020-06-15",
+      "interval": "day",
+      "reason": "missing_year_probe",
+      "symbol": "ICICIBANK"
+    },
+    {
+      "day": "2020-06-15",
+      "interval": "minute",
+      "reason": "missing_year_probe",
+      "symbol": "ITC"
+    },
+    {
+      "day": "2020-06-15",
+      "interval": "day",
+      "reason": "missing_year_probe",
+      "symbol": "ITC"
+    }
+  ],
+  "schema_version": 1,
+  "source_audit_sha256": "24eb17de15c9f18e8f8af5e13a263772a854f92739eb2d00c859c2967537ef0a"
+}

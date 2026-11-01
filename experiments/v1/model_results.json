@@ -1,0 +1,140 @@
+{
+  "split_sizes": {
+    "train": 199837,
+    "validation": 98483,
+    "test": 97449
+  },
+  "features": [
+    "return_5",
+    "return_15",
+    "return_30",
+    "volatility_30",
+    "volume_ratio_5_30",
+    "range_5",
+    "return_since_open",
+    "session_fraction"
+  ],
+  "candidates": [
+    {
+      "model": "logistic",
+      "threshold": 0.5,
+      "trades": 6366,
+      "mean_gross_bps": 1.4788195050999977,
+      "mean_net_bps": -18.5211804949,
+      "execution_zero_volume": 0
+    },
+    {
+      "model": "logistic",
+      "threshold": 0.55,
+      "trades": 333,
+      "mean_gross_bps": 4.799377342610271,
+      "mean_net_bps": -15.20062265738973,
+      "execution_zero_volume": 0
+    },
+    {
+      "model": "logistic",
+      "threshold": 0.6,
+      "trades": 76,
+      "mean_gross_bps": 18.109404510470995,
+      "mean_net_bps": -1.8905954895290051,
+      "execution_zero_volume": 0
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "threshold": 0.5,
+      "trades": 14884,
+      "mean_gross_bps": 1.5211069428784667,
+      "mean_net_bps": -18.47889305712153,
+      "execution_zero_volume": 1
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "threshold": 0.55,
+      "trades": 450,
+      "mean_gross_bps": 3.1329156460304897,
+      "mean_net_bps": -16.86708435396951,
+      "execution_zero_volume": 0
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "threshold": 0.6,
+      "trades": 52,
+      "mean_gross_bps": -18.203234888876864,
+      "mean_net_bps": -38.203234888876864,
+      "execution_zero_volume": 0
+    }
+  ],
+  "source_manifest_sha256": "73bc5b607830462c6963c79883bb7391b56854d5810ef0e817808af5de331ad2",
+  "config_sha256": "f31bb26cc49ff3602b790a800a6accb733a00d32bf10cad057b5d5913b001325",
+  "code_sha256": "c18a86673bcb53965523232b28b206c59d64ed5509e0ee4237f4bde78c058a7d",
+  "runtime": {
+    "sklearn": "1.7.1",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2"
+  },
+  "validation_model_metrics": {
+    "logistic": {
+      "validation_auc": 0.525198429485162,
+      "validation_brier": 0.24940800043205744
+    },
+    "hist_gradient_boosting": {
+      "validation_auc": 0.5260637012876846,
+      "validation_brier": 0.2492900886628459
+    }
+  },
+  "chosen_on_validation": {
+    "model": "hist_gradient_boosting",
+    "threshold": 0.5,
+    "trades": 14884,
+    "mean_gross_bps": 1.5211069428784667,
+    "mean_net_bps": -18.47889305712153,
+    "execution_zero_volume": 1
+  },
+  "test_metrics": {
+    "test_auc": 0.5164640029413248,
+    "test_brier": 0.24970090221413624,
+    "constant_probability_brier": 0.24986251453868802,
+    "always_long_same_times": {
+      "trades": 97449,
+      "mean_gross_bps": -0.04858377193935719,
+      "mean_net_bps": -20.048583771939356,
+      "execution_zero_volume": 1
+    },
+    "selected_rule": {
+      "trades": 17027,
+      "mean_gross_bps": 0.2798481505533179,
+      "mean_net_bps": -19.720151849446683,
+      "execution_zero_volume": 0
+    }
+  },
+  "cost_sensitivity": {
+    "0": {
+      "trades": 17027,
+      "mean_gross_bps": 0.2798481505533179,
+      "mean_net_bps": 0.2798481505533179,
+      "execution_zero_volume": 0
+    },
+    "10": {
+      "trades": 17027,
+      "mean_gross_bps": 0.2798481505533179,
+      "mean_net_bps": -9.720151849446681,
+      "execution_zero_volume": 0
+    },
+    "20": {
+      "trades": 17027,
+      "mean_gross_bps": 0.2798481505533179,
+      "mean_net_bps": -19.720151849446683,
+      "execution_zero_volume": 0
+    },
+    "50": {
+      "trades": 17027,
+      "mean_gross_bps": 0.2798481505533179,
+      "mean_net_bps": -49.72015184944668,
+      "execution_zero_volume": 0
+    }
+  },
+  "validation_rule_passed": false,
+  "deployment": "disabled",
+  "untouched_year": 2025,
+  "interpretation": "Exploratory direction classifier and idealized quote-return study; not an executable backtest or proof of profitability."
+}
