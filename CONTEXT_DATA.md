@@ -1,6 +1,6 @@
 # Context data collection v1
 
-Branch: `data/context-sources-v1`. All newly fetched source payloads are isolated under `data/context_sources_v1/`, which remains excluded from Git. Source URLs, retrieval timestamps, SHA-256 hashes, success/failure states and row counts are versioned under `experiments/context_sources_v1/`. Nothing is automatically merged into training data.
+Branch: `data/context-sources-v1`. All newly fetched source payloads are isolated under `data/context_sources_v1/`. The initial small public reference snapshots in `raw/` and their study subset in `review/` are explicitly versioned on this branch. Bulk authenticated minute histories remain excluded from Git. Source URLs, retrieval timestamps, SHA-256 hashes, success/failure states and row counts are versioned under `experiments/context_sources_v1/`. Nothing is automatically merged into training data.
 
 ## Collected public references
 
@@ -35,4 +35,4 @@ No paid provider has been selected and no purchase is needed for the public file
 
 `python src/context_sources.py` stages new snapshots and updates the public manifest. Existing content-addressed payloads are retained. Do not rerun it concurrently with the authenticated downloader because it refreshes the index-map file. `python -m unittest discover -s tests -p test_context.py` verifies chunk boundaries, date/duplicate rejection and acceptance of zero-volume index candles.
 
-Raw-data backups are separate from Git. Copy `data/context_sources_v1/` together with its versioned manifests to restore collected payloads without fetching them again. Model checkpoints and previously collected stock files are unchanged.
+The initial public reference snapshots can be restored from this Git branch and also have a separate ZIP backup. Future bulk minute-data backups are separate from Git; copy `data/context_sources_v1/` together with its versioned manifests to restore those payloads without fetching them again. Model checkpoints and previously collected stock files are unchanged.
