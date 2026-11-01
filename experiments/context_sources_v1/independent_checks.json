@@ -1,0 +1,94 @@
+[
+  {
+    "day": "04012021",
+    "url": "https://nsearchives.nseindia.com/content/indices/ind_close_all_04012021.csv",
+    "status": "downloaded",
+    "path": "data/context_sources_v1/independent_checks/indices_04012021.csv",
+    "sha256": "e80c5b741b75532e4d5f5151bcb67580e8b231de160de91c78079a217ab916c3",
+    "rows": 87,
+    "fields": [
+      "Index Name",
+      "Index Date",
+      "Open Index Value",
+      "High Index Value",
+      "Low Index Value",
+      "Closing Index Value",
+      "Points Change",
+      "Change(%)",
+      "Volume",
+      "Turnover (Rs. Cr.)",
+      "P/E",
+      "P/B",
+      "Div Yield"
+    ]
+  },
+  {
+    "day": "03012022",
+    "url": "https://nsearchives.nseindia.com/content/indices/ind_close_all_03012022.csv",
+    "status": "downloaded",
+    "path": "data/context_sources_v1/independent_checks/indices_03012022.csv",
+    "sha256": "5bbd41726149e198ebb946eebbb0e23de6c3a13997ad763f0278f8da65fd4f51",
+    "rows": 94,
+    "fields": [
+      "Index Name",
+      "Index Date",
+      "Open Index Value",
+      "High Index Value",
+      "Low Index Value",
+      "Closing Index Value",
+      "Points Change",
+      "Change(%)",
+      "Volume",
+      "Turnover (Rs. Cr.)",
+      "P/E",
+      "P/B",
+      "Div Yield"
+    ]
+  },
+  {
+    "day": "02012023",
+    "url": "https://nsearchives.nseindia.com/content/indices/ind_close_all_02012023.csv",
+    "status": "downloaded",
+    "path": "data/context_sources_v1/independent_checks/indices_02012023.csv",
+    "sha256": "a9d139867f48bdf79416caf6e35609f1bd6df36e75330ecb602e3280d1b4b448",
+    "rows": 104,
+    "fields": [
+      "Index Name",
+      "Index Date",
+      "Open Index Value",
+      "High Index Value",
+      "Low Index Value",
+      "Closing Index Value",
+      "Points Change",
+      "Change(%)",
+      "Volume",
+      "Turnover (Rs. Cr.)",
+      "P/E",
+      "P/B",
+      "Div Yield"
+    ]
+  },
+  {
+    "day": "02012024",
+    "url": "https://nsearchives.nseindia.com/content/indices/ind_close_all_02012024.csv",
+    "status": "downloaded",
+    "path": "data/context_sources_v1/independent_checks/indices_02012024.csv",
+    "sha256": "669a31884849e59ad6633967a895d8af048c91f8d77cef65305f940e99491d74",
+    "rows": 108,
+    "fields": [
+      "Index Name",
+      "Index Date",
+      "Open Index Value",
+      "High Index Value",
+      "Low Index Value",
+      "Closing Index Value",
+      "Points Change",
+      "Change(%)",
+      "Volume",
+      "Turnover (Rs. Cr.)",
+      "P/E",
+      "P/B",
+      "Div Yield"
+    ]
+  }
+]
