@@ -1,5 +1,7 @@
 # TradingResearch
 
+This is a local Git repository. The initial completed-work snapshot is tagged `v0.1.0-baseline`. See `ROADMAP.md` for the neural-network plan and commit/versioning workflow. Compact baseline evidence is tracked in `experiments/v1/`; large data and model binaries remain outside Git.
+
 Personal Indian cash-equity research. Includes a reproducible dataset audit and a staged, data-only Kite repair pilot. No live trading, stored broker credentials, neural network or return claims are included.
 
 ## First learning experiment completed
