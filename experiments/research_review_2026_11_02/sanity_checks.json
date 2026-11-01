@@ -1,0 +1,62 @@
+{
+  "seed": 20261102,
+  "repetitions": 10000,
+  "interpretation": "Synthetic independent null statistics, not trading results or an estimated probability our model is overfit. Actual strategy trials are correlated.",
+  "multiple_testing_demo": [
+    {
+      "trials": 1,
+      "development_false_positive_fraction": 0.0488,
+      "theoretical_fraction": 0.050000000000000044,
+      "independent_forward_positive_fraction": 0.0499
+    },
+    {
+      "trials": 10,
+      "development_false_positive_fraction": 0.3968,
+      "theoretical_fraction": 0.4012630607616213,
+      "independent_forward_positive_fraction": 0.0537
+    },
+    {
+      "trials": 100,
+      "development_false_positive_fraction": 0.9946,
+      "theoretical_fraction": 0.994079470779666,
+      "independent_forward_positive_fraction": 0.0485
+    },
+    {
+      "trials": 1000,
+      "development_false_positive_fraction": 1.0,
+      "theoretical_fraction": 1.0,
+      "independent_forward_positive_fraction": 0.0487
+    }
+  ],
+  "sequence_sample_structure": {
+    "2021": {
+      "windows": 90650,
+      "unique_sessions": 245,
+      "symbols": 37
+    },
+    "2022": {
+      "windows": 91020,
+      "unique_sessions": 246,
+      "symbols": 37
+    },
+    "2023": {
+      "windows": 89530,
+      "unique_sessions": 242,
+      "symbols": 37
+    },
+    "2024": {
+      "windows": 88590,
+      "unique_sessions": 245,
+      "symbols": 37
+    }
+  },
+  "probability_example_bps": {
+    "win_probability": 0.6,
+    "mean_win": 10,
+    "mean_loss": 20,
+    "round_trip_cost": 3,
+    "expected_net": -5.0,
+    "note": "Hypothetical payoffs and costs, not observed model performance."
+  },
+  "reserved_2025_accessed": false
+}
