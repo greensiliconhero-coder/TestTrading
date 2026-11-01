@@ -144,6 +144,7 @@ def main():
         raise ValueError('Forbidden period.')
     MODELS.mkdir(parents=True,exist_ok=True)
     models = {}
+    diagnostic_models = {}
     outcomes = {}
     predictions = []
     days = {name:sorted(g.day.unique()) for name,g in data.groupby('split')}
@@ -158,6 +159,7 @@ def main():
             key = family+'_'+kind
             print('Fitting',key,flush=True)
             earlier = fit(warm_train,features,family,kind,config)
+            diagnostic_models[key] = earlier
             signals = candidate_signals(warm_eval,earlier,family,features,config)
             warm_stats,_,_ = simulate(signals,sorted(warm_eval.day.unique()),config)
             model = fit(train,features,family,kind,config)
@@ -188,6 +190,7 @@ def main():
         trades.to_csv(FOLDER/f'{key}_development_trades.csv.gz',index=False,compression={'method':'gzip','mtime':0})
     pd.concat(predictions,ignore_index=True).to_csv(FOLDER/'validation_predictions.csv.gz',index=False,compression={'method':'gzip','mtime':0})
     joblib.dump({'models':models,'features':features,'config':config,'chosen':chosen},MODELS/'candidates.joblib',compress=3)
+    joblib.dump({'models':diagnostic_models,'features':features,'config':config},MODELS/'diagnostic_2021.joblib',compress=3)
     restored = joblib.load(MODELS/'candidates.joblib')
     delta = 0.0
     for key,model in models.items():
@@ -197,6 +200,7 @@ def main():
             if not np.array_equal(a,b):
                 raise ValueError('Restored model changed predictions.')
     card = {'version':'context_v3','models_sha256':sha(MODELS/'candidates.joblib'),'dataset_sha256':desc['dataset_sha256'],
+        'diagnostic_models_sha256':sha(MODELS/'diagnostic_2021.joblib'),'quality_config_sha256':desc.get('quality_config_sha256'),
         'config_sha256':sha(CONFIG),'training_code_sha256':sha(Path(__file__)),'features':features,'selected_candidate':chosen,
         'all_candidates_saved':list(models),'save_reload_max_difference':delta,'deployment':'disabled','2025_used':False,
         'versions':{'python':platform.python_version(),'numpy':np.__version__,'pandas':pd.__version__,'sklearn':sklearn.__version__,'joblib':joblib.__version__},
