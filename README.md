@@ -1,3 +1,13 @@
+# Five-year data acquisition — v4
+
+Current branch: `data/five-year-v4`. Status: downloader ready; Kite login/download pending. No new training results yet.
+
+See [the frozen five-year plan](FIVE_YEAR_V4.md) for the 2021–2025 dataset, 2021–2023 training / 2024 validation / 2025 test split, unchanged model families, no minimum trade quota, constraints, storage and reproduction commands. Raw files go to `data/five_year_v4/`; credentials stay in memory. Processing and training will use new branches.
+
+The following sections describe earlier completed experiments, not v4 results.
+
+---
+
 # TradingResearch: no-minimum-trade sensitivity
 
 **Branch: `experiment/no-min-trades`. Completed post-hoc test using existing fitted models; no retraining.**
