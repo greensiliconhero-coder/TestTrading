@@ -1,0 +1,47 @@
+{
+  "files": {
+    "work/research_v1_samples.pkl": {
+      "sha256": "6e6183b2bdb9c980873b116d067be2066acad3190bbeb23a6a3927f8a174d570",
+      "bytes": 38393470
+    },
+    "work/neural_v2/sequences.npy": {
+      "sha256": "86492020c0f4695241c04d2bf92c50d73ba08ddef2ba499f7f4defec6645a9ff",
+      "bytes": 431748128
+    },
+    "work/neural_v2/metadata.csv": {
+      "sha256": "1ae5be1dcdc22607ae0ccffe36bdf1b2d0ee41a05f00f57701f2ff2b419bd85d",
+      "bytes": 84248183
+    },
+    "work/neural_v2/dataset.json": {
+      "sha256": "38fcb94d3bf3d5eca3110e5efe0ac25505626dd3e22e77b336e4f3073ce253fe",
+      "bytes": 426
+    },
+    "data/context_training_v3/samples.csv.gz": {
+      "sha256": "bd0382b9eaaef2e3e542b26066f18b02d42d299c8de4f7e413ff3dd00ff2deb4",
+      "bytes": 42109124
+    },
+    "experiments/v1/model_results.json": {
+      "sha256": "d46d581e063d08fc93217d40b652cd34e22eb0cce091ab47111f7e805c573305",
+      "bytes": 3977
+    },
+    "experiments/v2/results.json": {
+      "sha256": "c65e48ee6425cc57498e1c5d252124e31e202c2bd9d3f9231a82b18554f5b449",
+      "bytes": 2806
+    },
+    "experiments/v3/results.json": {
+      "sha256": "057d265a7ee541269484d85153f7ff5453aa32cdb850268089e2ca5a740b24ea",
+      "bytes": 29762
+    },
+    "src/no_min_trades.py": {
+      "sha256": "52cbaf40a4e6f5bb229039e4ec10d447064bf555da1a575e39c5b4e69045404d",
+      "bytes": 8240
+    },
+    "config/no_min_trades.json": {
+      "sha256": "4014b31366873516acd22eafdbedfaa9acb5cc76b93095f75b93cec42d0a06da",
+      "bytes": 1272
+    }
+  },
+  "input_data_reused": true,
+  "input_caches_in_small_results_archive": false,
+  "model_weights_unchanged": true
+}

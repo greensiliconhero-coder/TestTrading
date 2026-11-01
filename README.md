@@ -1,10 +1,33 @@
-# TradingResearch
+# TradingResearch: no-minimum-trade sensitivity
 
-**Branch: `experiment/context-v3-trained` — Completed context-v3 fitting, evaluation and saved models.**
+**Branch: `experiment/no-min-trades`. Completed post-hoc test using existing fitted models; no retraining.**
 
-This branch contains the final exact-data fingerprints, six supervised models, three rule baselines, earlier diagnostic fits, all results and backup receipts. No candidate passed the validation gate; the selected outcome is cash / no strategy.
+This version removes only the minimum-trade-count eligibility rule. Costs, prediction thresholds, forecast hurdles, weights, datasets, capital and execution constraints stay fixed. It reports counterfactual selections separately; original model bundles retain their original selection outcomes. No orders were placed and 2025 remains unused.
 
-Documentation audited on 2 November 2026. The sections below summarize completed studies across the repository; each source link identifies the branch that actually contains the artifact. All simulated strategies remain research-only. No live orders were placed. 2025 remains unused for model fitting/selection/evaluation.
+## This run: results
+
+| Saved snapshot | Selection without count floor | Selection-period result | Later comparison |
+|---|---|---|---|
+| v1 tree and historical logistic summary | No profitable eligible validation candidate | All original thresholds lose after modeled costs | No qualified strategy |
+| Best CNN, threshold 0.55 | Qualifies on one trade | 2023: +126.7243 bps on one idealized quote trade | 2024: zero trades |
+| Final context relative tree | Qualifies on 11 trades | 2023: +0.2804% simulated portfolio return | 2024: 22 trades, -3.4463% |
+| Earlier context relative ridge, fitted on 2021 | Hypothetical selection on 2022, 12 trades | 2022: +0.0483% | 2023: -0.4856% over 14 trades; 2024: -0.4448% over 42 |
+
+The minimum is not a trade quota. Zero activity provides no per-trade return estimate. Removing the count floor admits rare apparent winners, but these later comparisons do not demonstrate repeatable profitable activity. Quote-trade bps and portfolio percentages are different units; portfolio periods restart from the original INR 50,000 illustrative capital. All later periods were already observed, so this is sensitivity analysis, not fresh validation.
+
+## Complete evidence and reproduction
+
+- [Full sensitivity report](experiments/no_min_trades/report.md): all original thresholds, all nine final candidates, all nine earlier snapshots, execution failures, period-by-period results and limitations.
+- [Machine-readable results and unchanged model hashes](experiments/no_min_trades/results.json).
+- [Input/code fingerprints](experiments/no_min_trades/input_fingerprints.json) and [frozen sensitivity rules](config/no_min_trades.json).
+- Selected trade lists, CNN trade lists at every original threshold, and selected portfolio daily equity are versioned in [the result directory](experiments/no_min_trades).
+- `src/no_min_trades.py` replays saved weights only. It refuses to overwrite completed sensitivity results. It requires the existing local v1 sample cache, neural sequence memmap/metadata and v3 feature table; these large input caches are not inside the small sensitivity-results ZIP. Underlying v3 source/training backups remain in the existing private release.
+- Three targeted tests passed: a single profitable observation may qualify; zero activity/negative profit cannot establish profit; execution eligibility remains active. Run `python -m unittest discover -s tests -p test_no_min_trades.py`.
+- The v1 logistic weights were not retained. Its recorded validation summaries are included; no fresh logistic inference or later-period replay is claimed. Best-epoch selection for the CNN is unchanged.
+
+## Original experiment catalog (cross-branch reference)
+
+The following describes the original studies and their original acceptance rules. Their model/data artifacts have not been replaced by this sensitivity run.
 
 ## Branch directory
 
@@ -122,7 +145,7 @@ The fixed survivor cohort, whole-history eligibility checks, corporate-action sc
 
 The complete data lives in the private release, not as large blobs on every Git branch. Branch names and machine-readable fingerprints identify which snapshot was used. Historical tags and already published archives remain immutable; these README improvements are new branch commits.
 
-## Run this branch
+## Original saved-model inference (unchanged bundles)
 
 Install `requirements.txt` in a compatible environment (recorded: Python 3.10.8, NumPy 1.26.4, pandas 2.2.2, scikit-learn 1.7.1, joblib 1.5.1). Then:
 
