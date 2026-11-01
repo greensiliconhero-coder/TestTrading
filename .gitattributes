@@ -3,3 +3,5 @@
 *.md text eol=lf
 *.json text eol=lf
 *.ps1 text eol=crlf
+# Raw reference payloads must round-trip byte-for-byte for provenance hashes.
+data/context_sources_v1/raw/** -text -diff
