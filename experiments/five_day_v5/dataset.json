@@ -1,0 +1,18 @@
+{
+  "config_sha256": "6e29d56f8a3661a2ee852757752c5180b6183f8882d73aae29fc5d083d31ef93",
+  "retrospective_action_window_exclusions": 3807,
+  "rows": 4444,
+  "samples_sha256": "38381d5f82a71acd3e064ddcf795656b6ed2bb128a3a094eb8b894c619f71571",
+  "split_batches": {
+    "development": 41,
+    "purged": 3,
+    "train": 111,
+    "validation": 40
+  },
+  "split_rows": {
+    "development": 929,
+    "purged": 70,
+    "train": 2566,
+    "validation": 879
+  }
+}

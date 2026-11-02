@@ -1,0 +1,336 @@
+{
+  "config": {
+    "candidates": [
+      "equal_weight",
+      "momentum20",
+      "reversal5",
+      "ridge",
+      "tree"
+    ],
+    "cost_bps": [
+      50,
+      75,
+      100
+    ],
+    "deployment": "disabled",
+    "development_year": 2025,
+    "holding_sessions": 5,
+    "lookback_sessions": 60,
+    "primary_cost_bps": 50,
+    "quality": "Same 36-stock survivor cohort. Exact benchmark-session alignment; no forward filling. Exclude corporate-action windows from 60-session lookback through exit retrospectively; report selection bias.",
+    "scope": "Fractional equal-weight nonoverlapping five-session basket diagnostic, not an executable portfolio. Cost assumptions 50/75/100 bps include a buffer for delivery fees, DP charges and slippage at roughly INR10000 positions; not exact historical contract notes.",
+    "seed": 31,
+    "selection": "Choose highest 2024 net basket return only if positive and above equal_weight at the same cost; otherwise cash. Lock before computing 2025.",
+    "top_n": 5,
+    "train_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "untouched_test": "Not available in downloaded snapshot. 2025 is development evidence only. No claim of fresh out-of-sample validation.",
+    "validation_year": 2024,
+    "version": "five_day_v5"
+  },
+  "interpretation": "Exploratory fractional baskets on previously observed years, retrospective action screening; no deployment or profitability proof.",
+  "model_hashes": {
+    "ridge": "c7e98aea7d962259575b50b8a5673e9eb4b043b91413b2184becfca95e0c7074",
+    "tree": "f67d0d6495591d5f0f0cbf2e5812725108e63c1552d5297227410efa83206247"
+  },
+  "results": {
+    "development": {
+      "equal_weight": {
+        "100": {
+          "batch_close_max_drawdown": -0.2690821159162923,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": -68.88929402205876,
+          "net_basket_return": -0.2690821159162923,
+          "profitable_trades": 354,
+          "trades": 929
+        },
+        "50": {
+          "batch_close_max_drawdown": -0.1118293723952184,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": -18.88929402205876,
+          "net_basket_return": -0.10180754467990627,
+          "profitable_trades": 425,
+          "trades": 929
+        },
+        "75": {
+          "batch_close_max_drawdown": -0.1896451332638911,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": -43.88929402205875,
+          "net_basket_return": -0.1896451332638911,
+          "profitable_trades": 384,
+          "trades": 929
+        }
+      },
+      "momentum20": {
+        "100": {
+          "batch_close_max_drawdown": -0.29884962402222326,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": -82.5138403170637,
+          "net_basket_return": -0.29531923919756853,
+          "profitable_trades": 75,
+          "trades": 205
+        },
+        "50": {
+          "batch_close_max_drawdown": -0.16841783384484188,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": -32.513840317063696,
+          "net_basket_return": -0.1338713014041324,
+          "profitable_trades": 86,
+          "trades": 205
+        },
+        "75": {
+          "batch_close_max_drawdown": -0.2246805713249307,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": -57.5138403170637,
+          "net_basket_return": -0.21865327753627473,
+          "profitable_trades": 80,
+          "trades": 205
+        }
+      },
+      "reversal5": {
+        "100": {
+          "batch_close_max_drawdown": -0.261135219009514,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": -71.24686404485293,
+          "net_basket_return": -0.26009297002219434,
+          "profitable_trades": 80,
+          "trades": 205
+        },
+        "50": {
+          "batch_close_max_drawdown": -0.12853359216606786,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": -21.246864044852924,
+          "net_basket_return": -0.09080619035387527,
+          "profitable_trades": 99,
+          "trades": 205
+        },
+        "75": {
+          "batch_close_max_drawdown": -0.18803355099110775,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": -46.24686404485292,
+          "net_basket_return": -0.17969937855032203,
+          "profitable_trades": 87,
+          "trades": 205
+        }
+      },
+      "ridge": {
+        "100": {
+          "batch_close_max_drawdown": -0.22116486261609747,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": -58.19341638322687,
+          "net_basket_return": -0.21950201428481197,
+          "profitable_trades": 84,
+          "trades": 205
+        },
+        "50": {
+          "batch_close_max_drawdown": -0.09574583399496328,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": -8.193416383226864,
+          "net_basket_return": -0.041182689465593114,
+          "profitable_trades": 101,
+          "trades": 205
+        },
+        "75": {
+          "batch_close_max_drawdown": -0.1412417100989618,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": -33.19341638322688,
+          "net_basket_return": -0.13481314694739566,
+          "profitable_trades": 90,
+          "trades": 205
+        }
+      },
+      "tree": {
+        "100": {
+          "batch_close_max_drawdown": -0.14590900239246785,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": -30.669382490344656,
+          "net_basket_return": -0.12570002211942666,
+          "profitable_trades": 82,
+          "trades": 205
+        },
+        "50": {
+          "batch_close_max_drawdown": -0.07155090080933857,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": 19.330617509655344,
+          "net_basket_return": 0.07343988697578663,
+          "profitable_trades": 99,
+          "trades": 205
+        },
+        "75": {
+          "batch_close_max_drawdown": -0.08640627020589808,
+          "batches": 41,
+          "benchmark_price_return_same_windows": 0.07402726625769929,
+          "mean_trade_net_bps": -5.669382490344652,
+          "net_basket_return": -0.031109108443464595,
+          "profitable_trades": 86,
+          "trades": 205
+        }
+      }
+    },
+    "validation": {
+      "equal_weight": {
+        "100": {
+          "batch_close_max_drawdown": -0.2830546091913003,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": -70.91771749480168,
+          "net_basket_return": -0.2830546091913003,
+          "profitable_trades": 368,
+          "trades": 879
+        },
+        "50": {
+          "batch_close_max_drawdown": -0.18208924158424467,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": -20.917717494801686,
+          "net_basket_return": -0.12326254257848335,
+          "profitable_trades": 426,
+          "trades": 879
+        },
+        "75": {
+          "batch_close_max_drawdown": -0.2158288693268372,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": -45.917717494801686,
+          "net_basket_return": -0.2070737638384601,
+          "profitable_trades": 389,
+          "trades": 879
+        }
+      },
+      "momentum20": {
+        "100": {
+          "batch_close_max_drawdown": -0.2404583666402761,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": -47.50939554946392,
+          "net_basket_return": -0.1860159668415805,
+          "profitable_trades": 93,
+          "trades": 200
+        },
+        "50": {
+          "batch_close_max_drawdown": -0.17411438292858517,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": 2.4906044505360883,
+          "net_basket_return": -0.005195647920257285,
+          "profitable_trades": 102,
+          "trades": 200
+        },
+        "75": {
+          "batch_close_max_drawdown": -0.20497997805195511,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": -22.509395549463914,
+          "net_basket_return": -0.10002293979418864,
+          "profitable_trades": 95,
+          "trades": 200
+        }
+      },
+      "reversal5": {
+        "100": {
+          "batch_close_max_drawdown": -0.25995832190111323,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": -70.04701476070709,
+          "net_basket_return": -0.253702553839107,
+          "profitable_trades": 84,
+          "trades": 200
+        },
+        "50": {
+          "batch_close_max_drawdown": -0.19032091407903262,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": -20.047014760707096,
+          "net_basket_return": -0.08754003772531527,
+          "profitable_trades": 98,
+          "trades": 200
+        },
+        "75": {
+          "batch_close_max_drawdown": -0.21862675295427725,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": -45.04701476070709,
+          "net_basket_return": -0.17468876077977769,
+          "profitable_trades": 91,
+          "trades": 200
+        }
+      },
+      "ridge": {
+        "100": {
+          "batch_close_max_drawdown": -0.22816034031945986,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": -57.86118267450691,
+          "net_basket_return": -0.21512322290379904,
+          "profitable_trades": 86,
+          "trades": 200
+        },
+        "50": {
+          "batch_close_max_drawdown": -0.17775093304148948,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": -7.861182674506908,
+          "net_basket_return": -0.04061954255759759,
+          "profitable_trades": 102,
+          "trades": 200
+        },
+        "75": {
+          "batch_close_max_drawdown": -0.20248027452926964,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": -32.86118267450691,
+          "net_basket_return": -0.13213754228716124,
+          "profitable_trades": 87,
+          "trades": 200
+        }
+      },
+      "tree": {
+        "100": {
+          "batch_close_max_drawdown": -0.3061294134356819,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": -83.56894850085382,
+          "net_basket_return": -0.292796334990038,
+          "profitable_trades": 82,
+          "trades": 200
+        },
+        "50": {
+          "batch_close_max_drawdown": -0.1869085758379183,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": -33.56894850085382,
+          "net_basket_return": -0.13510742425248123,
+          "profitable_trades": 94,
+          "trades": 200
+        },
+        "75": {
+          "batch_close_max_drawdown": -0.248025090565969,
+          "batches": 40,
+          "benchmark_price_return_same_windows": 0.04795278337964315,
+          "mean_trade_net_bps": -58.56894850085382,
+          "net_basket_return": -0.21781703545678288,
+          "profitable_trades": 86,
+          "trades": 200
+        }
+      }
+    }
+  },
+  "selected_on_2024": null
+}
