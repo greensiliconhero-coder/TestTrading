@@ -1,0 +1,32 @@
+{
+  "version": "five_day_v5",
+  "train_years": [
+    2021,
+    2022,
+    2023
+  ],
+  "validation_year": 2024,
+  "development_year": 2025,
+  "holding_sessions": 5,
+  "lookback_sessions": 60,
+  "top_n": 5,
+  "candidates": [
+    "equal_weight",
+    "momentum20",
+    "reversal5",
+    "ridge",
+    "tree"
+  ],
+  "cost_bps": [
+    50,
+    75,
+    100
+  ],
+  "primary_cost_bps": 50,
+  "seed": 31,
+  "selection": "Choose highest 2024 net basket return only if positive and above equal_weight at the same cost; otherwise cash. Lock before computing 2025.",
+  "scope": "Fractional equal-weight nonoverlapping five-session basket diagnostic, not an executable portfolio. Cost assumptions 50/75/100 bps include a buffer for delivery fees, DP charges and slippage at roughly INR10000 positions; not exact historical contract notes.",
+  "quality": "Same 36-stock survivor cohort. Exact benchmark-session alignment; no forward filling. Exclude corporate-action windows from 60-session lookback through exit retrospectively; report selection bias.",
+  "untouched_test": "Not available in downloaded snapshot. 2025 is development evidence only. No claim of fresh out-of-sample validation.",
+  "deployment": "disabled"
+}

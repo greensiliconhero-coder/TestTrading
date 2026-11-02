@@ -1,0 +1,11 @@
+# Five-session study, frozen before fitting
+
+Hypothesis: lowering turnover can allow medium-horizon cross-sectional signals to overcome costs. This is a bounded first iteration, not a hyperparameter search.
+
+Use existing verified daily candles for 2021–2025, 36 stocks and NIFTY 50. Features are past returns (1/5/20/60 sessions), 20-session volatility, recent-volume ratio and relative index momentum. Signals use completed daily bars; enter next session open and exit at the open five sessions later. Use fixed, nonoverlapping benchmark calendar batches, top five equally weighted candidates and fractional position returns. Do not claim cash-account or fill realism. Include cash, matched-universe equal-weight, simple momentum and reversal baselines; fit Ridge(alpha=100) and a bounded histogram tree with the prior settings. No neural network or reinforcement learning until a simple signal beats baselines.
+
+Train 2021–2023, purge training labels whose exit is in 2024; select on 2024 with exits in 2024. Freeze selection before 2025 development evaluation. Because 2025 has already been examined, a future period is required for confirmation. Primary roundtrip cost: 50 bps; stress: 75 and 100 bps. These are assumptions, not a full fee calculation. Current delivery STT alone is 0.1% each side; DP charges also matter on small positions. Sources: https://zerodha.com/charges/ and https://support.zerodha.com/category/account-opening/resident-individual/ri-charges/articles/what-do-dp-charges-mean
+
+Corporate-action windows spanning lookback through exit are excluded retrospectively to avoid unverified price-adjustment jumps. This creates selection bias and must be reported. Same surviving companies, no point-in-time universe. No overnight gap protection, bid/ask reconstruction or capacity proof. Benchmark daily alignment must be exact; never fill missing prices. Save exact inputs, fitted estimators, scores, trades, config hashes and results.
+
+Select a candidate only if its validation net basket return is positive and beats the matched-universe equal-weight baseline; otherwise cash. A good development result does not authorize trading. Subsequent iterations require a new hypothesis and branch, not retuning the observed test until it looks positive.
