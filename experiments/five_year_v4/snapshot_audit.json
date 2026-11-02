@@ -1,0 +1,19 @@
+{
+  "canonical_files": 460,
+  "complete_sessions": 56332,
+  "incomplete_sessions": 524,
+  "indices": 9,
+  "limitations": "Structural and same-provider audit only. Corporate actions and independent index comparison pending. No return-based exclusions.",
+  "raw_bytes": 1306044713,
+  "raw_files": 1702,
+  "source_manifest_sha256": "1404decc0d0d115add7c641ebfec4fd889c19db5ca77e5e49655adb70d7c6e1c",
+  "symbols": 37,
+  "training_started": false,
+  "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ]
+}

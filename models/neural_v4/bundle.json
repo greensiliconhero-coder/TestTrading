@@ -1,0 +1,66 @@
+{
+  "best_epoch": 2,
+  "config": {
+    "assumed_cost_bps": 20,
+    "batch_size": 512,
+    "channels": [
+      "open",
+      "high",
+      "low",
+      "close",
+      "volume"
+    ],
+    "deployment": "Disabled",
+    "development_comparison_year": 2025,
+    "epochs": 8,
+    "experiment_budget": "One architecture and one seed. No automatic hyperparameter search.",
+    "hidden_channels": 16,
+    "holding_minutes": 30,
+    "kernel_size": 5,
+    "learning_rate": 0.001,
+    "lookback_minutes": 60,
+    "minimum_improvement": 1e-05,
+    "minimum_validation_trades": 0,
+    "patience": 2,
+    "reserved_year": 2026,
+    "seed": 17,
+    "selection": "Best validation binary cross entropy, then threshold by validation mean net quote return; no trade if validation net return is nonpositive.",
+    "thresholds": [
+      0.5,
+      0.55,
+      0.6
+    ],
+    "training_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "validation_year": 2024,
+    "version": "neural_v4",
+    "weight_decay": 0.0001
+  },
+  "git_commit": "e99c127c9c7c466b61bb69a487a7e40ea78c3872",
+  "interpretation": "P(positive next-30-minute quote return), not causal explanation or net-profit guarantee.",
+  "normalization_mean": [
+    -3.1668238079873845e-05,
+    0.00043084422941319644,
+    -0.0005363630480132997,
+    -3.662909148260951e-05,
+    0.609682023525238
+  ],
+  "normalization_std": [
+    0.0038712183013558388,
+    0.0039048276375979185,
+    0.0039005184080451727,
+    0.003926265984773636,
+    0.36430972814559937
+  ],
+  "numpy_version": "1.26.4",
+  "signature": {
+    "code_sha256": "d06a108e9dacd33889ad622e60444253f99ea2456bb66f3e2dc0b1eb3873e085",
+    "config_sha256": "3da8fe422870a06d0d3f5a5d71d93cea81227856d561e55f9848bcbba8a95b1f",
+    "dataset_sha256": "953ba8f9530a2c22c3ee500bda011dd331f3894099f7faca12b23ce078a3c29c"
+  },
+  "torch_version": "2.2.2+cpu",
+  "weights_sha256": "fe222b41e7e0a8c89d2781533f93340476cecf740762dbec8fd2e0e4efd56e22"
+}

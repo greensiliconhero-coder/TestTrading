@@ -1,0 +1,106 @@
+{
+  "2025_used": true,
+  "best_epoch": 2,
+  "cnn_quote_trade_stats": null,
+  "comparison_rows": 87950,
+  "config": {
+    "assumed_cost_bps": 20,
+    "batch_size": 512,
+    "channels": [
+      "open",
+      "high",
+      "low",
+      "close",
+      "volume"
+    ],
+    "deployment": "Disabled",
+    "development_comparison_year": 2025,
+    "epochs": 8,
+    "experiment_budget": "One architecture and one seed. No automatic hyperparameter search.",
+    "hidden_channels": 16,
+    "holding_minutes": 30,
+    "kernel_size": 5,
+    "learning_rate": 0.001,
+    "lookback_minutes": 60,
+    "minimum_improvement": 1e-05,
+    "minimum_validation_trades": 0,
+    "patience": 2,
+    "reserved_year": 2026,
+    "seed": 17,
+    "selection": "Best validation binary cross entropy, then threshold by validation mean net quote return; no trade if validation net return is nonpositive.",
+    "thresholds": [
+      0.5,
+      0.55,
+      0.6
+    ],
+    "training_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "validation_year": 2024,
+    "version": "neural_v4",
+    "weight_decay": 0.0001
+  },
+  "constant_same_sample_metrics": {
+    "auc": 0.5,
+    "brier": 0.24983886946172895,
+    "log_loss": 0.6928249712730858
+  },
+  "deployment": "disabled",
+  "epochs_completed": 4,
+  "parameter_count": 1729,
+  "save_reload_max_difference": 0.0,
+  "selected_threshold": null,
+  "signature": {
+    "code_sha256": "d06a108e9dacd33889ad622e60444253f99ea2456bb66f3e2dc0b1eb3873e085",
+    "config_sha256": "3da8fe422870a06d0d3f5a5d71d93cea81227856d561e55f9848bcbba8a95b1f",
+    "dataset_sha256": "953ba8f9530a2c22c3ee500bda011dd331f3894099f7faca12b23ce078a3c29c"
+  },
+  "test_2025_metrics": {
+    "auc": 0.4999356743168337,
+    "brier": 0.24988576749669017,
+    "log_loss": 0.6929191747585612
+  },
+  "training_rows": 235380,
+  "v4_tree_quote_trade_stats": {
+    "execution_zero_volume": 0,
+    "mean_gross_bps": 0.7026570691130364,
+    "mean_net_bps": -19.297342930886963,
+    "trades": 15043
+  },
+  "v4_tree_same_sample_metrics": {
+    "auc": 0.5120490142479467,
+    "brier": 0.24985269592969514,
+    "log_loss": 0.6928552115852392
+  },
+  "validation_metrics": {
+    "auc": 0.5056884886465158,
+    "brier": 0.24978550823007167,
+    "log_loss": 0.692718185140944
+  },
+  "validation_rows": 86980,
+  "validation_thresholds": [
+    {
+      "execution_zero_volume": 0,
+      "mean_gross_bps": -4.071599743472496,
+      "mean_net_bps": -24.071599743472497,
+      "threshold": 0.5,
+      "trades": 1637
+    },
+    {
+      "execution_zero_volume": 0,
+      "mean_gross_bps": null,
+      "mean_net_bps": null,
+      "threshold": 0.55,
+      "trades": 0
+    },
+    {
+      "execution_zero_volume": 0,
+      "mean_gross_bps": null,
+      "mean_net_bps": null,
+      "threshold": 0.6,
+      "trades": 0
+    }
+  ]
+}

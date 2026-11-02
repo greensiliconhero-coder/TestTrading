@@ -1,0 +1,124 @@
+{
+  "dataset": {
+    "metadata_sha256": "a3e500e191b1b5d79a7d2183ce4740c34b5e6ed5d073e56edb090e2e11e8d0c8",
+    "quality_policy_sha256": "feda233d3638e3aaf515457fa46e299894ca30b81c652ba2aceb2f0151b9a7c7",
+    "rows": 451341,
+    "samples_sha256": "0559562dbb2a077d81b132ccaec3f395e87f6080c4c718be9812014b410d5f57",
+    "sequence_rows": 410310,
+    "sequences_sha256": "e669803f72843001e53b4a37091f29ab38169c091d19171c52d75a41aa503b7e",
+    "source_inventory_sha256": "97c2c21b45f6f8afbcd5c94f0c3f73876c78d792a0fdf88509bb48cdeb36b05e"
+  },
+  "deployment": "disabled",
+  "interpretation": "Idealized quote returns; threshold frozen on 2024, test 2025. Common retrospective quality screen limits inference.",
+  "models": {
+    "hist_gradient_boosting": {
+      "model_sha256": "72169a03bd1f8d0127f64e442150b7bf816545e5b2534b8c732fc9de4e5f188b",
+      "selected_threshold": null,
+      "test_auc": 0.5115663553716626,
+      "test_selected": null,
+      "test_thresholds": [
+        {
+          "execution_zero_volume": 0,
+          "mean_gross_bps": 0.500878973575851,
+          "mean_net_bps": -19.49912102642415,
+          "threshold": 0.5,
+          "trades": 16308
+        },
+        {
+          "execution_zero_volume": 0,
+          "mean_gross_bps": 1.07907213967191,
+          "mean_net_bps": -18.92092786032809,
+          "threshold": 0.55,
+          "trades": 828
+        },
+        {
+          "execution_zero_volume": 0,
+          "mean_gross_bps": 13.299351698767797,
+          "mean_net_bps": -6.700648301232203,
+          "threshold": 0.6,
+          "trades": 75
+        }
+      ],
+      "validation_auc": 0.5170239988920193,
+      "validation_thresholds": [
+        {
+          "execution_zero_volume": 0,
+          "mean_gross_bps": 0.0498731684733595,
+          "mean_net_bps": -19.950126831526642,
+          "threshold": 0.5,
+          "trades": 17847
+        },
+        {
+          "execution_zero_volume": 0,
+          "mean_gross_bps": 1.008808677302495,
+          "mean_net_bps": -18.991191322697507,
+          "threshold": 0.55,
+          "trades": 1058
+        },
+        {
+          "execution_zero_volume": 0,
+          "mean_gross_bps": 9.817264975131343,
+          "mean_net_bps": -10.182735024868657,
+          "threshold": 0.6,
+          "trades": 154
+        }
+      ]
+    },
+    "logistic": {
+      "model_sha256": "c5b2dba7973d209158eb10ee39742e6ef5e9e2fc72bea078ecebfcc2560fc8ab",
+      "selected_threshold": null,
+      "test_auc": 0.5104675777520122,
+      "test_selected": null,
+      "test_thresholds": [
+        {
+          "execution_zero_volume": 0,
+          "mean_gross_bps": 0.7673415744603335,
+          "mean_net_bps": -19.232658425539668,
+          "threshold": 0.5,
+          "trades": 9452
+        },
+        {
+          "execution_zero_volume": 0,
+          "mean_gross_bps": 1.4316097678062478,
+          "mean_net_bps": -18.568390232193753,
+          "threshold": 0.55,
+          "trades": 454
+        },
+        {
+          "execution_zero_volume": 0,
+          "mean_gross_bps": -5.540669050474533,
+          "mean_net_bps": -25.540669050474534,
+          "threshold": 0.6,
+          "trades": 68
+        }
+      ],
+      "validation_auc": 0.517301403395854,
+      "validation_thresholds": [
+        {
+          "execution_zero_volume": 0,
+          "mean_gross_bps": 0.8858269656009299,
+          "mean_net_bps": -19.11417303439907,
+          "threshold": 0.5,
+          "trades": 12244
+        },
+        {
+          "execution_zero_volume": 0,
+          "mean_gross_bps": 0.8865734412274068,
+          "mean_net_bps": -19.113426558772595,
+          "threshold": 0.55,
+          "trades": 840
+        },
+        {
+          "execution_zero_volume": 0,
+          "mean_gross_bps": 8.349281924854818,
+          "mean_net_bps": -11.650718075145182,
+          "threshold": 0.6,
+          "trades": 156
+        }
+      ]
+    }
+  },
+  "test_rows": 96745,
+  "training_rows": 258918,
+  "validation_rows": 95678
+}

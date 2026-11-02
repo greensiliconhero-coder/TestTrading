@@ -1,0 +1,684 @@
+{
+  "selected_on_2024": "continuation_ridge",
+  "candidate_count": 9,
+  "candidates": {
+    "continuation_rule": {
+      "earlier_2022": {
+        "trades": 3676,
+        "final_equity": 10781.189462649943,
+        "net_total_return": -0.7843762107470011,
+        "daily_close_max_drawdown": -0.7843762107470011,
+        "daily_sharpe": -18.602650773740287,
+        "total_fees": 28670.116801351047,
+        "exit_capacity_failures": 176,
+        "mean_daily_return": -0.007125071364171204,
+        "active_days": 214,
+        "turnover_over_initial_capital": 1070.04337299304
+      },
+      "validation_2024": {
+        "trades": 3815,
+        "final_equity": 9908.687143879888,
+        "net_total_return": -0.8018262571224022,
+        "daily_close_max_drawdown": -0.8018262571224022,
+        "daily_sharpe": -15.92089556610763,
+        "total_fees": 29623.48761012155,
+        "exit_capacity_failures": 88,
+        "mean_daily_return": -0.006563514175214612,
+        "active_days": 245,
+        "turnover_over_initial_capital": 1111.6975220034,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -0.00724296619905527,
+          "mean_daily_return_lower_bonferroni_9": -0.007518641015257331,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "training_event_rows": null,
+      "test_2025": {
+        "trades": 4080,
+        "final_equity": 10561.6143620519,
+        "net_total_return": -0.7887677127589621,
+        "daily_close_max_drawdown": -0.7887677127589621,
+        "daily_sharpe": -20.5650269263824,
+        "total_fees": 31295.941955949187,
+        "exit_capacity_failures": 227,
+        "mean_daily_return": -0.006263225938875088,
+        "active_days": 247,
+        "turnover_over_initial_capital": 1180.5093535494,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -0.006785024922686834,
+          "mean_daily_return_lower_bonferroni_9": -0.0071073870050165815,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "test_2025_stress": {
+        "trades": 3437,
+        "final_equity": 5228.598577684717,
+        "net_total_return": -0.8954280284463056,
+        "daily_close_max_drawdown": -0.8954280284463056,
+        "daily_sharpe": -25.52266901448945,
+        "total_fees": 24710.532692317687,
+        "exit_capacity_failures": 168,
+        "mean_daily_return": -0.009083483460066225,
+        "active_days": 247,
+        "turnover_over_initial_capital": 932.158716769
+      }
+    },
+    "continuation_ridge": {
+      "earlier_2022": {
+        "trades": 15,
+        "final_equity": 49807.80204222051,
+        "net_total_return": -0.003843959155589882,
+        "daily_close_max_drawdown": -0.0048010207695173834,
+        "daily_sharpe": -1.513001701720132,
+        "total_fees": 145.4154157795168,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": -1.797914957868978e-05,
+        "active_days": 14,
+        "turnover_over_initial_capital": 5.427254170039999
+      },
+      "validation_2024": {
+        "trades": 8,
+        "final_equity": 50638.299555779646,
+        "net_total_return": 0.012765991115592845,
+        "daily_close_max_drawdown": -0.0010441040951947311,
+        "daily_sharpe": 1.286303883428352,
+        "total_fees": 80.04434422035831,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": 5.1981550827947235e-05,
+        "active_days": 4,
+        "turnover_over_initial_capital": 3.0056070064,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -4.020569499823987e-07,
+          "mean_daily_return_lower_bonferroni_9": -4.462877846587574e-06,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "training_event_rows": 20857,
+      "test_2025": {
+        "trades": 3,
+        "final_equity": 49942.86220789852,
+        "net_total_return": -0.001142755842029608,
+        "daily_close_max_drawdown": -0.0012318066503588243,
+        "daily_sharpe": -1.254245165412825,
+        "total_fees": 30.74119210146896,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": -4.627467679848702e-06,
+        "active_days": 3,
+        "turnover_over_initial_capital": 1.1596600592000001,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -1.09306443022757e-05,
+          "mean_daily_return_lower_bonferroni_9": -1.4965325756082414e-05,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "test_2025_stress": {
+        "trades": 3,
+        "final_equity": 49925.46921898333,
+        "net_total_return": -0.0014906156203333687,
+        "daily_close_max_drawdown": -0.0014906156203333687,
+        "daily_sharpe": -1.4080229194522078,
+        "total_fees": 30.7392810166724,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": -6.037056899474233e-06,
+        "active_days": 3,
+        "turnover_over_initial_capital": 1.159660148
+      }
+    },
+    "continuation_tree": {
+      "earlier_2022": {
+        "trades": 22,
+        "final_equity": 49358.30440651854,
+        "net_total_return": -0.012833911869629233,
+        "daily_close_max_drawdown": -0.013298941406294507,
+        "daily_sharpe": -2.1218166582083575,
+        "total_fees": 216.62233548145934,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": -6.025654877561889e-05,
+        "active_days": 11,
+        "turnover_over_initial_capital": 8.086327176840001
+      },
+      "validation_2024": {
+        "trades": 6,
+        "final_equity": 49924.63831873528,
+        "net_total_return": -0.0015072336252944796,
+        "daily_close_max_drawdown": -0.0032327543578820617,
+        "daily_sharpe": -0.5338563367795159,
+        "total_fees": 52.03873126470922,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": -6.139991345735904e-06,
+        "active_days": 5,
+        "turnover_over_initial_capital": 1.9572950150000001,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -2.4530165033455767e-05,
+          "mean_daily_return_lower_bonferroni_9": -3.497207641791211e-05,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "training_event_rows": 20857,
+      "test_2025": {
+        "trades": 2,
+        "final_equity": 49997.35313991035,
+        "net_total_return": -5.2937201793001876e-05,
+        "daily_close_max_drawdown": -0.00012366386642470584,
+        "daily_sharpe": -0.3746049873071901,
+        "total_fees": 20.365700089651916,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": -2.1428524039805825e-07,
+        "active_days": 2,
+        "turnover_over_initial_capital": 0.7681158984,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -9.292339076167879e-07,
+          "mean_daily_return_lower_bonferroni_9": -1.4943804694927555e-06,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "test_2025_stress": {
+        "trades": 2,
+        "final_equity": 49985.83267134207,
+        "net_total_return": -0.0002833465731586493,
+        "daily_close_max_drawdown": -0.0002833465731586493,
+        "daily_sharpe": -1.1736594619261966,
+        "total_fees": 20.3644286579298,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": -1.1471940984955238e-06,
+        "active_days": 2,
+        "turnover_over_initial_capital": 0.7681157460000001
+      }
+    },
+    "reversal_rule": {
+      "earlier_2022": {
+        "trades": 2680,
+        "final_equity": 18715.739227478123,
+        "net_total_return": -0.6256852154504375,
+        "daily_close_max_drawdown": -0.6256852154504375,
+        "daily_sharpe": -16.370457807681788,
+        "total_fees": 23028.60498252275,
+        "exit_capacity_failures": 172,
+        "mean_daily_return": -0.004571500950708716,
+        "active_days": 213,
+        "turnover_over_initial_capital": 859.4865776431599
+      },
+      "validation_2024": {
+        "trades": 2904,
+        "final_equity": 16808.765122478497,
+        "net_total_return": -0.66382469755043,
+        "daily_close_max_drawdown": -0.6644744172472958,
+        "daily_sharpe": -14.675927915436375,
+        "total_fees": 25066.175425522422,
+        "exit_capacity_failures": 94,
+        "mean_daily_return": -0.004428095381157265,
+        "active_days": 245,
+        "turnover_over_initial_capital": 940.9739400612798,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -0.0048990010689639405,
+          "mean_daily_return_lower_bonferroni_9": -0.0051955632552057,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "training_event_rows": null,
+      "test_2025": {
+        "trades": 2892,
+        "final_equity": 17042.251665902942,
+        "net_total_return": -0.6591549666819412,
+        "daily_close_max_drawdown": -0.6591549666819412,
+        "daily_sharpe": -15.532866986857734,
+        "total_fees": 24519.0065620981,
+        "exit_capacity_failures": 163,
+        "mean_daily_return": -0.004338275984054063,
+        "active_days": 246,
+        "turnover_over_initial_capital": 924.88617395952,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -0.004833950497488168,
+          "mean_daily_return_lower_bonferroni_9": -0.005091552423489402,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "test_2025_stress": {
+        "trades": 2629,
+        "final_equity": 9891.63068959966,
+        "net_total_return": -0.8021673862080068,
+        "daily_close_max_drawdown": -0.8021673862080068,
+        "daily_sharpe": -19.182066826423952,
+        "total_fees": 21153.102025402404,
+        "exit_capacity_failures": 136,
+        "mean_daily_return": -0.006523942507041378,
+        "active_days": 246,
+        "turnover_over_initial_capital": 797.9686814605001
+      }
+    },
+    "reversal_ridge": {
+      "earlier_2022": {
+        "trades": 25,
+        "final_equity": 49660.716678699304,
+        "net_total_return": -0.00678566642601397,
+        "daily_close_max_drawdown": -0.007874472130451449,
+        "daily_sharpe": -1.2204887337052732,
+        "total_fees": 245.2132113007039,
+        "exit_capacity_failures": 2,
+        "mean_daily_return": -3.1731231907160194e-05,
+        "active_days": 12,
+        "turnover_over_initial_capital": 9.152011010199999
+      },
+      "validation_2024": {
+        "trades": 11,
+        "final_equity": 49974.248835095095,
+        "net_total_return": -0.0005150232980980496,
+        "daily_close_max_drawdown": -0.0027869752093253597,
+        "daily_sharpe": -0.12924082260480277,
+        "total_fees": 101.87123490490087,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": -2.0704649294328695e-06,
+        "active_days": 4,
+        "turnover_over_initial_capital": 3.8229925425999998,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -3.0282635866475416e-05,
+          "mean_daily_return_lower_bonferroni_9": -4.689192277102313e-05,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "training_event_rows": 11751,
+      "test_2025": {
+        "trades": 0,
+        "final_equity": 50000.0,
+        "net_total_return": 0.0,
+        "daily_close_max_drawdown": 0.0,
+        "daily_sharpe": null,
+        "total_fees": 0,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": 0.0,
+        "active_days": 0,
+        "turnover_over_initial_capital": 0,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": 0.0,
+          "mean_daily_return_lower_bonferroni_9": 0.0,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "test_2025_stress": {
+        "trades": 0,
+        "final_equity": 50000.0,
+        "net_total_return": 0.0,
+        "daily_close_max_drawdown": 0.0,
+        "daily_sharpe": null,
+        "total_fees": 0,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": 0.0,
+        "active_days": 0,
+        "turnover_over_initial_capital": 0
+      }
+    },
+    "reversal_tree": {
+      "earlier_2022": {
+        "trades": 36,
+        "final_equity": 49372.77117237169,
+        "net_total_return": -0.012544576552566133,
+        "daily_close_max_drawdown": -0.013231416023739784,
+        "daily_sharpe": -1.796890966976947,
+        "total_fees": 351.4227156283059,
+        "exit_capacity_failures": 2,
+        "mean_daily_return": -5.885380891704958e-05,
+        "active_days": 20,
+        "turnover_over_initial_capital": 13.116611778560001
+      },
+      "validation_2024": {
+        "trades": 41,
+        "final_equity": 49837.239118833524,
+        "net_total_return": -0.003255217623329476,
+        "daily_close_max_drawdown": -0.004497145943102021,
+        "daily_sharpe": -0.5202664593891667,
+        "total_fees": 391.7726631664833,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": -1.3227122153994186e-05,
+        "active_days": 17,
+        "turnover_over_initial_capital": 14.719820295159998,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -5.6266804334772146e-05,
+          "mean_daily_return_lower_bonferroni_9": -8.005960240906117e-05,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "training_event_rows": 11751,
+      "test_2025": {
+        "trades": 11,
+        "final_equity": 49722.45192153063,
+        "net_total_return": -0.0055509615693873915,
+        "daily_close_max_drawdown": -0.0055509615693873915,
+        "daily_sharpe": -1.364720673209275,
+        "total_fees": 100.85026846936698,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": -2.2501680242064663e-05,
+        "active_days": 4,
+        "turnover_over_initial_capital": 3.8047815546000003,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -5.319735960652864e-05,
+          "mean_daily_return_lower_bonferroni_9": -7.418320887625289e-05,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "test_2025_stress": {
+        "trades": 11,
+        "final_equity": 49665.38646236453,
+        "net_total_return": -0.006692270752709395,
+        "daily_close_max_drawdown": -0.006692270752709395,
+        "daily_sharpe": -1.4344965936367815,
+        "total_fees": 100.84401263546745,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": -2.71398651828297e-05,
+        "active_days": 4,
+        "turnover_over_initial_capital": 3.8047823865000003
+      }
+    },
+    "relative_rule": {
+      "earlier_2022": {
+        "trades": 2794,
+        "final_equity": 15409.997333752695,
+        "net_total_return": -0.6918000533249461,
+        "daily_close_max_drawdown": -0.6918000533249461,
+        "daily_sharpe": -16.437433208525643,
+        "total_fees": 24577.94442024819,
+        "exit_capacity_failures": 145,
+        "mean_daily_return": -0.00547096883926234,
+        "active_days": 213,
+        "turnover_over_initial_capital": 917.3168279555599
+      },
+      "validation_2024": {
+        "trades": 3171,
+        "final_equity": 11144.561003788067,
+        "net_total_return": -0.7771087799242387,
+        "daily_close_max_drawdown": -0.7771087799242387,
+        "daily_sharpe": -16.01662601595087,
+        "total_fees": 26933.26458821298,
+        "exit_capacity_failures": 70,
+        "mean_daily_return": -0.006089820729031419,
+        "active_days": 245,
+        "turnover_over_initial_capital": 1010.85144805464,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -0.00674997167260598,
+          "mean_daily_return_lower_bonferroni_9": -0.007072428879973834,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "training_event_rows": null,
+      "test_2025": {
+        "trades": 3392,
+        "final_equity": 13877.390900993925,
+        "net_total_return": -0.7224521819801215,
+        "daily_close_max_drawdown": -0.7230153530095582,
+        "daily_sharpe": -19.452417171762686,
+        "total_fees": 28703.890985007427,
+        "exit_capacity_failures": 176,
+        "mean_daily_return": -0.005166992440553967,
+        "active_days": 246,
+        "turnover_over_initial_capital": 1082.73479776548,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -0.005658100523568111,
+          "mean_daily_return_lower_bonferroni_9": -0.005902894675254571,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "test_2025_stress": {
+        "trades": 2966,
+        "final_equity": 6966.29599124107,
+        "net_total_return": -0.8606740801751787,
+        "daily_close_max_drawdown": -0.8606740801751787,
+        "daily_sharpe": -24.250817633079244,
+        "total_fees": 23531.527928761294,
+        "exit_capacity_failures": 127,
+        "mean_daily_return": -0.007934224586258327,
+        "active_days": 246,
+        "turnover_over_initial_capital": 887.6846163006
+      }
+    },
+    "relative_ridge": {
+      "earlier_2022": {
+        "trades": 11,
+        "final_equity": 50314.40060185855,
+        "net_total_return": 0.006288012037170887,
+        "daily_close_max_drawdown": -0.0007351471040608626,
+        "daily_sharpe": 1.754125391039712,
+        "total_fees": 110.410438141452,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": 2.932666379959922e-05,
+        "active_days": 7,
+        "turnover_over_initial_capital": 4.118894136
+      },
+      "validation_2024": {
+        "trades": 7,
+        "final_equity": 49687.59824753053,
+        "net_total_return": -0.006248035049389422,
+        "daily_close_max_drawdown": -0.006248035049389422,
+        "daily_sharpe": -1.824741706527147,
+        "total_fees": 65.57453246946335,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": -2.555720913513651e-05,
+        "active_days": 6,
+        "turnover_over_initial_capital": 2.4627228888,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -5.03238660970191e-05,
+          "mean_daily_return_lower_bonferroni_9": -6.793969611207194e-05,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "training_event_rows": 11050,
+      "test_2025": {
+        "trades": 10,
+        "final_equity": 50092.26261638804,
+        "net_total_return": 0.0018452523277607824,
+        "daily_close_max_drawdown": -0.0014232390521856653,
+        "daily_sharpe": 0.4508520715023229,
+        "total_fees": 97.33188361197124,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": 7.498450487644108e-06,
+        "active_days": 5,
+        "turnover_over_initial_capital": 3.6705490947999997,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -1.613759477776789e-05,
+          "mean_daily_return_lower_bonferroni_9": -2.565287515037955e-05,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "test_2025_stress": {
+        "trades": 10,
+        "final_equity": 50037.210458792586,
+        "net_total_return": 0.0007442091758518288,
+        "daily_close_max_drawdown": -0.0017191443108632853,
+        "daily_sharpe": 0.20146860885771348,
+        "total_fees": 97.3257912074281,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": 3.040423413504026e-06,
+        "active_days": 5,
+        "turnover_over_initial_capital": 3.670547737
+      }
+    },
+    "relative_tree": {
+      "earlier_2022": {
+        "trades": 39,
+        "final_equity": 49286.922072981164,
+        "net_total_return": -0.014261558540376695,
+        "daily_close_max_drawdown": -0.015695525424901935,
+        "daily_sharpe": -2.0493574287640564,
+        "total_fees": 379.3985530188384,
+        "exit_capacity_failures": 1,
+        "mean_daily_return": -6.69862981420852e-05,
+        "active_days": 26,
+        "turnover_over_initial_capital": 14.160938168280003
+      },
+      "validation_2024": {
+        "trades": 29,
+        "final_equity": 49585.113376115965,
+        "net_total_return": -0.00829773247768073,
+        "daily_close_max_drawdown": -0.009827507132045499,
+        "daily_sharpe": -1.1523405755373053,
+        "total_fees": 278.90121388404276,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": -3.390036400783054e-05,
+        "active_days": 19,
+        "turnover_over_initial_capital": 10.473541125,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -7.73981898594552e-05,
+          "mean_daily_return_lower_bonferroni_9": -0.00010410974471270187,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "training_event_rows": 11050,
+      "test_2025": {
+        "trades": 9,
+        "final_equity": 50040.870337278415,
+        "net_total_return": 0.0008174067455684053,
+        "daily_close_max_drawdown": -0.0024152104516107498,
+        "daily_sharpe": 0.29183487955040527,
+        "total_fees": 89.48248272158267,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": 3.3242631941127085e-06,
+        "active_days": 8,
+        "turnover_over_initial_capital": 3.3747173436,
+        "uncertainty": {
+          "mean_daily_return_lower_95_one_sided": -1.3272005502686837e-05,
+          "mean_daily_return_lower_bonferroni_9": -2.1610699156502998e-05,
+          "method": "circular five-session block bootstrap; exploratory, assumes local stationarity; Bonferroni covers nine declared candidates, not all prior research"
+        }
+      },
+      "test_2025_stress": {
+        "trades": 9,
+        "final_equity": 49990.25516166615,
+        "net_total_return": -0.0001948967666769441,
+        "daily_close_max_drawdown": -0.00319806591705063,
+        "daily_sharpe": -0.0683930550467812,
+        "total_fees": 89.4768883338567,
+        "exit_capacity_failures": 0,
+        "mean_daily_return": -7.731059839786996e-07,
+        "active_days": 8,
+        "turnover_over_initial_capital": 3.3747163589999998
+      }
+    }
+  },
+  "dataset": {
+    "version": "context_v4",
+    "features": [
+      "return_5",
+      "return_15",
+      "return_30",
+      "volatility_30",
+      "volume_ratio_5_30",
+      "range_5",
+      "return_since_open",
+      "session_fraction",
+      "idx_NIFTY_50_return_5",
+      "idx_NIFTY_AUTO_return_5",
+      "idx_NIFTY_BANK_return_5",
+      "idx_NIFTY_ENERGY_return_5",
+      "idx_NIFTY_FIN_SERVICE_return_5",
+      "idx_NIFTY_FMCG_return_5",
+      "idx_NIFTY_IT_return_5",
+      "idx_NIFTY_METAL_return_5",
+      "idx_NIFTY_PHARMA_return_5",
+      "idx_NIFTY_50_return_15",
+      "idx_NIFTY_AUTO_return_15",
+      "idx_NIFTY_BANK_return_15",
+      "idx_NIFTY_ENERGY_return_15",
+      "idx_NIFTY_FIN_SERVICE_return_15",
+      "idx_NIFTY_FMCG_return_15",
+      "idx_NIFTY_IT_return_15",
+      "idx_NIFTY_METAL_return_15",
+      "idx_NIFTY_PHARMA_return_15",
+      "idx_NIFTY_50_return_30",
+      "idx_NIFTY_AUTO_return_30",
+      "idx_NIFTY_BANK_return_30",
+      "idx_NIFTY_ENERGY_return_30",
+      "idx_NIFTY_FIN_SERVICE_return_30",
+      "idx_NIFTY_FMCG_return_30",
+      "idx_NIFTY_IT_return_30",
+      "idx_NIFTY_METAL_return_30",
+      "idx_NIFTY_PHARMA_return_30",
+      "idx_NIFTY_50_return_since_open",
+      "idx_NIFTY_AUTO_return_since_open",
+      "idx_NIFTY_BANK_return_since_open",
+      "idx_NIFTY_ENERGY_return_since_open",
+      "idx_NIFTY_FIN_SERVICE_return_since_open",
+      "idx_NIFTY_FMCG_return_since_open",
+      "idx_NIFTY_IT_return_since_open",
+      "idx_NIFTY_METAL_return_since_open",
+      "idx_NIFTY_PHARMA_return_since_open",
+      "idx_NIFTY_50_volatility_30",
+      "idx_NIFTY_AUTO_volatility_30",
+      "idx_NIFTY_BANK_volatility_30",
+      "idx_NIFTY_ENERGY_volatility_30",
+      "idx_NIFTY_FIN_SERVICE_volatility_30",
+      "idx_NIFTY_FMCG_volatility_30",
+      "idx_NIFTY_IT_volatility_30",
+      "idx_NIFTY_METAL_volatility_30",
+      "idx_NIFTY_PHARMA_volatility_30",
+      "seasonal_volume_ratio",
+      "panel_mean_return_30",
+      "panel_breadth",
+      "relative_return_30",
+      "sector_median_return_30"
+    ],
+    "rows": 407790,
+    "split_rows": {
+      "train": 232870,
+      "development": 87940,
+      "validation": 86980
+    },
+    "split_sessions": {
+      "development": 247,
+      "train": 656,
+      "validation": 245
+    },
+    "symbols": [
+      "ADANIPORTS",
+      "APOLLOHOSP",
+      "ASIANPAINT",
+      "AXISBANK",
+      "BAJAJ-AUTO",
+      "BPCL",
+      "CIPLA",
+      "COALINDIA",
+      "DRREDDY",
+      "EICHERMOT",
+      "GRASIM",
+      "HCLTECH",
+      "HEROMOTOCO",
+      "HINDALCO",
+      "HINDUNILVR",
+      "INDUSINDBK",
+      "INFY",
+      "JSWSTEEL",
+      "KOTAKBANK",
+      "LT",
+      "M&M",
+      "MARUTI",
+      "NESTLEIND",
+      "NTPC",
+      "ONGC",
+      "POWERGRID",
+      "RELIANCE",
+      "SBIN",
+      "SUNPHARMA",
+      "TATACONSUM",
+      "TATASTEEL",
+      "TCS",
+      "TECHM",
+      "TITAN",
+      "ULTRACEMCO",
+      "WIPRO"
+    ],
+    "config_sha256": "e0343b283f9d377c66e7d62f87749f8fdc923deee5fbcad9b2682dbf2ea44046",
+    "builder_sha256": "d270b75403ad318e9ea7940deab60309497c210e197a5a789d400626210b8eab",
+    "dataset_sha256": "a8456ff3a47254ad866e0395fb4deb05d8ba28cc0578b4b357009d950ecb3871",
+    "source_manifest_sha256": "743afd308589844ae079e7114c034db9b089d7949fed98d19e21ccb2c3b1e109",
+    "independent_sample_comparisons": 0,
+    "source_count": 460,
+    "deployment": "disabled",
+    "2025_used": true,
+    "calendar_complete": false,
+    "exclusion_counts": {
+      "stock_session_or_zero_volume_or_exdate": 1115,
+      "incomplete_index_session": 112
+    }
+  },
+  "deployment": "disabled",
+  "2025_used": true,
+  "save_reload_max_difference": 0.0,
+  "verdict": "Exploratory validation winner only; assess development, stress, uncertainty and forward evidence before any trading claim."
+}
