@@ -3,7 +3,7 @@ import json
 import numpy as np
 import pandas as pd
 from ledger_v7 import Ledger
-from delivery_v6 import fees
+from delivery_v6 import fees,simulate as gross_replay
 from benchmark_v6 import etf_fee
 from nse_raw_v8 import ROOT,DATA,OUT
 from research_v1 import sha
@@ -50,6 +50,23 @@ def main():
     c=json.loads((ROOT/'config/delivery_v6.json').read_text())
     events=json.loads((ROOT/'data/five_year_processing_v4/references/study_actions.json').read_text())
     actions={(a['symbol'],pd.to_datetime(a['exDate'],format='%d-%b-%Y').strftime('%Y-%m-%d')) for a in events}
+    # Paired control: change only execution price units in the old gross-leg replay.
+    adjusted=f.copy()
+    entry=raw[['symbol','day','open']].rename(columns={'day':'entry_day','open':'raw_entry_open'})
+    exit_=raw[['symbol','day','open']].rename(columns={'day':'exit_day','open':'raw_exit_open'})
+    adjusted=adjusted.merge(entry,on=['symbol','entry_day'],how='left',validate='many_to_one').merge(exit_,on=['symbol','exit_day'],how='left',validate='many_to_one')
+    if adjusted[['raw_entry_open','raw_exit_open']].isna().any().any():raise ValueError('Missing raw sample execution endpoints; no silent dropping.')
+    adjusted['raw_future_return']=adjusted.raw_exit_open/adjusted.raw_entry_open-1
+    adjusted['return_difference_bps']=(adjusted.raw_future_return-adjusted.future_return)*10000
+    adjusted.to_csv(DATA/'paired_sample_comparison.csv.gz',index=False)
+    adjusted['entry_open']=adjusted.raw_entry_open;adjusted['exit_open']=adjusted.raw_exit_open
+    gross_results={}
+    for split in ['validation','development']:
+        gross_results[split]={}
+        for name in ['equal_weight','momentum20','reversal5','ridge','tree']:
+            stats,_,_=gross_replay(adjusted.loc[adjusted.split==split],name,c,5)
+            gross_results[split][name]=stats
+    atomic_write(OUT/'raw_gross_control.json',encoded({'results':gross_results,'sample_count':len(adjusted),'max_abs_return_difference_bps':float(adjusted.return_difference_bps.abs().max()),'samples_over_5bps_return_difference':int((adjusted.return_difference_bps.abs()>5).sum()),'meaning':'Same v6 gross-roundtrip logic and frozen scores; only entry/exit price units changed to NSE raw.'}))
     results={}
     for split in ['validation','development']:
         results[split]={};frame=f.loc[f.split==split]
@@ -61,7 +78,7 @@ def main():
                     dest=DATA/'replay';dest.mkdir(exist_ok=True)
                     h.to_csv(dest/f'{name}_{split}_{key}_account.csv',index=False);t.to_csv(dest/f'{name}_{split}_{key}_orders.csv',index=False)
             print(split,name,results[split][name]['lag1_slip5']['net_return'],flush=True)
-    atomic_write(report,encoded({'results':results,'model_refit':False,'original_selection':'cash','frozen_scores_sha256':sha(source),'raw_panel_sha256':sha(path),'limits':['Original hindsight corporate-action exclusions and survivor cohort retained; no new strategy selection.','One-session versus zero-session sale-proceeds delay are sensitivity assumptions, not certified historical rules.','Current fee rates applied counterfactually.','Quantity sizing at observed open is an execution approximation; no bid/ask or auction fill proof.','Dividend/structural-action inputs are unresolved: replay aborts if any held asset reaches a listed action.','Pending sale proceeds contribute to final equity but are not spendable cash.','NIFTYBEES market-price buy-and-hold proxy; distributions not independently certified.','No new market profitability claim; 2025 remains development data.']}))
+    atomic_write(report,encoded({'results':results,'model_refit':False,'original_selection':'cash','frozen_scores_sha256':sha(source),'raw_panel_sha256':sha(path),'limits':['Original hindsight corporate-action exclusions and survivor cohort retained; no new strategy selection.','One-session versus zero-session sale-proceeds delay are sensitivity assumptions, not certified historical rules.','Current fee rates applied counterfactually.','Quantity sizing at observed open is an execution approximation; no bid/ask or auction fill proof.','Cash-constrained orders are reduced without automatic later retry.','Dividend/structural-action inputs are unresolved: replay aborts if any held asset reaches a listed action.','Pending sale proceeds contribute to final equity but are not spendable cash.','NIFTYBEES market-price buy-and-hold proxy; distributions not independently certified.','No new market profitability claim; 2025 remains development data.']}))
 
 
 if __name__=='__main__':main()
