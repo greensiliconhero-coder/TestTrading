@@ -1,0 +1,15 @@
+{
+  "automatic_execution_approvals": 0,
+  "document_failures": [],
+  "documents_archived": 13,
+  "documents_requested": 13,
+  "endpoint_resolution_counts": {
+    "identity_and_quote_verified_other_series": 14,
+    "identity_notice_unresolved": 1,
+    "merger_terms_archived_execution_unresolved": 3,
+    "new_isin_corroborated_by_primary_notice": 15,
+    "right_censored": 36
+  },
+  "remaining": "Dividend payments, bonus tradability, rights/demergers, merger fractional settlement, historical execution rules. Identity evidence alone does not clear the market gate.",
+  "source_endpoint_sha256": "d1f337442919e809da43c097f710f3893744d05ebf55823462cee2a10ac7195b"
+}

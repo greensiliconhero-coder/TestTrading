@@ -1,0 +1,8 @@
+{
+  "archive": "Action_evidence_v11_snapshot.zip",
+  "bytes": 8911171,
+  "sha256": "4944a7d23cf58ba675b244a99f7434f9e0a183500229c923cda502154dc098bd",
+  "files": 178,
+  "verified_all_members": true,
+  "scope": "Incremental v11 primary notices, quote archives for endpoint findings, all-market action source files, evidence registers, code and tests. Full-market panel remains in verified v10 release; models remain in v9. No new model fit."
+}

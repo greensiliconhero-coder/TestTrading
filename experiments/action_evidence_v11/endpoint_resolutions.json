@@ -1,0 +1,1214 @@
+[
+  {
+    "auto_repaired": false,
+    "day": "2021-06-09",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE399L01023",
+    "remaining": "Series-specific delivery/settlement and actual fill availability; quote presence is not a fill.",
+    "resolution": "identity_and_quote_verified_other_series",
+    "same_isin_quotes": [
+      {
+        "close": "1588.2",
+        "isin": "INE399L01023",
+        "open": "1650",
+        "series": "BE",
+        "symbol": "ATGL"
+      }
+    ],
+    "same_symbol_quotes": [
+      {
+        "close": "1588.2",
+        "isin": "INE399L01023",
+        "open": "1650",
+        "series": "BE",
+        "symbol": "ATGL"
+      }
+    ],
+    "signal_day": "2021-06-01",
+    "source_path": "data\\nse_raw_v8\\raw\\2021-06-09.zip",
+    "source_sha256": "437228f2092b3a2c89191919e1e4110296f48e2f87485a3d8596572b2aef158d",
+    "status": "same_isin_other_series",
+    "symbol": "ATGL"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2021-06-09",
+    "endpoint": "entry_day",
+    "execution_approved": false,
+    "isin": "INE399L01023",
+    "remaining": "Series-specific delivery/settlement and actual fill availability; quote presence is not a fill.",
+    "resolution": "identity_and_quote_verified_other_series",
+    "same_isin_quotes": [
+      {
+        "close": "1588.2",
+        "isin": "INE399L01023",
+        "open": "1650",
+        "series": "BE",
+        "symbol": "ATGL"
+      }
+    ],
+    "same_symbol_quotes": [
+      {
+        "close": "1588.2",
+        "isin": "INE399L01023",
+        "open": "1650",
+        "series": "BE",
+        "symbol": "ATGL"
+      }
+    ],
+    "signal_day": "2021-06-08",
+    "source_path": "data\\nse_raw_v8\\raw\\2021-06-09.zip",
+    "source_sha256": "437228f2092b3a2c89191919e1e4110296f48e2f87485a3d8596572b2aef158d",
+    "status": "same_isin_other_series",
+    "symbol": "ATGL"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2021-06-16",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE399L01023",
+    "remaining": "Series-specific delivery/settlement and actual fill availability; quote presence is not a fill.",
+    "resolution": "identity_and_quote_verified_other_series",
+    "same_isin_quotes": [
+      {
+        "close": "1394.35",
+        "isin": "INE399L01023",
+        "open": "1394.35",
+        "series": "BE",
+        "symbol": "ATGL"
+      }
+    ],
+    "same_symbol_quotes": [
+      {
+        "close": "1394.35",
+        "isin": "INE399L01023",
+        "open": "1394.35",
+        "series": "BE",
+        "symbol": "ATGL"
+      }
+    ],
+    "signal_day": "2021-06-08",
+    "source_path": "data\\nse_raw_v8\\raw\\2021-06-16.zip",
+    "source_sha256": "431d31aa3bdfd4973003e195ccfab40bf79e8b851c7f269190b54b8aa00ca711",
+    "status": "same_isin_other_series",
+    "symbol": "ATGL"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2021-07-14",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE548A01028",
+    "remaining": "Series-specific delivery/settlement and actual fill availability; quote presence is not a fill.",
+    "resolution": "identity_and_quote_verified_other_series",
+    "same_isin_quotes": [
+      {
+        "close": "82.55",
+        "isin": "INE548A01028",
+        "open": "86.15",
+        "series": "BE",
+        "symbol": "HFCL"
+      }
+    ],
+    "same_symbol_quotes": [
+      {
+        "close": "82.55",
+        "isin": "INE548A01028",
+        "open": "86.15",
+        "series": "BE",
+        "symbol": "HFCL"
+      }
+    ],
+    "signal_day": "2021-07-06",
+    "source_path": "data\\nse_raw_v8\\raw\\2021-07-14.zip",
+    "source_sha256": "d4022e64a1d52aa2b6d05f97d7c8dc6fddf0eec1d54d34929591b8e4e1ffccad",
+    "status": "same_isin_other_series",
+    "symbol": "HFCL"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2021-11-02",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE335Y01012",
+    "resolution": "identity_notice_unresolved",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "848.2",
+        "isin": "INE335Y01020",
+        "open": "868.4",
+        "series": "EQ",
+        "symbol": "IRCTC"
+      }
+    ],
+    "signal_day": "2021-10-25",
+    "source_path": "data\\nse_raw_v8\\raw\\2021-11-02.zip",
+    "source_sha256": "5a36d8da880c9442b495d33480500aae72be06091ccbd6d1fb4b0ff5f012fcf9",
+    "status": "same_symbol_different_isin",
+    "symbol": "IRCTC"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2022-04-21",
+    "economic_ex_day": "2022-04-19",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE797F01012",
+    "notice": "data\\action_evidence_v11\\JUBLFOOD.pdf",
+    "notice_sha256": "176e8c0de23c327faedb4e491f3be70d812cb53f922348e69ef1811c619a6107",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "594.75",
+        "isin": "INE797F01020",
+        "open": "556",
+        "series": "EQ",
+        "symbol": "JUBLFOOD"
+      }
+    ],
+    "signal_day": "2022-04-11",
+    "source_path": "data\\nse_raw_v8\\raw\\2022-04-21.zip",
+    "source_sha256": "8bf7fff960a9e73140de3c189d801685e3849bd8af0323c134311c103f0fadec",
+    "split_multiplier": 5,
+    "status": "same_symbol_different_isin",
+    "symbol": "JUBLFOOD"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2022-05-27",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE619A01035",
+    "remaining": "Series-specific delivery/settlement and actual fill availability; quote presence is not a fill.",
+    "resolution": "identity_and_quote_verified_other_series",
+    "same_isin_quotes": [
+      {
+        "close": "1124.25",
+        "isin": "INE619A01035",
+        "open": "1096.55",
+        "series": "BE",
+        "symbol": "RUCHI"
+      }
+    ],
+    "same_symbol_quotes": [
+      {
+        "close": "1124.25",
+        "isin": "INE619A01035",
+        "open": "1096.55",
+        "series": "BE",
+        "symbol": "RUCHI"
+      }
+    ],
+    "signal_day": "2022-05-19",
+    "source_path": "data\\nse_raw_v8\\raw\\2022-05-27.zip",
+    "source_sha256": "e4c4b0e3cc99cf7c8ac46db018f16f1da87d7db6156270435378fcf3f0362498",
+    "status": "same_isin_other_series",
+    "symbol": "RUCHI"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2022-07-29",
+    "economic_ex_day": "2022-07-28",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE081A01012",
+    "notice": "data\\action_evidence_v11\\TATASTEEL.pdf",
+    "notice_sha256": "7e60f1f2130253f1940cce01a88b827033a67df231923301a39e7ed3efc76fea",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "107.6",
+        "isin": "INE081A01020",
+        "open": "103",
+        "series": "EQ",
+        "symbol": "TATASTEEL"
+      }
+    ],
+    "signal_day": "2022-07-21",
+    "source_path": "data\\nse_raw_v8\\raw\\2022-07-29.zip",
+    "source_sha256": "7f00f0d28da46e6d0a9bf9c708b0360d1d5af5685879b815bb3f3066a235cd52",
+    "split_multiplier": 10,
+    "status": "same_symbol_different_isin",
+    "symbol": "TATASTEEL"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2022-07-29",
+    "economic_ex_day": "2022-07-28",
+    "endpoint": "entry_day",
+    "execution_approved": false,
+    "isin": "INE081A01012",
+    "notice": "data\\action_evidence_v11\\TATASTEEL.pdf",
+    "notice_sha256": "7e60f1f2130253f1940cce01a88b827033a67df231923301a39e7ed3efc76fea",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "107.6",
+        "isin": "INE081A01020",
+        "open": "103",
+        "series": "EQ",
+        "symbol": "TATASTEEL"
+      }
+    ],
+    "signal_day": "2022-07-28",
+    "source_path": "data\\nse_raw_v8\\raw\\2022-07-29.zip",
+    "source_sha256": "7f00f0d28da46e6d0a9bf9c708b0360d1d5af5685879b815bb3f3066a235cd52",
+    "split_multiplier": 10,
+    "status": "same_symbol_different_isin",
+    "symbol": "TATASTEEL"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2022-08-05",
+    "economic_ex_day": "2022-07-28",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE081A01012",
+    "notice": "data\\action_evidence_v11\\TATASTEEL.pdf",
+    "notice_sha256": "7e60f1f2130253f1940cce01a88b827033a67df231923301a39e7ed3efc76fea",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "107.35",
+        "isin": "INE081A01020",
+        "open": "107.65",
+        "series": "EQ",
+        "symbol": "TATASTEEL"
+      }
+    ],
+    "signal_day": "2022-07-28",
+    "source_path": "data\\nse_raw_v8\\raw\\2022-08-05.zip",
+    "source_sha256": "2d0def0a27f95de37b9e11d1c0a290c6235e8c30589633c2e704061c8f2fab67",
+    "split_multiplier": 10,
+    "status": "same_symbol_different_isin",
+    "symbol": "TATASTEEL"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2022-08-30",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE814H01011",
+    "remaining": "Series-specific delivery/settlement and actual fill availability; quote presence is not a fill.",
+    "resolution": "identity_and_quote_verified_other_series",
+    "same_isin_quotes": [
+      {
+        "close": "413.95",
+        "isin": "INE814H01011",
+        "open": "400",
+        "series": "BE",
+        "symbol": "ADANIPOWER"
+      }
+    ],
+    "same_symbol_quotes": [
+      {
+        "close": "413.95",
+        "isin": "INE814H01011",
+        "open": "400",
+        "series": "BE",
+        "symbol": "ADANIPOWER"
+      }
+    ],
+    "signal_day": "2022-08-22",
+    "source_path": "data\\nse_raw_v8\\raw\\2022-08-30.zip",
+    "source_sha256": "8ad7cbe878fd317ba7891edb71cf84e61994c169479a7900a6cb2c45c13bc535",
+    "status": "same_isin_other_series",
+    "symbol": "ADANIPOWER"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2022-09-14",
+    "economic_ex_day": "2022-09-13",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE918I01018",
+    "notice": "data\\action_evidence_v11\\BAJAJFINSV.pdf",
+    "notice_sha256": "8e299c3da147bd544ce20df041727054cdff18b1937d16a1801af83801eaa372",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "1805.35",
+        "isin": "INE918I01026",
+        "open": "1769",
+        "series": "EQ",
+        "symbol": "BAJAJFINSV"
+      }
+    ],
+    "signal_day": "2022-09-06",
+    "source_path": "data\\nse_raw_v8\\raw\\2022-09-14.zip",
+    "source_sha256": "5ec8914e9588313af12f6a7b036cc77b7e7ef83238a2b2f3f196ccfc252a51dd",
+    "split_multiplier": 5,
+    "status": "same_symbol_different_isin",
+    "symbol": "BAJAJFINSV"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2022-09-14",
+    "economic_ex_day": "2022-09-13",
+    "endpoint": "entry_day",
+    "execution_approved": false,
+    "isin": "INE918I01018",
+    "notice": "data\\action_evidence_v11\\BAJAJFINSV.pdf",
+    "notice_sha256": "8e299c3da147bd544ce20df041727054cdff18b1937d16a1801af83801eaa372",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "1805.35",
+        "isin": "INE918I01026",
+        "open": "1769",
+        "series": "EQ",
+        "symbol": "BAJAJFINSV"
+      }
+    ],
+    "signal_day": "2022-09-13",
+    "source_path": "data\\nse_raw_v8\\raw\\2022-09-14.zip",
+    "source_sha256": "5ec8914e9588313af12f6a7b036cc77b7e7ef83238a2b2f3f196ccfc252a51dd",
+    "split_multiplier": 5,
+    "status": "same_symbol_different_isin",
+    "symbol": "BAJAJFINSV"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2022-09-21",
+    "economic_ex_day": "2022-09-13",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE918I01018",
+    "notice": "data\\action_evidence_v11\\BAJAJFINSV.pdf",
+    "notice_sha256": "8e299c3da147bd544ce20df041727054cdff18b1937d16a1801af83801eaa372",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "1802",
+        "isin": "INE918I01026",
+        "open": "1800",
+        "series": "EQ",
+        "symbol": "BAJAJFINSV"
+      }
+    ],
+    "signal_day": "2022-09-13",
+    "source_path": "data\\nse_raw_v8\\raw\\2022-09-21.zip",
+    "source_sha256": "9e906a51f64be40adcb04a1df0b24bb56242539bdc48e372e659cdaa0b5b6c1b",
+    "split_multiplier": 5,
+    "status": "same_symbol_different_isin",
+    "symbol": "BAJAJFINSV"
+  },
+  {
+    "allotment_day": "2023-07-14",
+    "auto_repaired": false,
+    "day": "2023-07-13",
+    "denominator": 25,
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE001A01036",
+    "notice": "data\\action_evidence_v11\\HDFC_ALLOTMENT.pdf",
+    "notice_sha256": "12a5cd2a04601b54ec774653206f51007aec10e6bd9da1a9072d1a75e75e5e76",
+    "numerator": 42,
+    "record_day": "2023-07-13",
+    "remaining": "Actual successor trading availability, fractional cash amount/payment, and no old-security purchase after suspension.",
+    "resolution": "merger_terms_archived_execution_unresolved",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [],
+    "signal_day": "2023-07-05",
+    "source_path": "data\\nse_raw_v8\\raw\\2023-07-13.zip",
+    "source_sha256": "a1d468d861c0710add90f97952cd79ab24107002f99b11d1ab85276529160911",
+    "status": "no_same_isin_or_symbol",
+    "successor": "HDFCBANK",
+    "symbol": "HDFC"
+  },
+  {
+    "allotment_day": "2023-07-14",
+    "auto_repaired": false,
+    "day": "2023-07-13",
+    "denominator": 25,
+    "endpoint": "entry_day",
+    "execution_approved": false,
+    "isin": "INE001A01036",
+    "notice": "data\\action_evidence_v11\\HDFC_ALLOTMENT.pdf",
+    "notice_sha256": "12a5cd2a04601b54ec774653206f51007aec10e6bd9da1a9072d1a75e75e5e76",
+    "numerator": 42,
+    "record_day": "2023-07-13",
+    "remaining": "Actual successor trading availability, fractional cash amount/payment, and no old-security purchase after suspension.",
+    "resolution": "merger_terms_archived_execution_unresolved",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [],
+    "signal_day": "2023-07-12",
+    "source_path": "data\\nse_raw_v8\\raw\\2023-07-13.zip",
+    "source_sha256": "a1d468d861c0710add90f97952cd79ab24107002f99b11d1ab85276529160911",
+    "status": "no_same_isin_or_symbol",
+    "successor": "HDFCBANK",
+    "symbol": "HDFC"
+  },
+  {
+    "allotment_day": "2023-07-14",
+    "auto_repaired": false,
+    "day": "2023-07-20",
+    "denominator": 25,
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE001A01036",
+    "notice": "data\\action_evidence_v11\\HDFC_ALLOTMENT.pdf",
+    "notice_sha256": "12a5cd2a04601b54ec774653206f51007aec10e6bd9da1a9072d1a75e75e5e76",
+    "numerator": 42,
+    "record_day": "2023-07-13",
+    "remaining": "Actual successor trading availability, fractional cash amount/payment, and no old-security purchase after suspension.",
+    "resolution": "merger_terms_archived_execution_unresolved",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [],
+    "signal_day": "2023-07-12",
+    "source_path": "data\\nse_raw_v8\\raw\\2023-07-20.zip",
+    "source_sha256": "17599cfb64e33f60c53feb58055caf9406aaf2cc8c71d2298a9f3e871692969b",
+    "status": "no_same_isin_or_symbol",
+    "successor": "HDFCBANK",
+    "symbol": "HDFC"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2023-10-10",
+    "endpoint": "entry_day",
+    "execution_approved": false,
+    "isin": "INE040H01021",
+    "remaining": "Series-specific delivery/settlement and actual fill availability; quote presence is not a fill.",
+    "resolution": "identity_and_quote_verified_other_series",
+    "same_isin_quotes": [
+      {
+        "close": "26.35",
+        "isin": "INE040H01021",
+        "open": "26.5",
+        "series": "BE",
+        "symbol": "SUZLON"
+      }
+    ],
+    "same_symbol_quotes": [
+      {
+        "close": "26.35",
+        "isin": "INE040H01021",
+        "open": "26.5",
+        "series": "BE",
+        "symbol": "SUZLON"
+      }
+    ],
+    "signal_day": "2023-10-09",
+    "source_path": "data\\nse_raw_v8\\raw\\2023-10-10.zip",
+    "source_sha256": "b33abf833663d3a270739b8f50b87566fa2f8e24b7ba6dfa5ae1662c1e49f098",
+    "status": "same_isin_other_series",
+    "symbol": "SUZLON"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2023-10-17",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE040H01021",
+    "remaining": "Series-specific delivery/settlement and actual fill availability; quote presence is not a fill.",
+    "resolution": "identity_and_quote_verified_other_series",
+    "same_isin_quotes": [
+      {
+        "close": "29.5",
+        "isin": "INE040H01021",
+        "open": "28.9",
+        "series": "BE",
+        "symbol": "SUZLON"
+      }
+    ],
+    "same_symbol_quotes": [
+      {
+        "close": "29.5",
+        "isin": "INE040H01021",
+        "open": "28.9",
+        "series": "BE",
+        "symbol": "SUZLON"
+      }
+    ],
+    "signal_day": "2023-10-09",
+    "source_path": "data\\nse_raw_v8\\raw\\2023-10-17.zip",
+    "source_sha256": "0aca8c05db7225e555838717631d6491fffd09370818f940dad60fc2d5a04be6",
+    "status": "same_isin_other_series",
+    "symbol": "SUZLON"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2023-12-14",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE814H01011",
+    "remaining": "Series-specific delivery/settlement and actual fill availability; quote presence is not a fill.",
+    "resolution": "identity_and_quote_verified_other_series",
+    "same_isin_quotes": [
+      {
+        "close": "528.95",
+        "isin": "INE814H01011",
+        "open": "508.9",
+        "series": "BE",
+        "symbol": "ADANIPOWER"
+      }
+    ],
+    "same_symbol_quotes": [
+      {
+        "close": "528.95",
+        "isin": "INE814H01011",
+        "open": "508.9",
+        "series": "BE",
+        "symbol": "ADANIPOWER"
+      }
+    ],
+    "signal_day": "2023-12-06",
+    "source_path": "data\\nse_raw_v8\\raw\\2023-12-14.zip",
+    "source_sha256": "86ff2c12c9d28d1e2d73b54d3099210939eda6c7c6cbd34a1dfb813d0742e301",
+    "status": "same_isin_other_series",
+    "symbol": "ADANIPOWER"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2023-12-14",
+    "endpoint": "entry_day",
+    "execution_approved": false,
+    "isin": "INE814H01011",
+    "remaining": "Series-specific delivery/settlement and actual fill availability; quote presence is not a fill.",
+    "resolution": "identity_and_quote_verified_other_series",
+    "same_isin_quotes": [
+      {
+        "close": "528.95",
+        "isin": "INE814H01011",
+        "open": "508.9",
+        "series": "BE",
+        "symbol": "ADANIPOWER"
+      }
+    ],
+    "same_symbol_quotes": [
+      {
+        "close": "528.95",
+        "isin": "INE814H01011",
+        "open": "508.9",
+        "series": "BE",
+        "symbol": "ADANIPOWER"
+      }
+    ],
+    "signal_day": "2023-12-13",
+    "source_path": "data\\nse_raw_v8\\raw\\2023-12-14.zip",
+    "source_sha256": "86ff2c12c9d28d1e2d73b54d3099210939eda6c7c6cbd34a1dfb813d0742e301",
+    "status": "same_isin_other_series",
+    "symbol": "ADANIPOWER"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2023-12-21",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE814H01011",
+    "remaining": "Series-specific delivery/settlement and actual fill availability; quote presence is not a fill.",
+    "resolution": "identity_and_quote_verified_other_series",
+    "same_isin_quotes": [
+      {
+        "close": "511.65",
+        "isin": "INE814H01011",
+        "open": "490",
+        "series": "BE",
+        "symbol": "ADANIPOWER"
+      }
+    ],
+    "same_symbol_quotes": [
+      {
+        "close": "511.65",
+        "isin": "INE814H01011",
+        "open": "490",
+        "series": "BE",
+        "symbol": "ADANIPOWER"
+      }
+    ],
+    "signal_day": "2023-12-13",
+    "source_path": "data\\nse_raw_v8\\raw\\2023-12-21.zip",
+    "source_sha256": "0eda18a369cfa8c751e5859f737ae7f63e47a8434d2ba37bff2aff4c111f3e35",
+    "status": "same_isin_other_series",
+    "symbol": "ADANIPOWER"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2025-01-01",
+    "economic_ex_day": "2024-12-27",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE249Z01012",
+    "notice": "data\\action_evidence_v11\\MAZDOCK.pdf",
+    "notice_sha256": "c48889e5cf7f53ad59bc6ef36f158615ebd6aa40ce8735b2523f01c2c1806684",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "2243.80",
+        "isin": "INE249Z01020",
+        "open": "2230.00",
+        "series": "EQ",
+        "symbol": "MAZDOCK"
+      }
+    ],
+    "signal_day": "2024-12-23",
+    "source_path": "data\\nse_raw_v8\\raw\\2025-01-01.zip",
+    "source_sha256": "4e08e127ee357cd7e843945b0d345236856a46bab4a133c6f33331eccc80c140",
+    "split_multiplier": 2,
+    "status": "same_symbol_different_isin",
+    "symbol": "MAZDOCK"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2025-01-15",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE248A01017",
+    "remaining": "Series-specific delivery/settlement and actual fill availability; quote presence is not a fill.",
+    "resolution": "identity_and_quote_verified_other_series",
+    "same_isin_quotes": [
+      {
+        "close": "385.55",
+        "isin": "INE248A01017",
+        "open": "405.85",
+        "series": "BE",
+        "symbol": "ITI"
+      }
+    ],
+    "same_symbol_quotes": [
+      {
+        "close": "385.55",
+        "isin": "INE248A01017",
+        "open": "405.85",
+        "series": "BE",
+        "symbol": "ITI"
+      }
+    ],
+    "signal_day": "2025-01-07",
+    "source_path": "data\\nse_raw_v8\\raw\\2025-01-15.zip",
+    "source_sha256": "1bf23f3496d273ec56ef2cd6f923e1ca039e605abb515be5fdb65ca277c8aa94",
+    "status": "same_isin_other_series",
+    "symbol": "ITI"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2025-06-05",
+    "economic_ex_day": "2025-06-04",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE591G01017",
+    "notice": "data\\action_evidence_v11\\COFORGE.pdf",
+    "notice_sha256": "20b4368a09f6214c1044aa0a77580ce1413cbdfd78d0b58219cc214d6967c180",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "1766.00",
+        "isin": "INE591G01025",
+        "open": "1724.50",
+        "series": "EQ",
+        "symbol": "COFORGE"
+      }
+    ],
+    "signal_day": "2025-05-28",
+    "source_path": "data\\nse_raw_v8\\raw\\2025-06-05.zip",
+    "source_sha256": "a3022836761fde07166912c54023b56e15fb176827ebc4ee22c8ffea04522b60",
+    "split_multiplier": 5,
+    "status": "same_symbol_different_isin",
+    "symbol": "COFORGE"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2025-06-19",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE614G01033",
+    "remaining": "Series-specific delivery/settlement and actual fill availability; quote presence is not a fill.",
+    "resolution": "identity_and_quote_verified_other_series",
+    "same_isin_quotes": [
+      {
+        "close": "63.52",
+        "isin": "INE614G01033",
+        "open": "65.80",
+        "series": "BE",
+        "symbol": "RPOWER"
+      }
+    ],
+    "same_symbol_quotes": [
+      {
+        "close": "63.52",
+        "isin": "INE614G01033",
+        "open": "65.80",
+        "series": "BE",
+        "symbol": "RPOWER"
+      }
+    ],
+    "signal_day": "2025-06-11",
+    "source_path": "data\\nse_raw_v8\\raw\\2025-06-19.zip",
+    "source_sha256": "557b9cb818d8cb8b8862670b3822ec2a3a477b891156b0b30d0d882ae2e66355",
+    "status": "same_isin_other_series",
+    "symbol": "RPOWER"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2025-06-19",
+    "economic_ex_day": "2025-06-16",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE296A01024",
+    "notice": "data\\action_evidence_v11\\BAJFINANCE.pdf",
+    "notice_sha256": "0513f355122e2af95a87ed9ccad859d7aca03625c59eaa5cf7795d8da7b7cb56",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "900.50",
+        "isin": "INE296A01032",
+        "open": "919.00",
+        "series": "EQ",
+        "symbol": "BAJFINANCE"
+      }
+    ],
+    "signal_day": "2025-06-11",
+    "source_path": "data\\nse_raw_v8\\raw\\2025-06-19.zip",
+    "source_sha256": "557b9cb818d8cb8b8862670b3822ec2a3a477b891156b0b30d0d882ae2e66355",
+    "split_multiplier": 2,
+    "status": "same_symbol_different_isin",
+    "symbol": "BAJFINANCE"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2025-09-15",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE0LXG01040",
+    "remaining": "Series-specific delivery/settlement and actual fill availability; quote presence is not a fill.",
+    "resolution": "identity_and_quote_verified_other_series",
+    "same_isin_quotes": [
+      {
+        "close": "60.51",
+        "isin": "INE0LXG01040",
+        "open": "59.00",
+        "series": "BE",
+        "symbol": "OLAELEC"
+      }
+    ],
+    "same_symbol_quotes": [
+      {
+        "close": "60.51",
+        "isin": "INE0LXG01040",
+        "open": "59.00",
+        "series": "BE",
+        "symbol": "OLAELEC"
+      }
+    ],
+    "signal_day": "2025-09-05",
+    "source_path": "data\\nse_raw_v8\\raw\\2025-09-15.zip",
+    "source_sha256": "7fade0a40d5c94574e0f9fea41d24ff1a1ece2b131e60d333cceaf4072c80e28",
+    "status": "same_isin_other_series",
+    "symbol": "OLAELEC"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2025-09-22",
+    "economic_ex_day": "2025-09-22",
+    "endpoint": "entry_day",
+    "execution_approved": false,
+    "isin": "INE814H01011",
+    "notice": "data\\action_evidence_v11\\ADANIPOWER.pdf",
+    "notice_sha256": "764b45776ce66e6fcb6f6ccf4616a1a2dd5691a617fe9b7d22f2c63a4dbabbad",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "170.25",
+        "isin": "INE814H01029",
+        "open": "148.20",
+        "series": "EQ",
+        "symbol": "ADANIPOWER"
+      }
+    ],
+    "signal_day": "2025-09-19",
+    "source_path": "data\\nse_raw_v8\\raw\\2025-09-22.zip",
+    "source_sha256": "317ca34ae71af34a77848368be9b6c54a3e54c8e52763f63c3fa43cd17f3f2f6",
+    "split_multiplier": 5,
+    "status": "same_symbol_different_isin",
+    "symbol": "ADANIPOWER"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2025-09-29",
+    "economic_ex_day": "2025-09-22",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE814H01011",
+    "notice": "data\\action_evidence_v11\\ADANIPOWER.pdf",
+    "notice_sha256": "764b45776ce66e6fcb6f6ccf4616a1a2dd5691a617fe9b7d22f2c63a4dbabbad",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "146.65",
+        "isin": "INE814H01029",
+        "open": "148.70",
+        "series": "EQ",
+        "symbol": "ADANIPOWER"
+      }
+    ],
+    "signal_day": "2025-09-19",
+    "source_path": "data\\nse_raw_v8\\raw\\2025-09-29.zip",
+    "source_sha256": "8b8606fcf448c08c84ad2ebe270ac18375b46867325d1b48f27aabe2998cc746",
+    "split_multiplier": 5,
+    "status": "same_symbol_different_isin",
+    "symbol": "ADANIPOWER"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2025-10-14",
+    "economic_ex_day": "2025-10-14",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE672A01018",
+    "notice": "data\\action_evidence_v11\\TATAINVEST.pdf",
+    "notice_sha256": "4c506a3d648bedabd249832d71d7f84132754364b146790b3bedfd46e167911a",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "1035.00",
+        "isin": "INE672A01026",
+        "open": "1042.00",
+        "series": "EQ",
+        "symbol": "TATAINVEST"
+      }
+    ],
+    "signal_day": "2025-10-06",
+    "source_path": "data\\nse_raw_v8\\raw\\2025-10-14.zip",
+    "source_sha256": "5bd4f7e4243e8744fc1dfdf7c774eb0b1109c2e6c16e743cd335492973410ed9",
+    "split_multiplier": 10,
+    "status": "same_symbol_different_isin",
+    "symbol": "TATAINVEST"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2025-10-14",
+    "economic_ex_day": "2025-10-14",
+    "endpoint": "entry_day",
+    "execution_approved": false,
+    "isin": "INE672A01018",
+    "notice": "data\\action_evidence_v11\\TATAINVEST.pdf",
+    "notice_sha256": "4c506a3d648bedabd249832d71d7f84132754364b146790b3bedfd46e167911a",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "1035.00",
+        "isin": "INE672A01026",
+        "open": "1042.00",
+        "series": "EQ",
+        "symbol": "TATAINVEST"
+      }
+    ],
+    "signal_day": "2025-10-13",
+    "source_path": "data\\nse_raw_v8\\raw\\2025-10-14.zip",
+    "source_sha256": "5bd4f7e4243e8744fc1dfdf7c774eb0b1109c2e6c16e743cd335492973410ed9",
+    "split_multiplier": 10,
+    "status": "same_symbol_different_isin",
+    "symbol": "TATAINVEST"
+  },
+  {
+    "auto_repaired": false,
+    "day": "2025-10-21",
+    "economic_ex_day": "2025-10-14",
+    "endpoint": "exit_day",
+    "execution_approved": false,
+    "isin": "INE672A01018",
+    "notice": "data\\action_evidence_v11\\TATAINVEST.pdf",
+    "notice_sha256": "4c506a3d648bedabd249832d71d7f84132754364b146790b3bedfd46e167911a",
+    "remaining": "Apply full entitlements, including any simultaneous bonus, before account replay; preserve source ISIN versus economic effective date.",
+    "resolution": "new_isin_corroborated_by_primary_notice",
+    "same_isin_quotes": [],
+    "same_symbol_quotes": [
+      {
+        "close": "875.00",
+        "isin": "INE672A01026",
+        "open": "814.00",
+        "series": "EQ",
+        "symbol": "TATAINVEST"
+      }
+    ],
+    "signal_day": "2025-10-13",
+    "source_path": "data\\nse_raw_v8\\raw\\2025-10-21.zip",
+    "source_sha256": "729f028f4dfde2d7dca1abca7b0277a87c4ca950dd0fd5d180ba8fc48c0b6456",
+    "split_multiplier": 10,
+    "status": "same_symbol_different_isin",
+    "symbol": "TATAINVEST"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "INDIGO"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "KAYNES"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "HDFCBANK"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "RELIANCE"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "INFY"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "ICICIBANK"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "BSE"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "BHARTIARTL"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "IDEA"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "SHRIRAMFIN"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "SBIN"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "TCS"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "VEDL"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "HINDCOPPER"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "ETERNAL"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "HINDZINC"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "M&M"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "DIXON"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "BAJFINANCE"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "KOTAKBANK"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "SHAKTIPUMP"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "LT"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "SWIGGY"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "AXISBANK"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "MCX"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "MARUTI"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "JWL"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "TMPV"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "HINDUNILVR"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "HEROMOTOCO"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "BEL"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "PAYTM"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "HAL"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "WOCKPHARMA"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "SUNPHARMA"
+  },
+  {
+    "execution_approved": false,
+    "resolution": "right_censored",
+    "signal_day": "2025-12-24",
+    "status": "right_censored_dataset_end",
+    "symbol": "TATASTEEL"
+  }
+]
