@@ -28,7 +28,9 @@ Models and exact inputs are saved locally. Full data/model GitHub release archiv
 
 # Five-year processing and model comparison — v4
 
-Branch: `experiment/five-year-v4`.
+Branch: `snapshot/five-year-v4-results`.
+
+This branch preserves the completed five-year run from commit `c534508` on `experiment/five-year-v4`. Model weights and evaluation results are unchanged.
 
 All 1,702 Kite requests for 2021–2025 completed. Raw responses are copied into `data/five_year_processing_v4/raw`, with SHA-256 verification against the acquisition manifest. The original acquisition folder is preserved. Git tracks the manifests, code and reports; bulk datasets will be supplied as a checksum-verified release archive.
 
