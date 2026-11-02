@@ -1,0 +1,53 @@
+{
+  "daily_rows": 1240,
+  "equities_action_ledger_matches": [],
+  "etf_stt_source": "https://support.zerodha.com/category/account-opening/resident-individual/ri-charges/articles/stt-etfs",
+  "limitations": "ETF market-price buy-and-hold proxy. Equities action ledger may not exhaust ETF distributions; not independently certified total return. Current fees applied counterfactually, cash earnings and personal income taxes excluded. Buy at first active entry date, sell at last active exit date; holds through intervening inactive periods.",
+  "results": {
+    "development": {
+      "10": {
+        "entry_day": "2025-01-08",
+        "exit_day": "2025-12-26",
+        "fees": 27.29967759450112,
+        "final_cash": 55671.91054240551,
+        "net_return": 0.11343821084811023,
+        "price_return": 0.11671366798270366,
+        "quantity": 187,
+        "slippage_bps_per_side": 10
+      },
+      "5": {
+        "entry_day": "2025-01-08",
+        "exit_day": "2025-12-26",
+        "fees": 27.296333892590553,
+        "final_cash": 55724.54877610742,
+        "net_return": 0.11449097552214837,
+        "price_return": 0.11671366798270366,
+        "quantity": 187,
+        "slippage_bps_per_side": 5
+      }
+    },
+    "validation": {
+      "10": {
+        "entry_day": "2024-01-05",
+        "exit_day": "2024-12-24",
+        "fees": 27.303521419840642,
+        "final_cash": 55030.33711858017,
+        "net_return": 0.1006067423716035,
+        "price_return": 0.10350291909924936,
+        "quantity": 208,
+        "slippage_bps_per_side": 10
+      },
+      "5": {
+        "entry_day": "2024-01-05",
+        "exit_day": "2024-12-24",
+        "fees": 27.300152300000317,
+        "final_cash": 55082.800167700014,
+        "net_return": 0.10165600335400038,
+        "price_return": 0.10350291909924936,
+        "quantity": 208,
+        "slippage_bps_per_side": 5
+      }
+    }
+  },
+  "symbol": "NIFTYBEES"
+}

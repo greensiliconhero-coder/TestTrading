@@ -1,0 +1,283 @@
+{
+  "action_audit": {
+    "adjustment_status": "Unresolved: ledger lacks verified price adjustment factors, full announcement timing and dividend payment dates. No automatic total-return or historical share-unit reconstruction performed.",
+    "missing_publication_timestamp": 326,
+    "records": 326,
+    "source_sha256": "06b14aebff82a2d8b864aaacf791959307176811a03cd00ff7a8efd3bf569cdb",
+    "structural_action_symbols": [
+      "BPCL",
+      "DRREDDY",
+      "GRASIM",
+      "HINDUNILVR",
+      "NESTLEIND",
+      "POWERGRID",
+      "RELIANCE",
+      "TATACONSUM",
+      "TATASTEEL",
+      "TMPV",
+      "WIPRO"
+    ],
+    "types": {
+      "bonus": 6,
+      "buyback": 6,
+      "demerger": 3,
+      "dividend": 301,
+      "meeting": 5,
+      "rights": 2,
+      "split": 3
+    }
+  },
+  "benchmark_status": "NIFTYBEES price benchmark completed; distribution and adjustment certification unresolved.",
+  "config": {
+    "base_slippage_bps_per_side": 5,
+    "brokerage": 0,
+    "dp_per_symbol_sell": 15.34,
+    "exchange_fraction": 3.07e-05,
+    "fee_basis": "Current published resident-individual rates as of 2026-11-02, applied as a counterfactual cost sensitivity to historical prices; not reconstructed historical contract notes.",
+    "gst_fraction": 0.18,
+    "initial_capital": 50000,
+    "limits": [
+      "Historical adjusted price share units unresolved; whole-share quantities are provisional.",
+      "Separate gross buy/sell legs charged at each batch, even if a symbol is selected again. Real same-day netting or retention could differ.",
+      "Immediate sale proceeds reused; settlement/cash availability assumptions remain unverified.",
+      "Original retrospective action-window screen remains.",
+      "2025 already seen; development only."
+    ],
+    "position_cap": 10000,
+    "sebi_fraction": 1e-06,
+    "selection": "Reuse v5 saved scores and unchanged validation selection (cash); no model refitting or promotion based on new replay.",
+    "source": "https://zerodha.com/charges/",
+    "stamp_fraction_buy": 0.00015,
+    "stress_slippage_bps_per_side": 10,
+    "stt_fraction_buy_sell": 0.001,
+    "version": "delivery_v6"
+  },
+  "frozen_scores_sha256": "e07b914bf3e92289877cfe2b8be5f5a20691c9ffa11ad991ca26101ba9325091",
+  "results": {
+    "development": {
+      "equal_weight": {
+        "10": {
+          "dp_fees": 8544.380000000001,
+          "final_cash": 40425.5304066462,
+          "mean_position_notional": 1629.1717812208258,
+          "net_return": -0.19148939186707603,
+          "profitable_trades": 182,
+          "slippage": 1815.89001,
+          "total_fees": 10564.309583353923,
+          "trades": 557
+        },
+        "5": {
+          "dp_fees": 8590.400000000001,
+          "final_cash": 41145.930937303754,
+          "mean_position_notional": 1649.781013982143,
+          "net_return": -0.17708138125392492,
+          "profitable_trades": 190,
+          "slippage": 924.77487,
+          "total_fees": 10647.71419269633,
+          "trades": 560
+        }
+      },
+      "momentum20": {
+        "10": {
+          "dp_fees": 2899.2599999999998,
+          "final_cash": 42724.37406987393,
+          "mean_position_notional": 8387.782471851851,
+          "net_return": -0.14551251860252146,
+          "profitable_trades": 78,
+          "slippage": 3169.7338199999995,
+          "total_fees": 6425.3521101261995,
+          "trades": 189
+        },
+        "5": {
+          "dp_fees": 2899.2599999999998,
+          "final_cash": 44208.31623188306,
+          "mean_position_notional": 8558.238621031745,
+          "net_return": -0.1158336753623388,
+          "profitable_trades": 79,
+          "slippage": 1617.86116,
+          "total_fees": 6498.642608117061,
+          "trades": 189
+        }
+      },
+      "reversal5": {
+        "10": {
+          "dp_fees": 2914.5999999999995,
+          "final_cash": 46093.94288493467,
+          "mean_position_notional": 8514.75135036842,
+          "net_return": -0.07812114230130651,
+          "profitable_trades": 89,
+          "slippage": 3238.22192,
+          "total_fees": 6516.615195065555,
+          "trades": 190
+        },
+        "5": {
+          "dp_fees": 2914.5999999999995,
+          "final_cash": 48302.48467544304,
+          "mean_position_notional": 8711.031760263157,
+          "net_return": -0.03395030649113917,
+          "profitable_trades": 92,
+          "slippage": 1657.5499,
+          "total_fees": 6601.965424557214,
+          "trades": 190
+        }
+      },
+      "ridge": {
+        "10": {
+          "dp_fees": 2991.3,
+          "final_cash": 47276.9685768717,
+          "mean_position_notional": 8974.219407999999,
+          "net_return": -0.05446062846256594,
+          "profitable_trades": 91,
+          "slippage": 3504.11919,
+          "total_fees": 6888.982233128501,
+          "trades": 195
+        },
+        "5": {
+          "dp_fees": 2991.3,
+          "final_cash": 48911.530900709295,
+          "mean_position_notional": 9070.665835615384,
+          "net_return": -0.02176938198581413,
+          "profitable_trades": 96,
+          "slippage": 1771.70379,
+          "total_fees": 6932.565309290923,
+          "trades": 195
+        }
+      },
+      "tree": {
+        "10": {
+          "dp_fees": 2960.62,
+          "final_cash": 50785.50720836679,
+          "mean_position_notional": 9022.65343253886,
+          "net_return": 0.015710144167335738,
+          "profitable_trades": 87,
+          "slippage": 3490.3836100000003,
+          "total_fees": 6842.759181633438,
+          "trades": 193
+        },
+        "5": {
+          "dp_fees": 2960.62,
+          "final_cash": 52500.43433013614,
+          "mean_position_notional": 9024.560491554403,
+          "net_return": 0.05000868660272273,
+          "profitable_trades": 92,
+          "slippage": 1746.415845,
+          "total_fees": 6845.359824864036,
+          "trades": 193
+        }
+      }
+    },
+    "validation": {
+      "equal_weight": {
+        "10": {
+          "dp_fees": 8559.720000000001,
+          "final_cash": 39167.48010698084,
+          "mean_position_notional": 1663.992312060932,
+          "net_return": -0.2166503978603832,
+          "profitable_trades": 203,
+          "slippage": 1856.80981,
+          "total_fees": 10625.260083019293,
+          "trades": 558
+        },
+        "5": {
+          "dp_fees": 8590.400000000001,
+          "final_cash": 40082.19602291915,
+          "mean_position_notional": 1673.8832197767854,
+          "net_return": -0.19835607954161694,
+          "profitable_trades": 216,
+          "slippage": 937.75446,
+          "total_fees": 10676.669517080885,
+          "trades": 560
+        }
+      },
+      "momentum20": {
+        "10": {
+          "dp_fees": 2761.2,
+          "final_cash": 49884.155152277,
+          "mean_position_notional": 8930.753553944443,
+          "net_return": -0.0023168969544599127,
+          "profitable_trades": 88,
+          "slippage": 3221.30901,
+          "total_fees": 6344.125837723197,
+          "trades": 180
+        },
+        "5": {
+          "dp_fees": 2761.2,
+          "final_cash": 51441.627999330245,
+          "mean_position_notional": 8933.226658916667,
+          "net_return": 0.028832559986604833,
+          "profitable_trades": 90,
+          "slippage": 1611.8773299999998,
+          "total_fees": 6346.734670670022,
+          "trades": 180
+        }
+      },
+      "reversal5": {
+        "10": {
+          "dp_fees": 2868.58,
+          "final_cash": 43380.31979702114,
+          "mean_position_notional": 8806.283849999998,
+          "net_return": -0.13239360405957723,
+          "profitable_trades": 85,
+          "slippage": 3293.46594,
+          "total_fees": 6532.254262979008,
+          "trades": 187
+        },
+        "5": {
+          "dp_fees": 2883.92,
+          "final_cash": 45008.817792494476,
+          "mean_position_notional": 8922.326274095745,
+          "net_return": -0.09982364415011047,
+          "profitable_trades": 89,
+          "slippage": 1678.211325,
+          "total_fees": 6617.500882505776,
+          "trades": 188
+        }
+      },
+      "ridge": {
+        "10": {
+          "dp_fees": 2868.58,
+          "final_cash": 46217.617677553164,
+          "mean_position_notional": 9228.26781882353,
+          "net_return": -0.07564764644893673,
+          "profitable_trades": 89,
+          "slippage": 3454.3071099999997,
+          "total_fees": 6710.9452124470245,
+          "trades": 187
+        },
+        "5": {
+          "dp_fees": 2868.58,
+          "final_cash": 48079.4594174634,
+          "mean_position_notional": 9281.521168636364,
+          "net_return": -0.03841081165073201,
+          "profitable_trades": 94,
+          "slippage": 1738.053355,
+          "total_fees": 6735.057227536793,
+          "trades": 187
+        }
+      },
+      "tree": {
+        "10": {
+          "dp_fees": 2868.58,
+          "final_cash": 42951.983286114424,
+          "mean_position_notional": 8813.64334117647,
+          "net_return": -0.14096033427771149,
+          "profitable_trades": 85,
+          "slippage": 3295.79225,
+          "total_fees": 6534.874463885694,
+          "trades": 187
+        },
+        "5": {
+          "dp_fees": 2868.58,
+          "final_cash": 44767.51715117083,
+          "mean_position_notional": 8946.01274959893,
+          "net_return": -0.10464965697658335,
+          "profitable_trades": 86,
+          "slippage": 1673.5848449999999,
+          "total_fees": 6591.888003829378,
+          "trades": 187
+        }
+      }
+    }
+  },
+  "selection": "Original v5 cash decision preserved; no refit or re-selection."
+}

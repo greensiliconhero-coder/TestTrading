@@ -1,23 +1,30 @@
-# Five-day iteration v5
+# Delivery-cost iteration v6
 
-Status: completed exploratory run. Selected on 2024: cash. No live trading.
+Branch: `research/delivery-costs-v6`. Completed: itemized fee replay, corporate-action source audit and passive ETF price benchmark. No new model fitting; v5 scores/weights reused. Original validation selection remains cash.
 
-Train: 2021–2023, 2,566 stock-date samples in 111 nonoverlapping batches. Validation: 2024, 40 batches. Previously observed development period: 2025, 41 batches. Five-session holds, next-open entry, equal-weight fractional baskets; 50 bps assumed round-trip cost, stressed at 75 and 100.
+Each period starts with INR50,000. Active rankings allocate up to INR10,000 per position, whole shares, residual cash, buy-fee reservation. Base slippage: 5 bps each side; stress: 10. Current published resident-individual delivery fees are applied counterfactually to 2024/2025, not represented as exact historical contract notes. ETF taxes differ from individual-stock delivery taxes.
 
-| Candidate | 2024 net basket | 2025 development net basket | 2025 profitable / trades | 2025 net at 100 bps |
-|---|---:|---:|---:|---:|
-| equal_weight | -12.33% | -10.18% | 425/929 | -26.91% |
-| momentum20 | -0.52% | -13.39% | 86/205 | -29.53% |
-| reversal5 | -8.75% | -9.08% | 99/205 | -26.01% |
-| ridge | -4.06% | -4.12% | 101/205 | -21.95% |
-| tree | -13.51% | 7.34% | 99/205 | -12.57% |
+| Strategy | 2024 net return | 2025 development net return | 2025 fee total |
+|---|---:|---:|---:|
+| equal_weight | -19.84% | -17.71% | INR 10,647.71 |
+| momentum20 | 2.88% | -11.58% | INR 6,498.64 |
+| reversal5 | -9.98% | -3.40% | INR 6,601.97 |
+| ridge | -3.84% | -2.18% | INR 6,932.57 |
+| tree | -10.46% | 5.00% | INR 6,845.36 |
+| NIFTYBEES buy and hold | 10.17% | 11.45% | INR 27.30 |
 
-Interpretation: none was profitable on validation, so cash was selected before development evaluation. The tree development gain cannot be chosen in hindsight. Five-session rotation still incurs substantial recurring costs; 40 rotations at 50 bps imply roughly 20 percentage points of annual turnover cost before compounding and market returns. This does not establish that the holding period is optimal or that learning has failed in general.
+The ETF uses first active entry through last active exit: 2024-01-05 to 2024-12-24 and 2025-01-08 to 2025-12-26. It remains invested through intervening periods where active strategies may be in cash. These are not full calendar-year returns. Fee totals exclude separately modeled price slippage; benchmark excludes cash interest and personal income taxes.
 
-Limitations: same surviving-stock universe; no untouched test available. 3,807 stock-window observations were retrospectively excluded for corporate actions across lookback through exit. This is a major selection bias and reduces usable observations. Results are fractional basket diagnostics, not capital-account simulations. Equal-weight uses all eligible stocks and therefore a different position count; the fixed cost assumption is not an exact DP-fee comparison at a common capital amount. NIFTY comparison is a price-index return on matching windows, not an investable total-return benchmark. Overnight gaps and executable fills remain unresolved.
+Result: the passive ETF price proxy outperformed every active candidate in both windows. Momentum changed from slightly negative in v5 validation to positive under this cost replay, but still lagged the passive benchmark and lost money in 2025. Do not retroactively promote it. The tree remains negative in validation despite positive 2025 development results.
 
-Next iteration should first resolve corporate-action-adjusted total-return data and use explicit capital-dependent delivery costs and an investable passive benchmark. A longer holding horizon may reduce turnover further, but it should be preregistered and evaluated without repeatedly calling 2025 unseen. No automatic parameter search has been launched.
+Corporate-action audit: 326 records, comprising 301 dividends, 6 bonuses, 3 splits, 2 rights, 3 demergers, 6 buybacks and 5 meetings. All 326 lack publication timestamps. Announcement timing, adjustment factors and dividend payment cashflows are not certified. The earlier exclusion of all action types—including meetings—was broad and retrospective. This iteration documents that defect rather than silently claiming it repaired.
 
-Validation: future-bar changes did not alter prior features; known-payoff basket/cost arithmetic passed; saved estimators reproduced predictions exactly. Exact input tables, raw-source hashes, fitted models, scores and trade records are preserved.
+Material limitations: original retrospective action-window exclusions remain. Historical adjusted price units may distort whole-share quantities and fixed-fee effects. Gross sell/buy legs are charged at each batch; actual retention/netting and settlement can differ. Same survivor cohort and previously explored 2025. NIFTYBEES is an investable security, but this is a market-price proxy; ETF distributions and historical adjustment continuity are not independently certified, so do not call it a verified total-return backtest.
 
-Reproduce: `python src/five_day_v5.py` (refuses to overwrite completed results). Protocol: [FIVE_DAY_V5.md](FIVE_DAY_V5.md).
+Validation: tested stock/ETF fee amounts, cash/PnL reconciliation, whole shares, unaffordable positions, fixed-DP effects and slippage sensitivity. All six ETF source chunks checksum-verified and candle-validated with no duplicate daily dates. No live orders.
+
+Next research gate: obtain/reconcile unadjusted prices, split/bonus factors, demerger/rights handling and dividend entitlements before removing retrospective action exclusions or claiming an executable account simulation. Reserve a genuinely unseen future period before another predictive claim. Added complexity alone is not the next step.
+
+Reproduction: `python src/delivery_v6.py` for frozen-score replay (refuses overwrite), `python src/benchmark_v6.py` for benchmark, `python -m unittest discover -s tests -p test_delivery_v6.py`. Source protocol: [DELIVERY_V6.md](DELIVERY_V6.md). Exact scores, fee config, trades, action audit and ETF raw responses are preserved.
+
+Sources: https://zerodha.com/charges/ ; https://support.zerodha.com/category/account-opening/resident-individual/ri-charges/articles/what-do-dp-charges-mean ; https://support.zerodha.com/category/account-opening/resident-individual/ri-charges/articles/stt-etfs .

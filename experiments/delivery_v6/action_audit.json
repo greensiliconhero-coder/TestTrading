@@ -1,0 +1,28 @@
+{
+  "adjustment_status": "Unresolved: ledger lacks verified price adjustment factors, full announcement timing and dividend payment dates. No automatic total-return or historical share-unit reconstruction performed.",
+  "missing_publication_timestamp": 326,
+  "records": 326,
+  "source_sha256": "06b14aebff82a2d8b864aaacf791959307176811a03cd00ff7a8efd3bf569cdb",
+  "structural_action_symbols": [
+    "BPCL",
+    "DRREDDY",
+    "GRASIM",
+    "HINDUNILVR",
+    "NESTLEIND",
+    "POWERGRID",
+    "RELIANCE",
+    "TATACONSUM",
+    "TATASTEEL",
+    "TMPV",
+    "WIPRO"
+  ],
+  "types": {
+    "bonus": 6,
+    "buyback": 6,
+    "demerger": 3,
+    "dividend": 301,
+    "meeting": 5,
+    "rights": 2,
+    "split": 3
+  }
+}
