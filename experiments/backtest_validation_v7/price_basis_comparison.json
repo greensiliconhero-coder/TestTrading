@@ -1,0 +1,49 @@
+{
+  "comparisons": [
+    {
+      "day": "2022-07-27",
+      "exchange_close": 959.4,
+      "exchange_over_kite_close": 10.630470914127423,
+      "exchange_source_sha256": "728a2f0076c6332524ddaf25ebb966db505742b9f742d58e83d9748ff69ff52f",
+      "exchange_volume": 5255902,
+      "kite_snapshot_close": 90.25,
+      "kite_source_sha256": "01a3c2b6a83fd4e8fe64f954fa9de9b82c44be22a8ee76157d381259d136ef17",
+      "kite_volume": 52559020.0,
+      "symbol": "TATASTEEL"
+    },
+    {
+      "day": "2022-07-28",
+      "exchange_close": 100.35,
+      "exchange_over_kite_close": 1.0613432046536224,
+      "exchange_source_sha256": "6efdacccfe775d2b21201eeb0e4531c0355de4d81b7eccdc170415bfd0dc36fe",
+      "exchange_volume": 137156107,
+      "kite_snapshot_close": 94.55,
+      "kite_source_sha256": "01a3c2b6a83fd4e8fe64f954fa9de9b82c44be22a8ee76157d381259d136ef17",
+      "kite_volume": 137156107.0,
+      "symbol": "TATASTEEL"
+    },
+    {
+      "day": "2024-01-04",
+      "exchange_close": 27116.4,
+      "exchange_over_kite_close": 20.000295028765308,
+      "exchange_source_sha256": "b04c129010672d607e2d02d22abaf38824efe8192fb4583c23b679e0ef4ed630",
+      "exchange_volume": 132390,
+      "kite_snapshot_close": 1355.8,
+      "kite_source_sha256": "fef89cb64bfc869343bba36e9a2e548494c247f388eac351e3ea6e862caeb0c9",
+      "kite_volume": 2647800.0,
+      "symbol": "NESTLEIND"
+    },
+    {
+      "day": "2024-01-05",
+      "exchange_close": 2666.4,
+      "exchange_over_kite_close": 2.0,
+      "exchange_source_sha256": "999be72e8d8bc6ffff1f0d0c494d32cc767ab1d4bd007eef44ff78e6fa2393cf",
+      "exchange_volume": 2577064,
+      "kite_snapshot_close": 1333.2,
+      "kite_source_sha256": "fef89cb64bfc869343bba36e9a2e548494c247f388eac351e3ea6e862caeb0c9",
+      "kite_volume": 5154128.0,
+      "symbol": "NESTLEIND"
+    }
+  ],
+  "interpretation": "Official traded-price sample versus current adjusted vendor snapshot. Observed ratios are diagnostics, not a complete verified adjustment history or authorization to rescale all records."
+}

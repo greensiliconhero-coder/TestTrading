@@ -1,30 +1,45 @@
-# Delivery-cost iteration v6
+# Backtest validation v7
 
-Branch: `research/delivery-costs-v6`. Completed: itemized fee replay, corporate-action source audit and passive ETF price benchmark. No new model fitting; v5 scores/weights reused. Original validation selection remains cash.
+Branch: `research/backtest-validation-v7`. Engineering validation completed; market-data gate FAILED. No new market strategy was trained or promoted.
 
-Each period starts with INR50,000. Active rankings allocate up to INR10,000 per position, whole shares, residual cash, buy-fee reservation. Base slippage: 5 bps each side; stress: 10. Current published resident-individual delivery fees are applied counterfactually to 2024/2025, not represented as exact historical contract notes. ETF taxes differ from individual-stock delivery taxes.
+## What changed
 
-| Strategy | 2024 net return | 2025 development net return | 2025 fee total |
+Added a stateful research ledger that retains unchanged positions and trades net quantity differences, reserves buy fees, prevents borrowing, delays spendable sale proceeds by a configurable session lag, and accounts for verified dividends as receivables until their payment session. Split/bonus unit changes preserve wealth on raw-price synthetic fixtures. Missing evidence, unsupported rights/demergers, ambiguous fractional entitlements, adjusted execution-price basis and missing held-asset marks fail closed. Rejected steps are atomic. Dividend/other cashflow taxes, fractional cash-in-lieu, exchange/broker settlement nuances and intraday actions remain outside supported scope.
+
+Tests: 64 existing/regression tests passed before adding the explicit market gate test; all 13 ledger tests passed after that addition. Known-payoff, retained-position, net-rebalance, settlement, split/bonus conservation, dividend timing, same-bar signal rejection and split-boundary label purge were checked.
+
+## Synthetic learning controls
+
+20 paired fixed seeds, 6,000 samples per control; 3,599 training and 1,199 validation after one-step boundary purging, 1,200 held-out synthetic test samples. Unchanged Ridge and histogram-tree regressors; validation threshold selection followed by test evaluation, 20 bps cost. 80 fitted estimators and exact input/prediction arrays preserved.
+
+| Control/model | Mean test correlation | Validation-selected runs | Positive selected test runs |
 |---|---:|---:|---:|
-| equal_weight | -19.84% | -17.71% | INR 10,647.71 |
-| momentum20 | 2.88% | -11.58% | INR 6,498.64 |
-| reversal5 | -9.98% | -3.40% | INR 6,601.97 |
-| ridge | -3.84% | -2.18% | INR 6,932.57 |
-| tree | -10.46% | 5.00% | INR 6,845.36 |
-| NIFTYBEES buy and hold | 10.17% | 11.45% | INR 27.30 |
+| null_ridge | -0.0032 | 0/20 | 0/20 |
+| null_tree | 0.0035 | 6/20 | 2/20 |
+| planted_ridge | 0.8947 | 20/20 | 20/20 |
+| planted_tree | 0.8887 | 20/20 | 20/20 |
 
-The ETF uses first active entry through last active exit: 2024-01-05 to 2024-12-24 and 2025-01-08 to 2025-12-26. It remains invested through intervening periods where active strategies may be in cash. These are not full calendar-year returns. Fee totals exclude separately modeled price slippage; benchmark excludes cash interest and personal income taxes.
+All predefined engineering acceptance checks passed. Positive control learners recovered the deliberately strong linear signal. Null-tree controls still produced positive selected test means in 2/20 runs: random apparent winners remain possible. Correlation is not prediction accuracy, and these tests do not establish market profitability, exhaustive leakage detection or validity of real-world execution assumptions.
 
-Result: the passive ETF price proxy outperformed every active candidate in both windows. Momentum changed from slightly negative in v5 validation to positive under this cost replay, but still lagged the passive benchmark and lost money in 2025. Do not retroactively promote it. The tree remains negative in validation despite positive 2025 development results.
+## Confirmed historical price-basis problem
 
-Corporate-action audit: 326 records, comprising 301 dividends, 6 bonuses, 3 splits, 2 rights, 3 demergers, 6 buybacks and 5 meetings. All 326 lack publication timestamps. Announcement timing, adjustment factors and dividend payment cashflows are not certified. The earlier exclusion of all action types—including meetings—was broad and retrospective. This iteration documents that defect rather than silently claiming it repaired.
+| Symbol/date | NSE traded close | Saved Kite close | NSE/Kite ratio |
+|---|---:|---:|---:|
+| TATASTEEL 2022-07-27 | 959.40 | 90.25 | 10.6305 |
+| TATASTEEL 2022-07-28 | 100.35 | 94.55 | 1.0613 |
+| NESTLEIND 2024-01-04 | 27116.40 | 1355.80 | 20.0003 |
+| NESTLEIND 2024-01-05 | 2666.40 | 1333.20 | 2.0000 |
 
-Material limitations: original retrospective action-window exclusions remain. Historical adjusted price units may distort whole-share quantities and fixed-fee effects. Gross sell/buy legs are charged at each batch; actual retention/netting and settlement can differ. Same survivor cohort and previously explored 2025. NIFTYBEES is an investable security, but this is a market-price proxy; ETF distributions and historical adjustment continuity are not independently certified, so do not call it a verified total-return backtest.
+Four official NSE bhavcopy archives were downloaded and checked against the saved snapshot. The differences demonstrate that vendor-adjusted values cannot be treated as original traded rupee prices for historical whole-share quantities and fixed DP fees. Nestle 2024-01-04 differs by approximately 20 times, consistent with cumulative later unit adjustments; the exact complete adjustment chain has not been certified. Do not rescale the entire dataset from these four ratios.
 
-Validation: tested stock/ETF fee amounts, cash/PnL reconciliation, whole shares, unaffordable positions, fixed-DP effects and slippage sensitivity. All six ETF source chunks checksum-verified and candle-validated with no duplicate daily dates. No live orders.
+This materially limits the v6 whole-share cost replay; those figures remain provisional and cannot be called an executable historical account simulation. Prior quote-return diagnostics are a separate representation, also subject to their documented sampling and adjustment limitations.
 
-Next research gate: obtain/reconcile unadjusted prices, split/bonus factors, demerger/rights handling and dividend entitlements before removing retrospective action exclusions or claiming an executable account simulation. Reserve a genuinely unseen future period before another predictive claim. Added complexity alone is not the next step.
+## Remaining data requirements
 
-Reproduction: `python src/delivery_v6.py` for frozen-score replay (refuses overwrite), `python src/benchmark_v6.py` for benchmark, `python -m unittest discover -s tests -p test_delivery_v6.py`. Source protocol: [DELIVERY_V6.md](DELIVERY_V6.md). Exact scores, fee config, trades, action audit and ETF raw responses are preserved.
+Market gate is intentionally closed: full verified unadjusted execution prices; action factors, ex-dates and dividend payment dates; historical fee and settlement calendars. A complete adjustment history must extend through the 2026 vendor snapshot, not stop at the 2025 evaluation year. Announcement timestamps matter when decisions depend on advance action knowledge, whereas ex-date and payment-date evidence drive the accounting itself. We have not silently treated missing timestamps as proof that all historical action accounting is impossible.
 
-Sources: https://zerodha.com/charges/ ; https://support.zerodha.com/category/account-opening/resident-individual/ri-charges/articles/what-do-dp-charges-mean ; https://support.zerodha.com/category/account-opening/resident-individual/ri-charges/articles/stt-etfs .
+The public NSE raw-price samples establish a promising source for the next data-reconciliation step without requiring another model architecture. Preserve raw execution prices and separately construct causally adjusted signal features. Do not double-apply split entitlements to already adjusted prices. The next market strategy experiment stays gated until this is resolved; 2025 remains observed development data.
+
+Reproduce: `python -m unittest discover -s tests -p test_ledger_v7.py`; `python src/synthetic_v7.py` (refuses to overwrite completed controls); `python src/price_basis_probe_v7.py`. Full frozen scope: [BACKTEST_VALIDATION_V7.md](BACKTEST_VALIDATION_V7.md).
+
+Provider sources: [Kite chart adjustments](https://support.zerodha.com/category/trading-and-markets/charts-and-orders/charts/articles/kite-charts-not-matching-as-per-the-records-in-nse-or-bse), [Kite historical API adjustment explanation](https://kite.trade/forum/discussion/15971/getting-the-right-closing-prices-adjusted-for-corporate-actions). Exchange URLs and hashes are in `experiments/backtest_validation_v7/price_probe_manifest.json`.

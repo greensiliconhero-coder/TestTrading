@@ -1,0 +1,1398 @@
+{
+  "acceptance_checks": {
+    "null_ridge_correlation": true,
+    "null_ridge_selection": true,
+    "null_tree_correlation": true,
+    "null_tree_selection": true,
+    "planted_ridge_detected": true
+  },
+  "all_acceptance_checks_pass": true,
+  "code_sha256": "b9a33d31e03fd3ad873f87ca9a355c398bc60f38e527f9f898a1b02e2f4c07a2",
+  "config": {
+    "acceptance": {
+      "null_max_profitable_selected_test_fraction": 0.3,
+      "null_mean_absolute_signed_test_correlation_max": 0.05,
+      "planted_ridge_mean_test_correlation_min": 0.7
+    },
+    "deployment": "disabled",
+    "initial_capital": 50000,
+    "next_market_run_gate": "Require verified unadjusted prices, action factors and dividend payment timing; missing fields fail closed.",
+    "price_basis_required": "unadjusted",
+    "scope": "Engineering verification. Synthetic performance is not market profitability or validation of economic assumptions. Current fee schedule is reused for ledger arithmetic only. No new market selection or hyperparameter tuning.",
+    "settlement_lag_sessions": 1,
+    "supported_actions": [
+      "verified integer-share split or bonus",
+      "verified cash dividend with ex-session and payment-session"
+    ],
+    "synthetic_cost_bps": 20,
+    "synthetic_noise_sigma": 0.005,
+    "synthetic_rows": 6000,
+    "synthetic_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "synthetic_signal_coefficient": 0.01,
+    "synthetic_test_rows": 1200,
+    "synthetic_thresholds": [
+      0,
+      0.002,
+      0.004
+    ],
+    "synthetic_train_rows": 3600,
+    "synthetic_validation_rows": 1200,
+    "unsupported_actions": [
+      "rights",
+      "demerger",
+      "fractional entitlements without independently specified processing"
+    ],
+    "version": "backtest_validation_v7"
+  },
+  "input_hashes": [
+    {
+      "path": "data/backtest_validation_v7/planted_0.npz",
+      "sha256": "8585c2f02231522e4c3c64fcb95af016f4069eecfe74b4e0a8dc28e26c930e58"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_0.npz",
+      "sha256": "f8c613c9b6647e051014ef36f10e9f72a5d42ffa2c9e044e2c4c4b0e54334e36"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_1.npz",
+      "sha256": "c5709d02e68f93a4bb77c93e9fa9d46d6112b4df987bcce2bc7bf6d241ac4ac5"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_1.npz",
+      "sha256": "6c457174c0883335cd4d4d9098d7567539c4710fd687d3678fc8c28ea0533338"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_2.npz",
+      "sha256": "44caf2e4e2235dcf214e1c831e7a6f5cc7bf2788ee8b5e052a932f066d8118c7"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_2.npz",
+      "sha256": "00001f443592cb20fab1c19e27e169c8ff13185324c5d18fff7df8f6b934bfa3"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_3.npz",
+      "sha256": "17bd229006250d4208cd6347ab2cf0c2c925b6458087b733356f9165bca19359"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_3.npz",
+      "sha256": "8bfc647409fa539c0fc8a0e311fb43ac5f382596da76b345564c375e72465212"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_4.npz",
+      "sha256": "a9339f1c42ce018f6a1783b86e33803d2a57475045f7e5fddf7fd5b55b812cd8"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_4.npz",
+      "sha256": "a47a2ce7941a10c423ed192aaef4856cb86424586d7fc505a66587907002284d"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_5.npz",
+      "sha256": "75cb0101d0fa993a580035c43e9c5e5696a938a2c9bd6be3df141dd5cef5b020"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_5.npz",
+      "sha256": "a21081f09b9ec2ee5fd51ebe9a18d095f391191884bcf3015d1412df8e138757"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_6.npz",
+      "sha256": "031febc4f9131bee7cc9773bc35e306235c4d1046d3485fddc7beabe718d60ea"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_6.npz",
+      "sha256": "50c47d565351e67f36571d1a7b3a0b44656e0cc9131bb5b06f1e449c3471fba1"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_7.npz",
+      "sha256": "14a8739cc14804b09495081824df6d33e72bed3e26966bcb64b6459b76293309"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_7.npz",
+      "sha256": "e3c2ecb4224b6170bda68a80a98718c7fbdb27eca0cd153c0eb2cb8dc2e180e4"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_8.npz",
+      "sha256": "19ec2683920ec5887b261601fdf9fbb39b3a90fed74338ad866794c55cc9e4a4"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_8.npz",
+      "sha256": "6c2f66a46d2a93844b5bab78ec924519cb983d0187a4cf55ef3e213838017f82"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_9.npz",
+      "sha256": "d7e314f325ea02a649bbd15bb0357f208e62274a86ee0610f07ff176447711b9"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_9.npz",
+      "sha256": "f5015bb525bfe830d28f95f79f58d475b7d3bc0afbd33100c4f9c0cbe3f163bd"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_10.npz",
+      "sha256": "813a5aa87295d956d1dc9b180060acab365349fa2b16c95c0354869dcab08685"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_10.npz",
+      "sha256": "42c34802de08ff189c11346bd2d3f858ab746ff55b5bf3c3914844ff6bcaa650"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_11.npz",
+      "sha256": "7d7f5cad89c3b919af0f153b644eabd65f20c92c535038efc88d821cd09ed5b0"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_11.npz",
+      "sha256": "bd62f1ee1a81a2510688c0314570aba9d832d31d8d2515fa895d77f768e911c4"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_12.npz",
+      "sha256": "436fab1c96a928f0cbf9c2ad97a3460fd55b3cfa95e51b9c4c9138e642fb0994"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_12.npz",
+      "sha256": "1b3e28765f23a6eb88e7aa4ccfc429d068ca11b8d86986cf01577012010b81ed"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_13.npz",
+      "sha256": "f0d86a560130ca72b886dbe593f31c17e1404ad3515da6afe07203ce3a191a09"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_13.npz",
+      "sha256": "98e2ea5086ca7931f97638d7530bec425376ba7c5492a9cbd5b38afacc2dc552"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_14.npz",
+      "sha256": "aae94117c749664a21de945fa5a2ba21fc74f98b2c9d91d9548e59fd7055dee7"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_14.npz",
+      "sha256": "1697a437ed58ae789294947ff8a8c1a6f00abcf9de39a82866fe7747a8f258cc"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_15.npz",
+      "sha256": "e4eabc42b59880f0a829bb0c5a3400255d9a31e5734140dd0df36acc9d679095"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_15.npz",
+      "sha256": "3ac8ad05d7219a8d1db9c6b08f5da896a565dbe53e41cf6e5f914ad0055ae9b4"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_16.npz",
+      "sha256": "e4e4374797f67b49da95256ace1fad0bda3a87baf3ff8e9c9f1ba312012892fb"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_16.npz",
+      "sha256": "0a4cb7ceb351b468dcd0ed38bee7aa0c9831957d51d3a7763d5299d9185c1aed"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_17.npz",
+      "sha256": "10640b0128b5c40523f18554a120f0119b3b144312df707a8e2326795f8679e2"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_17.npz",
+      "sha256": "019954a213c136a2a517a9e8c5a2acc43ee65c437739f9af76ff24013fbf6075"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_18.npz",
+      "sha256": "397547b9e9151418c296a21f01e83750f097dcebfa4b8966d20e79cdfdafea30"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_18.npz",
+      "sha256": "976975d630307f817dc1d0bf6c68e36f55526c78c02894e24d396256e04f2180"
+    },
+    {
+      "path": "data/backtest_validation_v7/planted_19.npz",
+      "sha256": "68bf7296080bcd49f772324efe17842d43e867704cf39bed678df80e2717d609"
+    },
+    {
+      "path": "data/backtest_validation_v7/null_19.npz",
+      "sha256": "8ee036cdf5a6f2c7dbc17ef18738af3d9c33bd5233c33278ce41018fa79c1175"
+    }
+  ],
+  "meaning": "Necessary synthetic component validation only. No evidence of a profitable market strategy or proof that all forms of leakage/overfitting are absent.",
+  "runs": [
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "28d25415f66a6c548d8e0505bf09afc74117f75d9efdc9f4ac0d5125f1c3dd7f",
+      "predictions_sha256": "8ada4720044467515069d01e662e1cf647edd28f21b723d9f9750a29487dc65e",
+      "seed": 0,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8903775482527182,
+      "test_stats": {
+        "mean_net_return": 0.008976477070627363,
+        "profitable_trades": 383,
+        "trades": 419
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "d7b8264eeb5fadd6ba8647d68af45a72c6abf717b6731c7c92d01a14a64306fa",
+      "predictions_sha256": "70e7fbbcfebed8397371991108259a4010a86ea5cf15ee3b9f1a8005aef02e85",
+      "seed": 0,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8849549724174409,
+      "test_stats": {
+        "mean_net_return": 0.009052291861298986,
+        "profitable_trades": 380,
+        "trades": 413
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "ed0d89bb52f9da150f9cc0335a3fc26d5ff164bc64b49cb1078cf197c3522e62",
+      "predictions_sha256": "44c46c69287b472ea076bbca136e3a575fa6b2559fa6e1d8aa0d6e80a6a7f8a2",
+      "seed": 0,
+      "selected_threshold": null,
+      "test_correlation": -0.04747447393329089,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "92826d9cca5714ea70c91e5ba4fd0d7bed7c5e6995d4a5a834f6c0384476fd8b",
+      "predictions_sha256": "a65673d2345f72ca1bd3733c1e73521a228c82556e4f1393c36db515f4537aa1",
+      "seed": 0,
+      "selected_threshold": null,
+      "test_correlation": -0.027330664312924174,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "fa55cac146cd1b13335fb09443dee9d06275dedcdce0ea6c77fd1dcab9483ca7",
+      "predictions_sha256": "2f8430ab9d57c405219b1c607194b5157ac0a603aa218de1d12e503faa5cb594",
+      "seed": 1,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.9065536880123845,
+      "test_stats": {
+        "mean_net_return": 0.008898544930875971,
+        "profitable_trades": 389,
+        "trades": 430
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "76f9d240a3fa1d313bd60f5bd7ad747d7f6017be85671e5d99deb3437778c6e1",
+      "predictions_sha256": "0d5532431b1c6b8988b19986b4871282b9287c079331241971ed0ceda74be6cf",
+      "seed": 1,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8998212709646497,
+      "test_stats": {
+        "mean_net_return": 0.008851843909454864,
+        "profitable_trades": 389,
+        "trades": 432
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "c8bbb34a8e36db3f09895ab56fecf71542cbc022aa3e290841ad0caf10d7d772",
+      "predictions_sha256": "1849b0ab8dac8b70a00fff0bc3411c4ca8a94c6fc2514e40f240a38f6333aeff",
+      "seed": 1,
+      "selected_threshold": null,
+      "test_correlation": 0.045153274968052576,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "cbf57c7d913eb6bd7c379604d77aa68709b2cddcd36b705cd43bf704c000b281",
+      "predictions_sha256": "865e221460ec23d5444b5685db1db2f9780c70463a513d3d7795e6a059c54f35",
+      "seed": 1,
+      "selected_threshold": null,
+      "test_correlation": 0.08455370416125867,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "37d36bebfe8b355e566a7db0a499ddbf2b938d8d0a10d2ac3962b53bf1eafac2",
+      "predictions_sha256": "4e297061fdbebcfb79f2e1f6b25bb18738ff63e67be2dd36b0bd7d459e16a53a",
+      "seed": 2,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8917188116943574,
+      "test_stats": {
+        "mean_net_return": 0.008731282072599685,
+        "profitable_trades": 371,
+        "trades": 400
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "0457b988fb3d89fff4763c2dde76f64588340f8e4103bc658e0013cae5c59ce6",
+      "predictions_sha256": "5cc4ee7b0cde2d37cd4f59d3cd433a822e8e15523f99776f8de3cd0972d315d6",
+      "seed": 2,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8889675068018089,
+      "test_stats": {
+        "mean_net_return": 0.008814822866419398,
+        "profitable_trades": 366,
+        "trades": 392
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "b202cd4fe5c8b97ed0336ce0bec49cb784c6125a6e69564f222bf3786a81a7ec",
+      "predictions_sha256": "5546aff426139b479a9f811819bebd9ec298198995d4499f3fe707e2000b892a",
+      "seed": 2,
+      "selected_threshold": null,
+      "test_correlation": 0.008075539647519763,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "df55e2aaeb2dfe79281bca3558524077c0b3b3d9404b0098f9efb48b3be6bd58",
+      "predictions_sha256": "b3a25d059b06008b7bdb3524d21406f7c4c2ebf3b05d767fd1a92d12b74c532f",
+      "seed": 2,
+      "selected_threshold": null,
+      "test_correlation": -0.01107118204964087,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "08a7d762d0b406de57df54bf48e0b9424a8fd10096117be19a2c87a063828fa8",
+      "predictions_sha256": "2b0b6498be27277d239fef1c9ec8857ab711c30402e4641015c161bfbbe5dd8f",
+      "seed": 3,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.890290136906778,
+      "test_stats": {
+        "mean_net_return": 0.008737473787849845,
+        "profitable_trades": 338,
+        "trades": 379
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "e09a7313264cca809193d0461b8eeb7dbf4f53f5c37b79cd3e9b462b6191e1db",
+      "predictions_sha256": "3f7aedf58f6b6807a4046142fe5d5f465497f533ef30c7b7474bdf213374f844",
+      "seed": 3,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8817398747289169,
+      "test_stats": {
+        "mean_net_return": 0.008950485515794467,
+        "profitable_trades": 329,
+        "trades": 365
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "f7e9e9ecd5b4c013b4ada9aaa61bb6d935556e0a292fdfd7fabaadecafe3eadb",
+      "predictions_sha256": "bff35ac810a6891a36d17bed9e4ca3b54e39f0cb2c6982d5224efdb5530fce0c",
+      "seed": 3,
+      "selected_threshold": null,
+      "test_correlation": 0.009619828302958051,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "04f48719235300fae850d93e0a4d1f77386859f42dc38468fb7b81418d6f8eee",
+      "predictions_sha256": "c8b6b2e7621bb4866f281702206e960a69883359d6d5acb9c09364e9469bebbe",
+      "seed": 3,
+      "selected_threshold": null,
+      "test_correlation": 0.03873465305526332,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "a33821a6c6b27abe99febfc9006eed59bf6bbffa4b508e3150def795c93fa559",
+      "predictions_sha256": "438e3fbb92c66d086ff1a182bab32b57b96d4ae090eeb3edbba60a1e0abc1685",
+      "seed": 4,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8998599103347741,
+      "test_stats": {
+        "mean_net_return": 0.00890922417931436,
+        "profitable_trades": 410,
+        "trades": 460
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "0617bc5c3e6201c9d9f1bd1a35bde63f97b8c1150c4fbb954b3baa2bfe8afa30",
+      "predictions_sha256": "eaac3e0cf9f2a5947f285ebe002dbd1fdbf5b8d7d88b2efa72353c346ff97cf7",
+      "seed": 4,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8939038910394069,
+      "test_stats": {
+        "mean_net_return": 0.008905804525075339,
+        "profitable_trades": 408,
+        "trades": 458
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "f8ba4ed2af38a4b41fc2e8db49cdf7ba130f648a16b3a5ce8b31f062392aaea4",
+      "predictions_sha256": "a56c39cb261574fa50381e9942c143957715a7d2315c9711a8b710c96f8523e6",
+      "seed": 4,
+      "selected_threshold": null,
+      "test_correlation": 0.018524404188155073,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "85f9a8b400501a71f5822c8e39b23ba71334869db6df328f182b28a99e2e89d1",
+      "predictions_sha256": "208d5b5e1fa80015d081aaf7f8a796edfdb7333fa654f7bc58728aedb8e2a11b",
+      "seed": 4,
+      "selected_threshold": null,
+      "test_correlation": 0.003459072940213728,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "859b389d93fb0ca1a5e8c9d508599ef673740297cc07e4ed8837cc933cfea4e6",
+      "predictions_sha256": "8af7339b629d493529bcd52e09074557d58c939f70fd924316dc13b904a1f210",
+      "seed": 5,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.9011531639424003,
+      "test_stats": {
+        "mean_net_return": 0.008913171989138742,
+        "profitable_trades": 378,
+        "trades": 419
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "10fc437c90e15b83003177068985308f1d59649af17bb4277920999ceacd5b5a",
+      "predictions_sha256": "9b87d7853c10fa8a2000ba68424d2081b9b4d167f62e33b15366432b591b0957",
+      "seed": 5,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8951870982455077,
+      "test_stats": {
+        "mean_net_return": 0.00893838744185284,
+        "profitable_trades": 375,
+        "trades": 416
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "083aaaaeb5cc4c988f48c01cb190809271e2685b5a8a1aca4bb29af75d7ce026",
+      "predictions_sha256": "66cc3c1c6ffc14be17fa5647fa450ebcc4064a83384f382ba1b9525c0658fc11",
+      "seed": 5,
+      "selected_threshold": null,
+      "test_correlation": 0.0230891614633841,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "b4e2436dd62d0a64a103b45de8d61cd35c6524ddec64ef573cd4d88e0cc86a89",
+      "predictions_sha256": "0706b54753c0d3b857c970d71e849d47a320d21186658f04341af4294f5817b4",
+      "seed": 5,
+      "selected_threshold": 0.002,
+      "test_correlation": -0.022612767899330036,
+      "test_stats": {
+        "mean_net_return": -0.00017483233938247154,
+        "profitable_trades": 2,
+        "trades": 3
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "624736be3f5a0c3f9fdd2a8089cefa301bab0147afe62ded9938a030254d13b8",
+      "predictions_sha256": "6a3e47fd6f20403d04cf5294b155680d347f240c01de96f1948f5a719b997f15",
+      "seed": 6,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8997332356929498,
+      "test_stats": {
+        "mean_net_return": 0.009155425466599046,
+        "profitable_trades": 387,
+        "trades": 419
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "2e7b46a363b5c4a60e5110c65cdc83616039c3d593785d138ddefc18665be3c2",
+      "predictions_sha256": "bbf2c97b759d81fd97941991a1ae2cac389592256fbff8cbd3e65b13a9ed6273",
+      "seed": 6,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8950063895946541,
+      "test_stats": {
+        "mean_net_return": 0.009473273802202269,
+        "profitable_trades": 365,
+        "trades": 394
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "87bdaf04696da03eab4596982c717d26a59ef0f874afec197a8a6265b9aaaccd",
+      "predictions_sha256": "0eb4701d913f056964a5bfd5dc698a8ed2b6c589f0eff0201cd016873cb31cd2",
+      "seed": 6,
+      "selected_threshold": null,
+      "test_correlation": 0.010420119256409871,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "d7fe256c59fe30dc6128e9d24ddcccc17d5dba6965c966c79300a4d0b20e955e",
+      "predictions_sha256": "d845c1837d93a780f858606b3577976cee7f06803692d4d5be0205ca9ebf1680",
+      "seed": 6,
+      "selected_threshold": null,
+      "test_correlation": 0.0454848269523427,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "c70d458285ec35314f340c38fdb1889a205e7c3ace4dc1b1adbbdf589a98aad4",
+      "predictions_sha256": "20dbdfdd5f6a6b1fd735dbb422281faea06b1be22ad851222bf0e1ff4edf6efb",
+      "seed": 7,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8890214346881077,
+      "test_stats": {
+        "mean_net_return": 0.009072791110877255,
+        "profitable_trades": 375,
+        "trades": 410
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "0167a48b87cdfe777213fcfcebab4e6cf018877bc41934ea2763d1d0a4fa1735",
+      "predictions_sha256": "c94bc0be4657df5bd4ecdc6a22f30e3faf1b9b95be4d851012d3ba615c0d2ad3",
+      "seed": 7,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8839238216589741,
+      "test_stats": {
+        "mean_net_return": 0.009172671355616864,
+        "profitable_trades": 364,
+        "trades": 398
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "36eeebe6fa1bb91bcd0d5527561f65685686aef9e7706d10dbf314f86fe2171e",
+      "predictions_sha256": "63606d8597cdaaf6c0581c537caa440599a2412049db470e0416011b6f19ae81",
+      "seed": 7,
+      "selected_threshold": null,
+      "test_correlation": -0.026645719825751465,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "402f9c7275d4596f5b4f520f481266e81a6b68bc34ac41bc77fd47b7fcde6682",
+      "predictions_sha256": "2f55917c4e302da09cb471db76e964d3fa988516f31272aec3e154963fd22138",
+      "seed": 7,
+      "selected_threshold": 0.002,
+      "test_correlation": -0.03893682531301135,
+      "test_stats": {
+        "mean_net_return": -0.0041527243949012116,
+        "profitable_trades": 1,
+        "trades": 5
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "60925d896c154fd601ecb26c1bd1462df6f7a249bb183378d8a77da6238fc101",
+      "predictions_sha256": "8a8de121af721abb69ac1c457804a86a272050028b4cd39616ecc9c0ffffeaf3",
+      "seed": 8,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8878931640403095,
+      "test_stats": {
+        "mean_net_return": 0.008484499454375485,
+        "profitable_trades": 358,
+        "trades": 409
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "e2dd378b9f248f10247b5fa5ab17f6a54659640d69b6a835525ad4770be7ade9",
+      "predictions_sha256": "573dd1a1472b790b411f97817c3d51c748e53779dd36f75249a10e7b59ba7835",
+      "seed": 8,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8845647712783319,
+      "test_stats": {
+        "mean_net_return": 0.008392408152103296,
+        "profitable_trades": 358,
+        "trades": 412
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "c416c58e1899b280a9a04e9dcd63ad05ae0d4056225c119a5a548c5004aa769f",
+      "predictions_sha256": "f31c00459cd2be6c52a40597ad39c12ad70d0a8f622783627ddbc44354351aee",
+      "seed": 8,
+      "selected_threshold": null,
+      "test_correlation": 0.033797042945181786,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "0ecc71d3cccd9476f402feaabfdf53acab8ec52bacdf3f303b9bf95621fd8a3f",
+      "predictions_sha256": "50db1385adff1e4d670cbb873e9c8637b5d6d5d5a6f56c095b2288125bf1c90d",
+      "seed": 8,
+      "selected_threshold": 0.002,
+      "test_correlation": 0.018686019275368223,
+      "test_stats": {
+        "mean_net_return": -0.0004623261558331035,
+        "profitable_trades": 1,
+        "trades": 3
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "037d77a3c07e35125a78f8d61909883b2ce32e7e656bcc62577b169d3cc00776",
+      "predictions_sha256": "14da298fa7ff234add84e4f1e85c9e12ed01d56926d0833d0e682a90bb9b47b5",
+      "seed": 9,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.9016560794296876,
+      "test_stats": {
+        "mean_net_return": 0.009111483848681238,
+        "profitable_trades": 385,
+        "trades": 415
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "813b315d50c002db9be8ecb922e068c1632753c3fd191c1f18d741f0af277359",
+      "predictions_sha256": "7edca9404270e71e458f4a06e533e4ac7e54d44c5c12a19c8ee82c4972481ae9",
+      "seed": 9,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8965913337856679,
+      "test_stats": {
+        "mean_net_return": 0.008946883704413926,
+        "profitable_trades": 396,
+        "trades": 428
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "4a1b0b1c766b255358b244f8071c32b9b47f61e8644082ad88669f5d31a29487",
+      "predictions_sha256": "baa5406162e61b44d5c191cfb27a6edff457c3510ef8b167a4ad77957c88033b",
+      "seed": 9,
+      "selected_threshold": null,
+      "test_correlation": -0.00887990879149657,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "152cf438f16d1cfdbaa5a4e7880d045300dcd1c59275ee2a0938f74a7b036b25",
+      "predictions_sha256": "1a4c1a2894f8cef8d85810b78dd9efc3e5cbdfe64545931e4809ef5bb61bd776",
+      "seed": 9,
+      "selected_threshold": null,
+      "test_correlation": 0.03522110537219693,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "6addd7f8ce831f4c6779a52e3398270163670726bc874bea07877a101fb9769c",
+      "predictions_sha256": "fd7c90f42f81457e202a175a08887473939b35f2e0b5e7a79757667ac38f92d5",
+      "seed": 10,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8925521947102315,
+      "test_stats": {
+        "mean_net_return": 0.008711640037209643,
+        "profitable_trades": 377,
+        "trades": 425
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "a86235178ef30e0f9ed40cea5820a07c1e6fbc5ad8ec7cf46a3fa43246103006",
+      "predictions_sha256": "7486616d76af4397fea0520227b411ac3eb58976c33ee9a0e973c13b056b3b9d",
+      "seed": 10,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8843045998712217,
+      "test_stats": {
+        "mean_net_return": 0.008219081664306904,
+        "profitable_trades": 382,
+        "trades": 444
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "50ef082a46f9a88b76262a2d011e26fd193cc37f9d11bc6b0e6f74f4a9d4fa69",
+      "predictions_sha256": "c2c138d91dfcd787b021c2936943447b1ca42ba11184188d636b3f443077ea6c",
+      "seed": 10,
+      "selected_threshold": null,
+      "test_correlation": -0.0069077118364301105,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "370796b73310b6da5a79e2cf88dd952d824d83b28a95b1c689700adaf46cbd84",
+      "predictions_sha256": "f72550c2de10ce47ff6db1f62ec9ee762a6569960b654fdaa63175250bae9324",
+      "seed": 10,
+      "selected_threshold": null,
+      "test_correlation": -0.06191181587969368,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "d119505acc8662d519ea9d3f07b1696eab2277f534f61495e07d2bdb7d20a9fc",
+      "predictions_sha256": "a12216b8a6fad490ddab4a6ccacca94921e526cc4d9550da7657d4f80ff64304",
+      "seed": 11,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8965131348250689,
+      "test_stats": {
+        "mean_net_return": 0.008867452962938543,
+        "profitable_trades": 341,
+        "trades": 383
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "431f48a6753c38b70d89a20a0a14d8f0ac916c6150b8f49ab384861b27bd3697",
+      "predictions_sha256": "07b5dea693614439e84c6f5d062e845dd05af4431421a348f45a670e92f60ec2",
+      "seed": 11,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8894779482138843,
+      "test_stats": {
+        "mean_net_return": 0.008823383797648111,
+        "profitable_trades": 334,
+        "trades": 380
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "9faa93699649e951357415c0a66b197ab80c8d381bb20ec02eb889d929fc0854",
+      "predictions_sha256": "2e9a74131d805557733f0911fdcb32a68a2f1d225b736bb71141a747e5b08566",
+      "seed": 11,
+      "selected_threshold": null,
+      "test_correlation": -0.036213014377547426,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "505fd79f02b1c7af76213894545727393ab6df0a0cb6f50341ca33a600cfa411",
+      "predictions_sha256": "0abaef583e888b1b49c0c81b307de800ffc06f51d0a6727db181c230851e4e3a",
+      "seed": 11,
+      "selected_threshold": null,
+      "test_correlation": -0.044555885924657,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "d97143e00609de19d1a12367a4c59d8cc3fa8cc762e166da487a6e0e913c4dd1",
+      "predictions_sha256": "6610bd0994dc7b3509c6b1d2256f26c962933b945bc45db99daa8fb9f76d5a95",
+      "seed": 12,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8914394320662002,
+      "test_stats": {
+        "mean_net_return": 0.008656115883140178,
+        "profitable_trades": 373,
+        "trades": 422
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "57e617a83969dad118dc2e1ff47dabf793d38b72cd0c01f5ccb5eee1d8d4e562",
+      "predictions_sha256": "429019d2b356d01e07bd1737a4ca5374f87670f7a1e277c5544a561cf41d6c0d",
+      "seed": 12,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8844397974970658,
+      "test_stats": {
+        "mean_net_return": 0.008476713808886625,
+        "profitable_trades": 377,
+        "trades": 431
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "412d68dc607d3ab772054f309a5af9c52bcd6f8cfdbd10819b4f5716867e725e",
+      "predictions_sha256": "f4ea000e054524a03e64fa82a550e2b6da8eb7ea24a7f9bbe7e42eddc22f2f2a",
+      "seed": 12,
+      "selected_threshold": null,
+      "test_correlation": 0.010990279041458533,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "432bcf801d469fe6cbe774e81fab91a9c8a946386c983190b723f751f18d8329",
+      "predictions_sha256": "d07ec5381ba85582041243b2c9d083583aed0604bc38f7ff86728b6e2402a3e4",
+      "seed": 12,
+      "selected_threshold": 0.002,
+      "test_correlation": -0.007813969400827464,
+      "test_stats": {
+        "mean_net_return": 0.0002143014011034275,
+        "profitable_trades": 8,
+        "trades": 14
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "216cf76361dec90153d6fd78e8adf36415a13576cb14b5787fff42b63a456c79",
+      "predictions_sha256": "161ccbecef7fb8979ee6bafd5f96e480235063077afcd4bca0ce6d6b45184663",
+      "seed": 13,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8919826056271032,
+      "test_stats": {
+        "mean_net_return": 0.008842396078292653,
+        "profitable_trades": 384,
+        "trades": 427
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "47ae56440a4eaa08e33fe420f57019166ae8f6af5340979853438397a406a3fd",
+      "predictions_sha256": "464c12b8b481f04213772547e4876f8c0f7285bf3bfe21923a54b5917f856a6f",
+      "seed": 13,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.884399794842026,
+      "test_stats": {
+        "mean_net_return": 0.008901634029928539,
+        "profitable_trades": 382,
+        "trades": 423
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "262174da184161e8cf136ac92a61289a5a5f1140eedb55e3b881fc00b3d8e461",
+      "predictions_sha256": "74bc2f09072c26a73815fe69d0bb5b073748b6ebdf553f3355e8d466d08e9c32",
+      "seed": 13,
+      "selected_threshold": null,
+      "test_correlation": -0.021191181445621668,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "387b8a51074503d61b9afdc58618152cfbb0bb3745430eb6d3e1c75b8e13c09e",
+      "predictions_sha256": "2a95566e47c3a41c17e26922ceb70d4992f2e349615dcbf63c5b36b95435b6d5",
+      "seed": 13,
+      "selected_threshold": 0.002,
+      "test_correlation": -0.014517943162878601,
+      "test_stats": {
+        "mean_net_return": 0.0011689824975562643,
+        "profitable_trades": 2,
+        "trades": 3
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "44b922aa8f9c33844123a9213078a239b24212b65f41882b65e0b1470853a0d4",
+      "predictions_sha256": "f825b3b852af82c2bd6e48bfc81a2fbef7a4ff9699841431ab7aeec216db1595",
+      "seed": 14,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8910772545468154,
+      "test_stats": {
+        "mean_net_return": 0.008673241016072732,
+        "profitable_trades": 368,
+        "trades": 410
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "90a624754b732c36efce7385c12f70f1821f12f5899e744ec0d5e6d32c57763e",
+      "predictions_sha256": "62cbca7f8fd387efe84a87b02b5952479330ea8c3fb1c28c0acbe6d08fd4e253",
+      "seed": 14,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8857090188172906,
+      "test_stats": {
+        "mean_net_return": 0.008867706717353617,
+        "profitable_trades": 362,
+        "trades": 398
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "cbc5b837328ad05ab263d313e05bec589a0111c0ce06bd062aa512f8c9f94725",
+      "predictions_sha256": "2214846f0108f5b5d1c8bfdaef17390758dbd0f0f9c6f7e009cdeec43cbe53b8",
+      "seed": 14,
+      "selected_threshold": null,
+      "test_correlation": 0.02859691298393637,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "bc392134911ff9b26dc7b6157b37fbd45fce2b877a2371151aa7232fcf6f41eb",
+      "predictions_sha256": "0c4a989a913e485eccf9a45aa71155b72ce021da39bac467b1b84e40a4998551",
+      "seed": 14,
+      "selected_threshold": null,
+      "test_correlation": 0.004627337845826924,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "dff8b0dbcbc69f3f2f74ffabf8b3c82b9fdaa2b8ddf912ff1c3d5de7bd0fe85e",
+      "predictions_sha256": "e28ec62d8e2db4d68e85a68792f4b53ceacc7347ac962c5796fd141b8449ddae",
+      "seed": 15,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8977318888500904,
+      "test_stats": {
+        "mean_net_return": 0.008874993343083965,
+        "profitable_trades": 375,
+        "trades": 420
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "b4c8753da026f56f409df3089de3a9d494918a87992178200eb197749b8ca1c7",
+      "predictions_sha256": "c9641a9689ae113c784bb51d89fcd0d9d797f6d91f0da986424b617b2b104c80",
+      "seed": 15,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8904807854287118,
+      "test_stats": {
+        "mean_net_return": 0.008956099384135956,
+        "profitable_trades": 370,
+        "trades": 413
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "675915bd24871236eb51b9d14d6686a4735ddc8603025aa9e2b9ffa20f6442d7",
+      "predictions_sha256": "e3e7f546a9748ca62eb06029eb1cfe89e67fe53a02a017e813c3a186d54dd804",
+      "seed": 15,
+      "selected_threshold": null,
+      "test_correlation": -0.05306985235649402,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "f77ce27f5a2e3e9ed2cdf85c3d05f6dad1d610d4a9a588c58e711e235820d12e",
+      "predictions_sha256": "c5695216064976964728fda4488043e54ad84012e776e92c810b69d5907b4e6e",
+      "seed": 15,
+      "selected_threshold": null,
+      "test_correlation": 0.008348348198097894,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "6d88ee63db6ee8497d8b35fce2fabf25caa4f4502f54be040e111a8a2e3a5808",
+      "predictions_sha256": "70f8cc9c1e5f4b9485dc4ccb60eed5066d65dc8a68ede43ec5b53da36eaac0d2",
+      "seed": 16,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8904094603775868,
+      "test_stats": {
+        "mean_net_return": 0.009132548748869774,
+        "profitable_trades": 363,
+        "trades": 401
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "047f1bfcb419fbcb59892fd14d753de85059f1d79b53eedf7ae734f3d27fd9b5",
+      "predictions_sha256": "45f499e25e74067d1ca4aeb98b8688a847fb92706c519d7d5539adcf4f88a313",
+      "seed": 16,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8847184258303545,
+      "test_stats": {
+        "mean_net_return": 0.008815772771768742,
+        "profitable_trades": 376,
+        "trades": 421
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "cf10ed1255d9fd985b079eafddd46a21e5250a4ccb3d007f511374382f6276a1",
+      "predictions_sha256": "a3cb32b8325db5ae606741a856ebcafc95b76395918ac391275e499f46d5bf81",
+      "seed": 16,
+      "selected_threshold": null,
+      "test_correlation": -0.008297932283695304,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "b4e1da3f34778e0b3ce7ea832060ddcb7acbfde2d58e6255faf4bad99a48a2a0",
+      "predictions_sha256": "37e3b9461882ad1f23162b57ca4af3ebbcc56bda791f50651d072c636e913072",
+      "seed": 16,
+      "selected_threshold": null,
+      "test_correlation": -0.008963157896532004,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "eb45ebf9e82bdcdf5356db8a4e1b893655e60201ce31737f2c6229a3dda341d3",
+      "predictions_sha256": "4b50c95b146b2d8747afb82a53cb89987759203830e08a6961a31537f2f4dc83",
+      "seed": 17,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8947341642454786,
+      "test_stats": {
+        "mean_net_return": 0.008584682402273672,
+        "profitable_trades": 338,
+        "trades": 387
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "8c9cb1215ceb020ce31894ec1a46dd5976ef2eb87db76a2a6afb66b968e36cb9",
+      "predictions_sha256": "1a42b1c828e3740e8a1925dd6f4950e07a62c66e3ad5902ab92bcffb502c3951",
+      "seed": 17,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8909596894723107,
+      "test_stats": {
+        "mean_net_return": 0.008507273943554335,
+        "profitable_trades": 346,
+        "trades": 393
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "060cb3a6e26ac65897ec703f212a2b4c448ae33e5bba87ab7f8a3328a911e79f",
+      "predictions_sha256": "b905228551326c7a61c793577945efee06af0beda44526b9fbf8ea8b9aa0451b",
+      "seed": 17,
+      "selected_threshold": null,
+      "test_correlation": 0.035323633157049866,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "a3dfe1a2865f1c3d3a23d407da2400d5abf5aeb78c0f561c2c9633912a28fec5",
+      "predictions_sha256": "b71c8a0cd1ae93b8c2f67b06a1d2d42f9dcea9d0548cc64b2b56080952dcd308",
+      "seed": 17,
+      "selected_threshold": null,
+      "test_correlation": 0.055658156793322644,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "a2768aba10e497ecea23001b502867a1544105b1781089aed45bcf5a9249e8c2",
+      "predictions_sha256": "86a445662dec1d2411195f2c3106a02d6e46d3ac1c0630e0799a85df0e3783ca",
+      "seed": 18,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8916887571263177,
+      "test_stats": {
+        "mean_net_return": 0.007668317474015195,
+        "profitable_trades": 351,
+        "trades": 410
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "a1cb6086ae7395824a56b946c31209e1200010ca1f7ff00e4f38060fb1a07b6c",
+      "predictions_sha256": "6db17694ff28a5e127f3107a35ccd6db0e8fab8d01fd831a93233239fb7e378a",
+      "seed": 18,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.887052034252738,
+      "test_stats": {
+        "mean_net_return": 0.007812678502232082,
+        "profitable_trades": 353,
+        "trades": 406
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "4bea50055538625a7ad077b8f75c5139f8d48aecbf19d91b5d348f1aad9ec377",
+      "predictions_sha256": "74d09ffffae17e540302ec781c1142e1126dc075a62fd206044c1198cc74216f",
+      "seed": 18,
+      "selected_threshold": null,
+      "test_correlation": -0.06433933268307122,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "8352ee8d63bf834319d96f7cce7f723ec168793493f52fec6219d587f7ec6bf8",
+      "predictions_sha256": "9648d4877e3a259f9f7386bf2d597dbf9615eb871eccc9d4ebd96faff7366f8b",
+      "seed": 18,
+      "selected_threshold": 0.002,
+      "test_correlation": 0.0203874116775884,
+      "test_stats": {
+        "mean_net_return": -0.0002138242789456882,
+        "profitable_trades": 2,
+        "trades": 5
+      }
+    },
+    {
+      "control": "planted",
+      "model": "ridge",
+      "model_sha256": "7864c9d0f4bce1aacb40f8fc4b06a09a8290630c84741ae3d952d33a4b4e706f",
+      "predictions_sha256": "e4ea25fdda9bb3071cb304a18187660d4854bea539093fdb3554e1acb9b6200f",
+      "seed": 19,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8969681899538944,
+      "test_stats": {
+        "mean_net_return": 0.009101624583581885,
+        "profitable_trades": 360,
+        "trades": 391
+      }
+    },
+    {
+      "control": "planted",
+      "model": "tree",
+      "model_sha256": "8a4e073c4c7627642593c15da13ac4550d361bbca36a6752eb1a61c76712042e",
+      "predictions_sha256": "22b3917c47e007e3cede35c4bbc65aefa991ed5347a3171f6b588f8479b69ec4",
+      "seed": 19,
+      "selected_threshold": 0.004,
+      "test_correlation": 0.8885148666854568,
+      "test_stats": {
+        "mean_net_return": 0.008930646251269672,
+        "profitable_trades": 371,
+        "trades": 403
+      }
+    },
+    {
+      "control": "null",
+      "model": "ridge",
+      "model_sha256": "ad8fe52a67c50c01d09f267d2fd116e75348100a452699303324268bdbb575c4",
+      "predictions_sha256": "317cc01dbd97642a0250219cefb428a44bf517414fb2a9b2ea0f6c11c9890090",
+      "seed": 19,
+      "selected_threshold": null,
+      "test_correlation": -0.014103254420010706,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    },
+    {
+      "control": "null",
+      "model": "tree",
+      "model_sha256": "fdee026175c6ba68cd23d342cb781985e099b43b451687d75005a335bfc2d75e",
+      "predictions_sha256": "f2acb212596000792f3a61befedaf9ca66e9d6021fe6351c84029d553e41ca58",
+      "seed": 19,
+      "selected_threshold": null,
+      "test_correlation": -0.006963731423560959,
+      "test_stats": {
+        "mean_net_return": null,
+        "profitable_trades": 0,
+        "trades": 0
+      }
+    }
+  ],
+  "runtime": {
+    "numpy": "1.26.4",
+    "python": "3.10.8"
+  },
+  "summary": {
+    "null_ridge": {
+      "max_test_correlation": 0.045153274968052576,
+      "mean_absolute_test_correlation": 0.025535628895375768,
+      "mean_test_correlation": -0.00317660929996517,
+      "min_test_correlation": -0.06433933268307122,
+      "positive_selected_test_runs": 0,
+      "runs": 20,
+      "validation_selected_runs": 0
+    },
+    "null_tree": {
+      "max_test_correlation": 0.08455370416125867,
+      "mean_absolute_test_correlation": 0.027991928976726782,
+      "mean_test_correlation": 0.0035241346504211644,
+      "min_test_correlation": -0.06191181587969368,
+      "positive_selected_test_runs": 2,
+      "runs": 20,
+      "validation_selected_runs": 6
+    },
+    "planted_ridge": {
+      "max_test_correlation": 0.9065536880123845,
+      "mean_absolute_test_correlation": 0.8946677127661626,
+      "mean_test_correlation": 0.8946677127661626,
+      "min_test_correlation": 0.8878931640403095,
+      "positive_selected_test_runs": 20,
+      "runs": 20,
+      "validation_selected_runs": 20
+    },
+    "planted_tree": {
+      "max_test_correlation": 0.8998212709646497,
+      "mean_absolute_test_correlation": 0.888735894571321,
+      "mean_test_correlation": 0.888735894571321,
+      "min_test_correlation": 0.8817398747289169,
+      "positive_selected_test_runs": 20,
+      "runs": 20,
+      "validation_selected_runs": 20
+    }
+  },
+  "test_rows": 1200,
+  "train_rows_after_purge": 3599,
+  "validation_rows_after_purge": 1199
+}

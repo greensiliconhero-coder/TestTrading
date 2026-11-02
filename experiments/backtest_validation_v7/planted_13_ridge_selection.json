@@ -1,0 +1,23 @@
+{
+  "threshold": 0.004,
+  "validation_candidates": [
+    {
+      "mean_net_return": 0.005623515202841703,
+      "profitable_trades": 473,
+      "threshold": 0,
+      "trades": 621
+    },
+    {
+      "mean_net_return": 0.007116093272497624,
+      "profitable_trades": 421,
+      "threshold": 0.002,
+      "trades": 504
+    },
+    {
+      "mean_net_return": 0.008482301473517199,
+      "profitable_trades": 374,
+      "threshold": 0.004,
+      "trades": 419
+    }
+  ]
+}

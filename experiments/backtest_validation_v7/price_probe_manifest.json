@@ -1,0 +1,38 @@
+[
+  {
+    "day": "2022-07-27",
+    "path": "data/backtest_validation_v7/price_probe/cm27JUL2022bhav.csv.zip",
+    "retrieved_utc": "2026-11-02T13:49:33.311411+00:00",
+    "sha256": "728a2f0076c6332524ddaf25ebb966db505742b9f742d58e83d9748ff69ff52f",
+    "status": "downloaded",
+    "symbol": "TATASTEEL",
+    "url": "https://nsearchives.nseindia.com/content/historical/EQUITIES/2022/JUL/cm27JUL2022bhav.csv.zip"
+  },
+  {
+    "day": "2022-07-28",
+    "path": "data/backtest_validation_v7/price_probe/cm28JUL2022bhav.csv.zip",
+    "retrieved_utc": "2026-11-02T13:49:35.721766+00:00",
+    "sha256": "6efdacccfe775d2b21201eeb0e4531c0355de4d81b7eccdc170415bfd0dc36fe",
+    "status": "downloaded",
+    "symbol": "TATASTEEL",
+    "url": "https://nsearchives.nseindia.com/content/historical/EQUITIES/2022/JUL/cm28JUL2022bhav.csv.zip"
+  },
+  {
+    "day": "2024-01-04",
+    "path": "data/backtest_validation_v7/price_probe/cm04JAN2024bhav.csv.zip",
+    "retrieved_utc": "2026-11-02T13:49:36.920076+00:00",
+    "sha256": "b04c129010672d607e2d02d22abaf38824efe8192fb4583c23b679e0ef4ed630",
+    "status": "downloaded",
+    "symbol": "NESTLEIND",
+    "url": "https://nsearchives.nseindia.com/content/historical/EQUITIES/2024/JAN/cm04JAN2024bhav.csv.zip"
+  },
+  {
+    "day": "2024-01-05",
+    "path": "data/backtest_validation_v7/price_probe/cm05JAN2024bhav.csv.zip",
+    "retrieved_utc": "2026-11-02T13:49:37.822039+00:00",
+    "sha256": "999be72e8d8bc6ffff1f0d0c494d32cc767ab1d4bd007eef44ff78e6fa2393cf",
+    "status": "downloaded",
+    "symbol": "NESTLEIND",
+    "url": "https://nsearchives.nseindia.com/content/historical/EQUITIES/2024/JAN/cm05JAN2024bhav.csv.zip"
+  }
+]

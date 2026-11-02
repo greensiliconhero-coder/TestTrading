@@ -1,0 +1,28 @@
+{
+  "manifest": {
+    "price_basis": "vendor_adjusted",
+    "execution_prices_verified": false,
+    "action_factors_verified": false,
+    "dividend_payment_dates_verified": false,
+    "historical_fee_schedule_verified": false,
+    "settlement_calendar_verified": false,
+    "source_notes": [
+      "https://support.zerodha.com/category/trading-and-markets/charts-and-orders/charts/articles/kite-charts-not-matching-as-per-the-records-in-nse-or-bse",
+      "https://kite.trade/forum/discussion/15971/getting-the-right-closing-prices-adjusted-for-corporate-actions"
+    ],
+    "snapshot_date": "2026-11-02",
+    "action_ledger_last_year": 2025,
+    "additional_gap": "The 2021\u20132025 action ledger does not cover adjustments applied during 2026 before the vendor snapshot."
+  },
+  "gate": {
+    "passed": false,
+    "reasons": [
+      "Verified unadjusted execution prices required.",
+      "execution_prices_verified is not verified.",
+      "action_factors_verified is not verified.",
+      "dividend_payment_dates_verified is not verified.",
+      "historical_fee_schedule_verified is not verified.",
+      "settlement_calendar_verified is not verified."
+    ]
+  }
+}
