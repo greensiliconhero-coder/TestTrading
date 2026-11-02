@@ -1,0 +1,57 @@
+{
+  "version": "backtest_validation_v7",
+  "deployment": "disabled",
+  "initial_capital": 50000,
+  "settlement_lag_sessions": 1,
+  "price_basis_required": "unadjusted",
+  "supported_actions": [
+    "verified integer-share split or bonus",
+    "verified cash dividend with ex-session and payment-session"
+  ],
+  "unsupported_actions": [
+    "rights",
+    "demerger",
+    "fractional entitlements without independently specified processing"
+  ],
+  "synthetic_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "synthetic_rows": 6000,
+  "synthetic_train_rows": 3600,
+  "synthetic_validation_rows": 1200,
+  "synthetic_test_rows": 1200,
+  "synthetic_signal_coefficient": 0.01,
+  "synthetic_noise_sigma": 0.005,
+  "synthetic_cost_bps": 20,
+  "synthetic_thresholds": [
+    0,
+    0.002,
+    0.004
+  ],
+  "acceptance": {
+    "planted_ridge_mean_test_correlation_min": 0.7,
+    "null_mean_absolute_signed_test_correlation_max": 0.05,
+    "null_max_profitable_selected_test_fraction": 0.3
+  },
+  "scope": "Engineering verification. Synthetic performance is not market profitability or validation of economic assumptions. Current fee schedule is reused for ledger arithmetic only. No new market selection or hyperparameter tuning.",
+  "next_market_run_gate": "Require verified unadjusted prices, action factors and dividend payment timing; missing fields fail closed."
+}
