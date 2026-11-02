@@ -1,8 +1,22 @@
-# Five-year data acquisition — v4
+# Five-year processing and model comparison — v4
 
-Current branch: `data/five-year-v4`. Status: 1,533/1,702 requests staged. Interrupted-response retry fix tested; resume/login pending. Renamed-series history remains subject to review. No new training results yet.
+Branch: `processing/five-year-v4`.
 
-See [the frozen five-year plan](FIVE_YEAR_V4.md) for the 2021–2025 dataset, 2021–2023 training / 2024 validation / 2025 test split, unchanged model families, no minimum trade quota, constraints, storage and reproduction commands. Raw files go to `data/five_year_v4/`; credentials stay in memory. Processing and training will use new branches.
+All 1,702 Kite requests for 2021–2025 completed. Raw responses are copied into `data/five_year_processing_v4/raw`, with SHA-256 verification against the acquisition manifest. The original acquisition folder is preserved. Git tracks the manifests, code and reports; bulk datasets will be supplied as a checksum-verified release archive.
+
+Current status: snapshot audit running; model preparation/training pending. No v4 performance results exist yet.
+
+Training uses 2021–2023, validation uses 2024, and the frozen final comparison uses 2025. The same logistic, histogram-tree classifier, CNN, and context rule/Ridge/tree families are being prepared. Thresholds, architecture, execution timing and cost assumptions retain the earlier definitions; no minimum validation trade count applies. Nonzero activity, positive validation net results and applicable execution checks are still required.
+
+Data review: all five corporate-action year downloads and all 45 official index year-series downloads succeeded. Same-provider daily/minute consistency and independent index high/low checks are recorded. Ex-date stock sessions, incomplete regular sessions and zero-volume stock sessions are excluded. The existing 10-bps independent-index quality screen is retained and remains retrospective. TATAMOTORS/TMPV data is preserved but excluded from all model years pending economic-continuity review of the 2025 demerger; this yields a 36-stock model cohort. The stock-only and CNN models now share these stricter data-quality exclusions, so changes versus old results cannot be attributed solely to added training history.
+
+Limitations: survivor cohort, retrospective quality selection, previously explored 2024 validation, estimated trading costs, and bar-volume execution proxies. Classifier/CNN quote-return statistics are not cash-portfolio returns. No live orders or profitability guarantee.
+
+Reproduce acquisition with `Run-FiveYearData.ps1`. Processing commands: `python src/five_year_prepare.py`, `python src/five_year_references.py`, `python src/five_year_quality.py`, `python src/five_year_classifiers.py prepare`, and `python src/five_year_context_features.py`. Run quality only after preparation and references have finished. Training commands and verified results will be documented on the next experiment branch after preparation passes.
+
+See [the protocol](FIVE_YEAR_V4.md) and `experiments/five_year_v4/` for provenance and audit reports.
+
+---
 
 The following sections describe earlier completed experiments, not v4 results.
 

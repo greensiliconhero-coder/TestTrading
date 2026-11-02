@@ -1,0 +1,86 @@
+{
+  "version": "context_v4",
+  "seed": 31,
+  "training_years": [
+    2021,
+    2022,
+    2023
+  ],
+  "validation_year": 2024,
+  "development_comparison_year": 2025,
+  "reserved_year": 2026,
+  "signal_minutes": [
+    615,
+    645,
+    675,
+    705,
+    735,
+    765,
+    795,
+    825,
+    855,
+    885
+  ],
+  "entry_delay_bars": 2,
+  "exit_delay_bars": 32,
+  "holding_minutes": 30,
+  "event_families": [
+    "continuation",
+    "reversal",
+    "relative"
+  ],
+  "models": [
+    "rule",
+    "ridge",
+    "tree"
+  ],
+  "candidate_budget": 9,
+  "ridge_alpha": 100.0,
+  "tree": {
+    "max_iter": 100,
+    "max_leaf_nodes": 15,
+    "learning_rate": 0.05,
+    "l2_regularization": 10,
+    "min_samples_leaf": 100,
+    "early_stopping": false
+  },
+  "initial_capital": 50000,
+  "position_budget": 10000,
+  "maximum_positions": 5,
+  "slippage_bps_per_side": 2,
+  "stress_slippage_bps_per_side": 5,
+  "forecast_margin_bps": 2,
+  "participation_fraction": 0.01,
+  "minimum_validation_trades": 0,
+  "bootstrap_repetitions": 2000,
+  "bootstrap_block_sessions": 5,
+  "deployment": "disabled",
+  "selection": "Positive 2024 validation net return, nonzero trades and no exit capacity failures; select highest net return. Test once in 2025.",
+  "events": {
+    "continuation": "stock return_30 > 0, NIFTY_50 return_30 > 0, stock volume_ratio_5_30 >= 1.2",
+    "reversal": "stock return_5 < -volatility_30*sqrt(5), NIFTY_50 return_30 >= 0",
+    "relative": "stock return_30 - NIFTY_50 return_30 > volatility_30*sqrt(30), median non-benchmark index return_30 > 0"
+  },
+  "learned_trade_gate": "predicted gross return > estimated fees on two 10000 INR notionals / 10000 + 4 bps round-trip slippage + 2 bps margin; rule candidates take every event",
+  "exclusions": "Stock or index session must have exactly 375 regular minutes; stock zero-volume or nonpositive candles rejected; stock corporate-action ex-dates excluded; no imputation; no historical sector membership inferred.",
+  "fee_schedule_exchange_fraction": [
+    [
+      "2021-01-01",
+      3.45e-05
+    ],
+    [
+      "2023-04-01",
+      3.25e-05
+    ],
+    [
+      "2024-04-01",
+      3.22e-05
+    ],
+    [
+      "2024-10-01",
+      2.97e-05
+    ]
+  ],
+  "fee_assumptions": "Brokerage min(20,0.0003*notional) per side; STT sell 0.00025; stamp buy 0.00003; SEBI both 0.000001; GST 18% on brokerage+exchange+SEBI. Estimated, unrounded; IPFT/contract-note reconciliation unresolved.",
+  "limits": "Fixed survivor cohort, retrospective screening and known 2024 period remain development limitations; bar-volume capacity is only an execution proxy, not historical bid/ask or demonstrated fills. No claim of complete exchange-calendar verification. No real orders."
+}

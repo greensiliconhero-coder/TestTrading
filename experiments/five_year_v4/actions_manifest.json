@@ -1,0 +1,62 @@
+[
+  {
+    "name": "nse_actions_2021",
+    "url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=01-01-2021&to_date=31-12-2021",
+    "retrieved_utc": "2026-11-02T08:38:47.557519+00:00",
+    "limitation": "Ex-date records, not adjustment factors or point-in-time announcements.",
+    "http_status": 200,
+    "rows": 2325,
+    "status": "staged_unverified",
+    "sha256": "a7f68fce49d79408ca80662290289b6ef8d900776d7f7c0ba650cf1a3ed22b10",
+    "bytes": 715187,
+    "path": "data/five_year_processing_v4/references/raw/nse_actions_2021_a7f68fce49d79408.json"
+  },
+  {
+    "name": "nse_actions_2022",
+    "url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=01-01-2022&to_date=31-12-2022",
+    "retrieved_utc": "2026-11-02T08:38:47.574723+00:00",
+    "limitation": "Ex-date records, not adjustment factors or point-in-time announcements.",
+    "http_status": 200,
+    "rows": 2483,
+    "status": "staged_unverified",
+    "sha256": "1dc97928e1652b3fcbabcd9971291fa629725f25e73f0da0bc5f60f4225b53a6",
+    "bytes": 763708,
+    "path": "data/five_year_processing_v4/references/raw/nse_actions_2022_1dc97928e1652b3f.json"
+  },
+  {
+    "name": "nse_actions_2023",
+    "url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=01-01-2023&to_date=31-12-2023",
+    "retrieved_utc": "2026-11-02T08:38:47.574723+00:00",
+    "limitation": "Ex-date records, not adjustment factors or point-in-time announcements.",
+    "http_status": 200,
+    "rows": 2587,
+    "status": "staged_unverified",
+    "sha256": "a00fe6bf5a9c359fdb5edf6560e57df6e0493f50388de0464f888347cbca824d",
+    "bytes": 797300,
+    "path": "data/five_year_processing_v4/references/raw/nse_actions_2023_a00fe6bf5a9c359f.json"
+  },
+  {
+    "name": "nse_actions_2024",
+    "url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=01-01-2024&to_date=31-12-2024",
+    "retrieved_utc": "2026-11-02T08:38:50.478675+00:00",
+    "limitation": "Ex-date records, not adjustment factors or point-in-time announcements.",
+    "http_status": 200,
+    "rows": 2692,
+    "status": "staged_unverified",
+    "sha256": "9764d0e88c87418ea7157cfeb44d97402e6fa0d475cc53b6efe82b3626ee1887",
+    "bytes": 828288,
+    "path": "data/five_year_processing_v4/references/raw/nse_actions_2024_9764d0e88c87418e.json"
+  },
+  {
+    "name": "nse_actions_2025",
+    "url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=01-01-2025&to_date=31-12-2025",
+    "retrieved_utc": "2026-11-02T08:38:51.271443+00:00",
+    "limitation": "Ex-date records, not adjustment factors or point-in-time announcements.",
+    "http_status": 200,
+    "rows": 1927,
+    "status": "staged_unverified",
+    "sha256": "259827ee5b1961e27d9fc8ce02b232ed106466922331190b4d0bd46b783861fe",
+    "bytes": 584232,
+    "path": "data/five_year_processing_v4/references/raw/nse_actions_2025_259827ee5b1961e2.json"
+  }
+]

@@ -1,0 +1,677 @@
+[
+  {
+    "symbol": "NIFTY 50",
+    "year": 2021,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY 50",
+      "startDate": "01/01/2021",
+      "endDate": "12/31/2021",
+      "indexName": "Nifty 50"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "df8bbc01b08d0e2ac2ed25f90847ca108585d75ed4b7ce3f7750a225b1476c4d",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_50_2021_df8bbc01b08d0e2a.json"
+  },
+  {
+    "symbol": "NIFTY 50",
+    "year": 2022,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY 50",
+      "startDate": "01/01/2022",
+      "endDate": "12/31/2022",
+      "indexName": "Nifty 50"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "a86452479adfc59522aff7d1991fb7953cc6939ec4ffb41a7e4ef8cc00aa0ea2",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_50_2022_a86452479adfc595.json"
+  },
+  {
+    "symbol": "NIFTY 50",
+    "year": 2023,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY 50",
+      "startDate": "01/01/2023",
+      "endDate": "12/31/2023",
+      "indexName": "Nifty 50"
+    },
+    "status": "downloaded",
+    "rows": 246,
+    "sha256": "d7405305dec4f199ca5c3f55e305b7131b4143030e10854ccdcac5f85a62d977",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_50_2023_d7405305dec4f199.json"
+  },
+  {
+    "symbol": "NIFTY 50",
+    "year": 2024,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY 50",
+      "startDate": "01/01/2024",
+      "endDate": "12/31/2024",
+      "indexName": "Nifty 50"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "2ee721d239dc589a8c5ef662f450b666977ab8c1550a5f06896f66ea5dda4de9",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_50_2024_2ee721d239dc589a.json"
+  },
+  {
+    "symbol": "NIFTY 50",
+    "year": 2025,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY 50",
+      "startDate": "01/01/2025",
+      "endDate": "12/31/2025",
+      "indexName": "Nifty 50"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "17a091de3a4983dd7813dcc4148ca4a2185f3b48e0fc0c3d000b338623ed5443",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_50_2025_17a091de3a4983dd.json"
+  },
+  {
+    "symbol": "NIFTY BANK",
+    "year": 2021,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY BANK",
+      "startDate": "01/01/2021",
+      "endDate": "12/31/2021",
+      "indexName": "Nifty Bank"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "67ead91b48c4a824cb6d929d750a1b6d63a7efab6e51cb95af51ac6d98568ff4",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_BANK_2021_67ead91b48c4a824.json"
+  },
+  {
+    "symbol": "NIFTY BANK",
+    "year": 2022,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY BANK",
+      "startDate": "01/01/2022",
+      "endDate": "12/31/2022",
+      "indexName": "Nifty Bank"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "f51614ca4123b12179626b35fa5a8981d0d5861d9176bb2cca10f174991d4e3a",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_BANK_2022_f51614ca4123b121.json"
+  },
+  {
+    "symbol": "NIFTY BANK",
+    "year": 2023,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY BANK",
+      "startDate": "01/01/2023",
+      "endDate": "12/31/2023",
+      "indexName": "Nifty Bank"
+    },
+    "status": "downloaded",
+    "rows": 246,
+    "sha256": "b681d386c952bf151407c545d105f442995f860f74041d5b846babee28a0b165",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_BANK_2023_b681d386c952bf15.json"
+  },
+  {
+    "symbol": "NIFTY BANK",
+    "year": 2024,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY BANK",
+      "startDate": "01/01/2024",
+      "endDate": "12/31/2024",
+      "indexName": "Nifty Bank"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "e7eb7155591e2b3ef6ace4acdf817ffb7bd7b3b5146da27da73faf854d8d35d4",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_BANK_2024_e7eb7155591e2b3e.json"
+  },
+  {
+    "symbol": "NIFTY BANK",
+    "year": 2025,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY BANK",
+      "startDate": "01/01/2025",
+      "endDate": "12/31/2025",
+      "indexName": "Nifty Bank"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "d83f0e9d7d49c0846668fe10269a97be654e837c03b41872984893bce3b32b8c",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_BANK_2025_d83f0e9d7d49c084.json"
+  },
+  {
+    "symbol": "NIFTY IT",
+    "year": 2021,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY IT",
+      "startDate": "01/01/2021",
+      "endDate": "12/31/2021",
+      "indexName": "Nifty It"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "cb2e46252eb8f956e68de3b18983839f0e08ba2b3a9114fa0dfb4953eb0967f9",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_IT_2021_cb2e46252eb8f956.json"
+  },
+  {
+    "symbol": "NIFTY IT",
+    "year": 2022,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY IT",
+      "startDate": "01/01/2022",
+      "endDate": "12/31/2022",
+      "indexName": "Nifty It"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "83c3633ea8c15906a39c60e4acd01dcca8348917dab7d954a1d23fd834b532cd",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_IT_2022_83c3633ea8c15906.json"
+  },
+  {
+    "symbol": "NIFTY IT",
+    "year": 2023,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY IT",
+      "startDate": "01/01/2023",
+      "endDate": "12/31/2023",
+      "indexName": "Nifty It"
+    },
+    "status": "downloaded",
+    "rows": 246,
+    "sha256": "2ff4f4d34f27a2c2847566af04979c76657b2495e4351cf22d49a94dc6106835",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_IT_2023_2ff4f4d34f27a2c2.json"
+  },
+  {
+    "symbol": "NIFTY IT",
+    "year": 2024,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY IT",
+      "startDate": "01/01/2024",
+      "endDate": "12/31/2024",
+      "indexName": "Nifty It"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "b7086e8758833e519e2059b9ed62ed96c98485cee580e9ad96c9d3120d77b944",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_IT_2024_b7086e8758833e51.json"
+  },
+  {
+    "symbol": "NIFTY IT",
+    "year": 2025,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY IT",
+      "startDate": "01/01/2025",
+      "endDate": "12/31/2025",
+      "indexName": "Nifty It"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "db21813fc9b56638aff3ddea0ef6b76eef1e331ee2a704153567d452db094e17",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_IT_2025_db21813fc9b56638.json"
+  },
+  {
+    "symbol": "NIFTY FMCG",
+    "year": 2021,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY FMCG",
+      "startDate": "01/01/2021",
+      "endDate": "12/31/2021",
+      "indexName": "Nifty Fmcg"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "2f38e7bb202ec19b273f3f4f09ba4f07fa3df44fdf7197b8fa855473e8060eb5",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_FMCG_2021_2f38e7bb202ec19b.json"
+  },
+  {
+    "symbol": "NIFTY FMCG",
+    "year": 2022,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY FMCG",
+      "startDate": "01/01/2022",
+      "endDate": "12/31/2022",
+      "indexName": "Nifty Fmcg"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "7b5346c357c5a56201f91b5157171944047a958df4c81f681420963ae7b78ada",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_FMCG_2022_7b5346c357c5a562.json"
+  },
+  {
+    "symbol": "NIFTY FMCG",
+    "year": 2023,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY FMCG",
+      "startDate": "01/01/2023",
+      "endDate": "12/31/2023",
+      "indexName": "Nifty Fmcg"
+    },
+    "status": "downloaded",
+    "rows": 246,
+    "sha256": "61d4188321dded9571b8e685d569fdfd3c5da7c66255df7fd10fcc2eff566fab",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_FMCG_2023_61d4188321dded95.json"
+  },
+  {
+    "symbol": "NIFTY FMCG",
+    "year": 2024,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY FMCG",
+      "startDate": "01/01/2024",
+      "endDate": "12/31/2024",
+      "indexName": "Nifty Fmcg"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "c7b592beba3a811f1b75c89d9652a251c50d3b1cac4cf6bac8f9c502a36b7407",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_FMCG_2024_c7b592beba3a811f.json"
+  },
+  {
+    "symbol": "NIFTY FMCG",
+    "year": 2025,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY FMCG",
+      "startDate": "01/01/2025",
+      "endDate": "12/31/2025",
+      "indexName": "Nifty Fmcg"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "385bf980ad268425ee5ae143d3310a011f4ec65d41fc49458c06b686574da3a7",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_FMCG_2025_385bf980ad268425.json"
+  },
+  {
+    "symbol": "NIFTY AUTO",
+    "year": 2021,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY AUTO",
+      "startDate": "01/01/2021",
+      "endDate": "12/31/2021",
+      "indexName": "Nifty Auto"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "115780e92592bf84070a062bb8ee2e192bfb72979cab39cac93cf5bf6283cef9",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_AUTO_2021_115780e92592bf84.json"
+  },
+  {
+    "symbol": "NIFTY AUTO",
+    "year": 2022,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY AUTO",
+      "startDate": "01/01/2022",
+      "endDate": "12/31/2022",
+      "indexName": "Nifty Auto"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "34b449eee166962a55b575dc15571f6e94aadef64026155e4668870176ad0010",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_AUTO_2022_34b449eee166962a.json"
+  },
+  {
+    "symbol": "NIFTY AUTO",
+    "year": 2023,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY AUTO",
+      "startDate": "01/01/2023",
+      "endDate": "12/31/2023",
+      "indexName": "Nifty Auto"
+    },
+    "status": "downloaded",
+    "rows": 246,
+    "sha256": "125d783f16dd43a7eda21aa991a9757b87a195303db62994df9314e873101510",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_AUTO_2023_125d783f16dd43a7.json"
+  },
+  {
+    "symbol": "NIFTY AUTO",
+    "year": 2024,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY AUTO",
+      "startDate": "01/01/2024",
+      "endDate": "12/31/2024",
+      "indexName": "Nifty Auto"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "5d3dc03f26bc001e758fcbc5268f2f115f09a269be5ec9fc361ea15a9031d989",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_AUTO_2024_5d3dc03f26bc001e.json"
+  },
+  {
+    "symbol": "NIFTY AUTO",
+    "year": 2025,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY AUTO",
+      "startDate": "01/01/2025",
+      "endDate": "12/31/2025",
+      "indexName": "Nifty Auto"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "04f53a7f81dfda9b8eac55cd4e61eea8515c7409d3c729a4c1914ebef89f3a59",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_AUTO_2025_04f53a7f81dfda9b.json"
+  },
+  {
+    "symbol": "NIFTY PHARMA",
+    "year": 2021,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY PHARMA",
+      "startDate": "01/01/2021",
+      "endDate": "12/31/2021",
+      "indexName": "Nifty Pharma"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "661e4966768a033701a37dbd936ed8ec53bbeaed3f0ba3f6a1e07919336b46c8",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_PHARMA_2021_661e4966768a0337.json"
+  },
+  {
+    "symbol": "NIFTY PHARMA",
+    "year": 2022,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY PHARMA",
+      "startDate": "01/01/2022",
+      "endDate": "12/31/2022",
+      "indexName": "Nifty Pharma"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "e5bc7c37855f73748b447fb8461d60d3d61db64ca893c3d36f4f26bf9a1ab9de",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_PHARMA_2022_e5bc7c37855f7374.json"
+  },
+  {
+    "symbol": "NIFTY PHARMA",
+    "year": 2023,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY PHARMA",
+      "startDate": "01/01/2023",
+      "endDate": "12/31/2023",
+      "indexName": "Nifty Pharma"
+    },
+    "status": "downloaded",
+    "rows": 246,
+    "sha256": "75e2f73f6f4d4657ce4fb6aca1c72c8f1c6f2b32e609298f0a3febf04b4a5efc",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_PHARMA_2023_75e2f73f6f4d4657.json"
+  },
+  {
+    "symbol": "NIFTY PHARMA",
+    "year": 2024,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY PHARMA",
+      "startDate": "01/01/2024",
+      "endDate": "12/31/2024",
+      "indexName": "Nifty Pharma"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "518c71c1acc9fdd7d8318a6cf83160052a40d4970e7df9df2b686b807a0c5335",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_PHARMA_2024_518c71c1acc9fdd7.json"
+  },
+  {
+    "symbol": "NIFTY PHARMA",
+    "year": 2025,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY PHARMA",
+      "startDate": "01/01/2025",
+      "endDate": "12/31/2025",
+      "indexName": "Nifty Pharma"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "a1e51b04c9126526e70e2b37d86af5bf862a4c46f1d56befde387d1cb951ca40",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_PHARMA_2025_a1e51b04c9126526.json"
+  },
+  {
+    "symbol": "NIFTY METAL",
+    "year": 2021,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY METAL",
+      "startDate": "01/01/2021",
+      "endDate": "12/31/2021",
+      "indexName": "Nifty Metal"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "b07e1334869c71667102a1b0d3e6ad04d199311413c5567ee4f76e9c944c5993",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_METAL_2021_b07e1334869c7166.json"
+  },
+  {
+    "symbol": "NIFTY METAL",
+    "year": 2022,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY METAL",
+      "startDate": "01/01/2022",
+      "endDate": "12/31/2022",
+      "indexName": "Nifty Metal"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "b06ec1e485bd57ccb16a70bb32c65b21e4425a34e0b1259f13631c5154fa3cfd",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_METAL_2022_b06ec1e485bd57cc.json"
+  },
+  {
+    "symbol": "NIFTY METAL",
+    "year": 2023,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY METAL",
+      "startDate": "01/01/2023",
+      "endDate": "12/31/2023",
+      "indexName": "Nifty Metal"
+    },
+    "status": "downloaded",
+    "rows": 246,
+    "sha256": "ac66d24f14464a05df858b0880fefd6b8aa0f61ce162c1fb9bb848b697b221f4",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_METAL_2023_ac66d24f14464a05.json"
+  },
+  {
+    "symbol": "NIFTY METAL",
+    "year": 2024,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY METAL",
+      "startDate": "01/01/2024",
+      "endDate": "12/31/2024",
+      "indexName": "Nifty Metal"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "231ef1f6bee792373d2f87fec0358796663a229e890ea7e0e73437b762c676bb",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_METAL_2024_231ef1f6bee79237.json"
+  },
+  {
+    "symbol": "NIFTY METAL",
+    "year": 2025,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY METAL",
+      "startDate": "01/01/2025",
+      "endDate": "12/31/2025",
+      "indexName": "Nifty Metal"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "bd940c3ed83824a279e37441d727bfd3b1ab2e5abfbe170906c2a5d912ea29ec",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_METAL_2025_bd940c3ed83824a2.json"
+  },
+  {
+    "symbol": "NIFTY ENERGY",
+    "year": 2021,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY ENERGY",
+      "startDate": "01/01/2021",
+      "endDate": "12/31/2021",
+      "indexName": "Nifty Energy"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "3c313f66d94f21010d976b0ac6620cd9206d01a6508f98e56fba2f21b9efd73b",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_ENERGY_2021_3c313f66d94f2101.json"
+  },
+  {
+    "symbol": "NIFTY ENERGY",
+    "year": 2022,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY ENERGY",
+      "startDate": "01/01/2022",
+      "endDate": "12/31/2022",
+      "indexName": "Nifty Energy"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "fba0f50691fa2d1dc902e6330e67be0d1d25083ef2a7b85d987ee505030ec368",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_ENERGY_2022_fba0f50691fa2d1d.json"
+  },
+  {
+    "symbol": "NIFTY ENERGY",
+    "year": 2023,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY ENERGY",
+      "startDate": "01/01/2023",
+      "endDate": "12/31/2023",
+      "indexName": "Nifty Energy"
+    },
+    "status": "downloaded",
+    "rows": 246,
+    "sha256": "d1a3ae1e1f58ac46c774f7f58b4ae327ec5dcd116e991b652416b6e51d4cec1b",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_ENERGY_2023_d1a3ae1e1f58ac46.json"
+  },
+  {
+    "symbol": "NIFTY ENERGY",
+    "year": 2024,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY ENERGY",
+      "startDate": "01/01/2024",
+      "endDate": "12/31/2024",
+      "indexName": "Nifty Energy"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "f99d34b40ec78d1106d49daa1ce267bb8647da110926f57075608ae260983bb4",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_ENERGY_2024_f99d34b40ec78d11.json"
+  },
+  {
+    "symbol": "NIFTY ENERGY",
+    "year": 2025,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY ENERGY",
+      "startDate": "01/01/2025",
+      "endDate": "12/31/2025",
+      "indexName": "Nifty Energy"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "6ea3a4374dadd302f91ca18038528736f7201ee9b1cd228986bc6f5f9ae18591",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_ENERGY_2025_6ea3a4374dadd302.json"
+  },
+  {
+    "symbol": "NIFTY FIN SERVICE",
+    "year": 2021,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY FIN SERVICE",
+      "startDate": "01/01/2021",
+      "endDate": "12/31/2021",
+      "indexName": "Nifty Financial Services"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "57b8746461358d9fe81a302be22b64673bb867bfb7d75d21474b65012960c3b8",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_FIN_SERVICE_2021_57b8746461358d9f.json"
+  },
+  {
+    "symbol": "NIFTY FIN SERVICE",
+    "year": 2022,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY FIN SERVICE",
+      "startDate": "01/01/2022",
+      "endDate": "12/31/2022",
+      "indexName": "Nifty Financial Services"
+    },
+    "status": "downloaded",
+    "rows": 248,
+    "sha256": "48af0515fa4e410170b5b1a15c8bb52c53750cbe76704f56980e39658d0cd2b3",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_FIN_SERVICE_2022_48af0515fa4e4101.json"
+  },
+  {
+    "symbol": "NIFTY FIN SERVICE",
+    "year": 2023,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY FIN SERVICE",
+      "startDate": "01/01/2023",
+      "endDate": "12/31/2023",
+      "indexName": "Nifty Financial Services"
+    },
+    "status": "downloaded",
+    "rows": 246,
+    "sha256": "a587182a2cf7114b6b57a3f87f63aa4186eea5fe27d3d0754fc2e53bc9727573",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_FIN_SERVICE_2023_a587182a2cf7114b.json"
+  },
+  {
+    "symbol": "NIFTY FIN SERVICE",
+    "year": 2024,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY FIN SERVICE",
+      "startDate": "01/01/2024",
+      "endDate": "12/31/2024",
+      "indexName": "Nifty Financial Services"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "71cdf5ce967e31222699e5708288be171ec451c97b5ac6c81d4d37a7c74b1b12",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_FIN_SERVICE_2024_71cdf5ce967e3122.json"
+  },
+  {
+    "symbol": "NIFTY FIN SERVICE",
+    "year": 2025,
+    "url": "https://www.niftyindices.com/BackPage/getHistoricaldatatabletoString",
+    "request": {
+      "name": "NIFTY FIN SERVICE",
+      "startDate": "01/01/2025",
+      "endDate": "12/31/2025",
+      "indexName": "Nifty Financial Services"
+    },
+    "status": "downloaded",
+    "rows": 249,
+    "sha256": "77c31e697fa5b1f44184e6af03648d2cead56bf21b4bec6959dd1f5cd0bef036",
+    "path": "data/five_year_processing_v4/references/official_daily/NIFTY_FIN_SERVICE_2025_77c31e697fa5b1f4.json"
+  }
+]
