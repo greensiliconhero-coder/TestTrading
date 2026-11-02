@@ -1,0 +1,8 @@
+{
+  "archive": "Causal_universe_v10_snapshot.zip",
+  "bytes": 208857117,
+  "sha256": "c6d258cf6f43622720237bc360a5f969fa8bc69df7db665e6e0e44c064c782a4",
+  "files": 1432,
+  "verified_all_members": true,
+  "scope": "Full raw NSE source archives, v10 reconstructed full-market panel, candidates, evidence queues, source references, code and tests. Prior fitted models remain in the verified v9 release; no v10 model was fitted."
+}

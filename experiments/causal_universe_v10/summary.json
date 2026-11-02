@@ -1,0 +1,18 @@
+{
+  "action_obligation_rows": 285,
+  "candidate_rows": 8496,
+  "candidate_sha256": "1a917075e0ebffac064a07dd21fa2fe7dac03ab36f751cb73844b24dccd09d4c",
+  "candidates_outside_old_stock_list": 5005,
+  "distinct_isins": 2612,
+  "execution_gate": "Blocked pending verified relevant action entitlements, tradability/payment dates, identity transitions, historical fees/settlement and missing endpoints. Candidates are not deleted for these audit findings.",
+  "invalid_or_zero_rows": 0,
+  "panel_sha256": "c5ba6451c939c6a70b5eaff9712eb229358811668f561c33ef469a13659a4ef9",
+  "price_rows": 2057943,
+  "selected_isins": 226,
+  "selected_symbols": 222,
+  "selection_uses_future_actions_or_prices": false,
+  "signal_dates": 236,
+  "trading_backtest_performed": false,
+  "windows_with_actions": 277,
+  "windows_without_both_endpoints": 61
+}

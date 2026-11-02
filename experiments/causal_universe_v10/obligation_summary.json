@@ -1,0 +1,18 @@
+{
+  "action_type_counts": {
+    "bonus": 9,
+    "buyback": 6,
+    "demerger": 3,
+    "dividend": 238,
+    "meeting": 20,
+    "rights": 1,
+    "split": 8
+  },
+  "endpoint_status_counts": {
+    "no_same_isin_or_symbol": 3,
+    "right_censored_dataset_end": 36,
+    "same_isin_other_series": 14,
+    "same_symbol_different_isin": 16
+  },
+  "note": "Counts are audit records, not silently dropped candidates; endpoint counts can exceed window counts. Meetings/buybacks are not automatically cashflow events. All uncertain mappings remain unapproved."
+}
