@@ -1,0 +1,9 @@
+{
+  "data/five_day_v5/samples_with_scores.csv": "e07b914bf3e92289877cfe2b8be5f5a20691c9ffa11ad991ca26101ba9325091",
+  "data/five_year_processing_v4/references/official_daily/NIFTY_50_2021_df8bbc01b08d0e2a.json": "df8bbc01b08d0e2ac2ed25f90847ca108585d75ed4b7ce3f7750a225b1476c4d",
+  "data/five_year_processing_v4/references/official_daily/NIFTY_50_2022_a86452479adfc595.json": "a86452479adfc59522aff7d1991fb7953cc6939ec4ffb41a7e4ef8cc00aa0ea2",
+  "data/five_year_processing_v4/references/official_daily/NIFTY_50_2023_d7405305dec4f199.json": "d7405305dec4f199ca5c3f55e305b7131b4143030e10854ccdcac5f85a62d977",
+  "data/five_year_processing_v4/references/official_daily/NIFTY_50_2024_2ee721d239dc589a.json": "2ee721d239dc589a8c5ef662f450b666977ab8c1550a5f06896f66ea5dda4de9",
+  "data/five_year_processing_v4/references/official_daily/NIFTY_50_2025_17a091de3a4983dd.json": "17a091de3a4983dd7813dcc4148ca4a2185f3b48e0fc0c3d000b338623ed5443",
+  "data/nse_raw_v8/raw_price_panel.csv.gz": "889d08cfc3e0c4d4e2382528d75d7889d247822ffbc83ab854cc2deda7571c73"
+}

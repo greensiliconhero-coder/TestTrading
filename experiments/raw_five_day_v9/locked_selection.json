@@ -1,0 +1,12 @@
+{
+  "protocol_sha256": "9ab7b28005e2af261fe4d19598747d59ab29fdc4edc7b753e55bc2a6750fcc02",
+  "selected": null,
+  "validation_primary_returns": {
+    "NIFTYBEES": 0.10165600335400038,
+    "equal_weight": -0.020005533691599298,
+    "momentum20": 0.08195096419738102,
+    "reversal5": -0.07170491179418637,
+    "ridge": 0.0025955033997868693,
+    "tree": -0.09758032260210658
+  }
+}

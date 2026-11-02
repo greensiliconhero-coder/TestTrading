@@ -1,0 +1,8 @@
+{
+  "archive": "NSE_raw_v8_and_refit_v9_snapshot.zip",
+  "bytes": 150910906,
+  "sha256": "bc468aa7341467a897fe8c087b41e1d3c766612117869e02b2c0150ecd013742",
+  "files": 3099,
+  "verified_all_members": true,
+  "scope": "Full v8 raw NSE collection plus v9 exact inputs, fitted models, scores, reports and supporting daily vendor/reference sources; excludes prior minute datasets."
+}
