@@ -1,0 +1,5 @@
+# Delivery cost and corporate-action review v6
+
+Frozen scope: reuse saved v5 scores and fitted models. Do not retrain. Replace the flat 50-bps deduction with itemized current published delivery fee assumptions, whole units, INR50,000 initial capital, max INR10,000 per ranked position, 5bps slippage each side and 10bps stress. Equal-weight baseline spreads capital across all eligible symbols; charge DP per sold symbol so small baskets are not unfairly treated as INR10,000 positions. Include residual cash and reserve buy fees. Original v5 validation selection remains cash.
+
+This is a cost-sensitivity replay, not an executable historical account reconstruction: adjusted share-price units, settlement and same-day netting remain unresolved. Current rates are applied counterfactually; do not describe these as exact historical costs. Audit all action types and missing publication timestamps without inventing adjustment factors. Preserve all source files. NIFTYBEES daily acquisition is staged for a passive ETF benchmark, with ETF-specific taxes and corporate actions to be checked before comparison. No independent holdout exists in the downloaded 2021–2025 history.

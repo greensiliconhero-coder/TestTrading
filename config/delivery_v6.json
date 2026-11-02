@@ -1,0 +1,24 @@
+{
+  "version": "delivery_v6",
+  "initial_capital": 50000,
+  "position_cap": 10000,
+  "base_slippage_bps_per_side": 5,
+  "stress_slippage_bps_per_side": 10,
+  "brokerage": 0,
+  "stt_fraction_buy_sell": 0.001,
+  "stamp_fraction_buy": 0.00015,
+  "exchange_fraction": 3.07e-05,
+  "sebi_fraction": 1e-06,
+  "gst_fraction": 0.18,
+  "dp_per_symbol_sell": 15.34,
+  "fee_basis": "Current published resident-individual rates as of 2026-11-02, applied as a counterfactual cost sensitivity to historical prices; not reconstructed historical contract notes.",
+  "source": "https://zerodha.com/charges/",
+  "selection": "Reuse v5 saved scores and unchanged validation selection (cash); no model refitting or promotion based on new replay.",
+  "limits": [
+    "Historical adjusted price share units unresolved; whole-share quantities are provisional.",
+    "Separate gross buy/sell legs charged at each batch, even if a symbol is selected again. Real same-day netting or retention could differ.",
+    "Immediate sale proceeds reused; settlement/cash availability assumptions remain unverified.",
+    "Original retrospective action-window screen remains.",
+    "2025 already seen; development only."
+  ]
+}
