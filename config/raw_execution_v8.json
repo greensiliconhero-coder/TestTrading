@@ -1,0 +1,23 @@
+{
+  "version": "raw_execution_v8",
+  "data_window": [
+    "2021-01-01",
+    "2025-12-31"
+  ],
+  "source": "NSE official bhavcopy legacy and UDiFF formats",
+  "models": "Frozen v5 scores; no refit or reselection",
+  "capital": 50000,
+  "ranked_position_cap": 10000,
+  "primary_settlement_lag": 1,
+  "stress_or_alternative_settlement_lags": [
+    0
+  ],
+  "slippage_bps_per_side": [
+    5,
+    10
+  ],
+  "fee_config": "config/delivery_v6.json",
+  "replay_scope": "Existing retrospective action-free sample windows only; abort on any held stock action. Net target quantities retained between adjacent rebalance dates. Cash-constrained orders reduced without automatic later retry. Liquidate at scheduled exit when no next entry batch.",
+  "unseen_test": false,
+  "deployment": "disabled"
+}

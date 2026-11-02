@@ -6,10 +6,12 @@ from delivery_v6 import fees
 
 
 class Ledger:
-    def __init__(self, cash, fee_config, settlement_lag=1, price_basis='unadjusted'):
+    def __init__(self, cash, fee_config, settlement_lag=1, price_basis='unadjusted',slippage_bps=0,fee_calculator=fees):
         if price_basis!='unadjusted':raise ValueError('Action accounting requires verified unadjusted prices.')
         if not math.isfinite(cash) or cash<0 or type(settlement_lag) is not int or settlement_lag<0:raise ValueError('Invalid initial ledger.')
         self.cash=float(cash);self.fee_config=dict(fee_config);self.lag=settlement_lag
+        if not math.isfinite(slippage_bps) or not 0<=slippage_bps<10000:raise ValueError('Invalid slippage.')
+        self.slippage=slippage_bps/10000;self.fee_calculator=fee_calculator
         self.positions={};self.receivables=[];self.trades=[];self.history=[];self.last_step=-1
 
     def equity(self,prices):
@@ -64,12 +66,12 @@ class Ledger:
                     held=self.positions.get(s,0);desired=targets.get(s,0)
                     quantity=max(held-desired,0) if side=='sell' else max(desired-held,0)
                     if not quantity:continue
-                    price=prices[s]
+                    price=prices[s]*(1+self.slippage if side=='buy' else 1-self.slippage)
                     if side=='buy':
                         quantity=min(quantity,int(self.cash/price))
-                        while quantity and quantity*price+fees(quantity*price,side,self.fee_config)>self.cash:quantity-=1
+                        while quantity and quantity*price+self.fee_calculator(quantity*price,side,self.fee_config)>self.cash:quantity-=1
                     if not quantity:continue
-                    notional=quantity*price;charge=fees(notional,side,self.fee_config)
+                    notional=quantity*price;charge=self.fee_calculator(notional,side,self.fee_config)
                     if side=='sell':
                         # Fees incurred now; net proceeds settle after configured delay.
                         if charge>notional:raise ValueError('Fees exceed sale proceeds; explicit cash debit policy needed.')
