@@ -4,6 +4,7 @@ import argparse
 import csv
 import gzip
 import hashlib
+import http.client
 import io
 import json
 import math
@@ -13,6 +14,7 @@ import re
 import socket
 import tempfile
 import time
+import zlib
 from datetime import date, datetime, timedelta, timezone
 from urllib import request, error, parse
 
@@ -75,6 +77,10 @@ def transport(path, params, headers):
             return gzip.decompress(body) if body.startswith(b'\x1f\x8b') else body
     except error.HTTPError as exc:
         raise ApiFailure(exc.code) from None
+    except (http.client.IncompleteRead, http.client.RemoteDisconnected,
+            gzip.BadGzipFile, EOFError, zlib.error):
+        # Discard partial bodies; Client retries the entire read-only request.
+        raise ApiFailure(0, 'incomplete_response') from None
     except (error.URLError, TimeoutError, socket.timeout, ConnectionError):
         raise ApiFailure(0, 'network') from None
 

@@ -36,3 +36,7 @@ No results or profitability claims exist for this version yet. More history can 
 Initial authenticated attempt stopped before candle requests because TATAMOTORS is no longer a current symbol. NSE circular CML70875 establishes the rename to TMPV effective 2025-10-24. The saved current Kite snapshot maps TMPV to token 884737; TMCV is a different instrument. The downloader uses this explicit, token-checked alias for acquisition and records the original requested symbol, current symbol, evidence and identity-review flag on every response. This does not certify economic continuity through restructuring. Its data requires review before training. Unresolved identities are recorded in the manifest and do not block other instruments.
 
 Source: https://nsearchives.nseindia.com/content/circulars/CML70875.pdf
+
+## Interrupted-response recovery
+
+At 1,533 staged requests, an HTTP IncompleteRead escaped the transport error handler. Partial response bytes were not saved as a successful file. The transport now converts interrupted/truncated HTTP or gzip bodies into a sanitized transient failure, retries the complete request up to three times with backoff, and records a failure if exhausted. Regression tests cover recovery and bounded failure; 18 relevant tests passed. Resume reuses hash-verified files.

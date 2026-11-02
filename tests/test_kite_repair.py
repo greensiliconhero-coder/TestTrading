@@ -5,6 +5,8 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+import http.client
+from unittest.mock import MagicMock, patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
 from kite_repair import Client, ApiFailure, instrument_map, validate_response, download_job, encoded, make_plan, validate_plan
 
@@ -33,6 +35,28 @@ class FakeClient:
 
 
 class RepairTests(unittest.TestCase):
+    def test_incomplete_body_retries_whole_request(self):
+        response = MagicMock()
+        response.__enter__.return_value = response
+        response.read.side_effect = [http.client.IncompleteRead(b'partial', 10), payload()]
+        with patch('kite_repair.request.build_opener') as opener:
+            opener.return_value.open.return_value = response
+            client = Client('key', 'token', sleep=lambda _: None)
+            self.assertEqual(client.get('/instruments/NSE'), payload())
+            self.assertEqual(opener.return_value.open.call_count, 2)
+
+    def test_persistent_incomplete_body_is_bounded_and_sanitized(self):
+        response = MagicMock()
+        response.__enter__.return_value = response
+        response.read.side_effect = http.client.IncompleteRead(b'sensitive-body', 10)
+        with patch('kite_repair.request.build_opener') as opener:
+            opener.return_value.open.return_value = response
+            with self.assertRaises(ApiFailure) as caught:
+                Client('key', 'token', sleep=lambda _: None).get('/instruments/NSE')
+            self.assertEqual(opener.return_value.open.call_count, 3)
+            self.assertEqual(caught.exception.kind, 'incomplete_response')
+            self.assertNotIn('sensitive', str(caught.exception))
+
     def test_retry_transient_and_rate_spacing(self):
         calls, sleeps = [], []
         def send(*args):

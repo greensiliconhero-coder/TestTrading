@@ -1,6 +1,6 @@
 # Five-year data acquisition — v4
 
-Current branch: `data/five-year-v4`. Status: initial login succeeded; fixed TATAMOTORS to TMPV acquisition mapping. Restart/login pending. Renamed-series history remains subject to review. No new training results yet.
+Current branch: `data/five-year-v4`. Status: 1,533/1,702 requests staged. Interrupted-response retry fix tested; resume/login pending. Renamed-series history remains subject to review. No new training results yet.
 
 See [the frozen five-year plan](FIVE_YEAR_V4.md) for the 2021–2025 dataset, 2021–2023 training / 2024 validation / 2025 test split, unchanged model families, no minimum trade quota, constraints, storage and reproduction commands. Raw files go to `data/five_year_v4/`; credentials stay in memory. Processing and training will use new branches.
 
