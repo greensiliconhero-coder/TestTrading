@@ -16,6 +16,10 @@ def expected_share_ratio(subject):
     return None
 
 
+def dividend_amounts(subject):
+    return [float(x) for x in re.findall(r'(\d+(?:\.\d+)?)\s*(?:/-)?\s*per\s+sh(?:ares?)?\b',subject,re.I)]
+
+
 def main():
     acquisition=json.loads((OUT/'acquisition_summary.json').read_text())
     panel=DATA/'raw_price_panel.csv.gz'
@@ -28,6 +32,10 @@ def main():
         path=ROOT/rec['path']
         if sha(path)!=rec['sha256']:raise ValueError('Kite canonical changed')
         f=pd.read_csv(path);f['symbol']=rec['symbol'];f['day']=f.date.str[:10];vendor.append(f)
+    for rec in json.loads((ROOT/'data/delivery_v6/benchmark/manifest.json').read_text()):
+        path=ROOT/rec['path']
+        if sha(path)!=rec['sha256']:raise ValueError('Kite ETF input changed')
+        f=pd.DataFrame(json.loads(path.read_bytes())['data']['candles'],columns=['date','open','high','low','close','volume']);f['day']=f.date.str[:10];f['symbol']='NIFTYBEES';vendor.append(f)
     k=pd.concat(vendor,ignore_index=True)
     k.loc[(k.symbol=='TATAMOTORS')&(k.day>='2025-10-24'),'symbol']='TMPV'
     comparison=raw.merge(k[['symbol','day','open','high','low','close','volume']],on=['symbol','day'],how='outer',suffixes=('_nse','_kite'),indicator=True,validate='one_to_one')
@@ -43,8 +51,8 @@ def main():
             observed=None if pre.empty or post.empty else float(pre.close_factor.iloc[0]/post.close_factor.iloc[0])
             events.append({'symbol':a['symbol'],'ex_day':day,'subject':a['subject'],'expected_share_multiplier_from_exchange_ledger':ratio,'observed_adjustment_factor_change':observed,'within_0_2_percent':observed is not None and abs(observed/ratio-1)<=.002,'scope':'Diagnostic factor transition only, not full causal adjustment chain.'})
         if 'dividend' in a['subject'].lower():
-            amounts=re.findall(r'(\d+(?:\.\d+)?)\s*(?:/-)?\s*per\s*share',a['subject'],re.I)
-            dividends.append({'symbol':a['symbol'],'ex_day':day,'subject':a['subject'],'amount_candidates':[float(v) for v in amounts],'sum_candidate':sum(float(v) for v in amounts) if amounts else None,'payment_date':None,'publication_timestamp':a.get('caBroadcastDate'),'status':'parsed_candidate_requires_cashflow_verification'})
+            amounts=dividend_amounts(a['subject'])
+            dividends.append({'symbol':a['symbol'],'ex_day':day,'subject':a['subject'],'amount_candidates':amounts,'sum_candidate':sum(amounts) if amounts else None,'payment_date':None,'publication_timestamp':a.get('caBroadcastDate'),'status':'parsed_candidate_requires_cashflow_verification'})
     atomic_write(OUT/'split_bonus_checks.json',encoded(events));atomic_write(DATA/'dividend_candidates.json',encoded(dividends))
     missing=comparison.loc[comparison['_merge']!='both',['symbol','day','_merge']]
     missing.to_csv(OUT/'coverage_differences.csv',index=False)

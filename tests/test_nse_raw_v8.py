@@ -7,7 +7,7 @@ from pathlib import Path
 import pandas as pd
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 from nse_raw_v8 import parse_archive,archive_url,ROOT
-from nse_reconcile_v8 import expected_share_ratio
+from nse_reconcile_v8 import expected_share_ratio,dividend_amounts
 from raw_execution_v8 import replay
 from ledger_v7 import Ledger
 
@@ -40,6 +40,8 @@ class RawTests(unittest.TestCase):
         self.assertAlmostEqual(expected_share_ratio('Bonus 1:3'),4/3)
         self.assertEqual(expected_share_ratio('Face Value Split - From Rs 10/- Per Share To Re 1/- Per Share'),10)
         self.assertIsNone(expected_share_ratio('Rights 6:179 @ Premium Rs 1810/-'))
+        self.assertEqual(dividend_amounts('Dividend - Rs 14.50 Per Sh'),[14.5])
+        self.assertEqual(dividend_amounts('Dividend - Rs 15 Per Share Special Dividend 15 Per Share'),[15.,15.])
 
     def test_slippage_affects_fills_not_held_marks(self):
         config=json.loads((ROOT/'config/delivery_v6.json').read_text());zero={k:0 for k,v in config.items() if isinstance(v,(float,int))}

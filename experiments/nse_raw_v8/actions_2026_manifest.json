@@ -1,0 +1,12 @@
+{
+  "name": "nse_actions_2026",
+  "url": "https://www.nseindia.com/api/corporates-corporateActions?index=equities&from_date=01-01-2026&to_date=02-11-2026",
+  "retrieved_utc": "2026-11-02T14:00:22.950579+00:00",
+  "limitation": "Actions through snapshot date; ex-date records, not payment-date ledger.",
+  "http_status": 200,
+  "rows": 1900,
+  "status": "staged_unverified",
+  "sha256": "bef93c548c9de4784b7529acfb4895588300fd1633f0788db425d67976785a34",
+  "bytes": 574956,
+  "path": "data/nse_raw_v8/references/raw/nse_actions_2026_bef93c548c9de478.json"
+}

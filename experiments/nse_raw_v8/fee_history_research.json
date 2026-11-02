@@ -1,0 +1,17 @@
+{
+  "sources": [
+    {
+      "topic": "April 2024 exchange fees",
+      "url": "https://zerodha.com/marketintel/bulletin/373933/revision-in-nse-transaction-charges-from-april-1-2024",
+      "observation": "Official broker bulletin records equity delivery exchange charge change from 0.00325% to 0.00322%, effective 2024-04-01.",
+      "applied_to_v8": false
+    },
+    {
+      "topic": "DP fee history",
+      "url": "https://support.zerodha.com/category/account-opening/resident-individual/ri-charges/articles/what-do-dp-charges-mean",
+      "observation": "Current support page documents per-symbol selling fees; a current page is insufficient to certify all historical dates.",
+      "applied_to_v8": false
+    }
+  ],
+  "decision": "Keep v6 current fee assumptions fixed for paired comparison. Historical fee certification remains separate."
+}

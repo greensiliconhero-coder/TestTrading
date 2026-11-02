@@ -1,0 +1,112 @@
+{
+  "max_abs_return_difference_bps": 60.67613961472526,
+  "meaning": "Same v6 gross-roundtrip logic and frozen scores; only entry/exit price units changed to NSE raw.",
+  "results": {
+    "development": {
+      "equal_weight": {
+        "dp_fees": 8084.18,
+        "final_cash": 41626.7135669356,
+        "mean_position_notional": 1671.582641185958,
+        "net_return": -0.16746572866128806,
+        "profitable_trades": 181,
+        "slippage": 881.7609500000001,
+        "total_fees": 10045.80548306445,
+        "trades": 527
+      },
+      "momentum20": {
+        "dp_fees": 2899.2599999999998,
+        "final_cash": 44148.417547969155,
+        "mean_position_notional": 8494.50025984127,
+        "net_return": -0.11703164904061691,
+        "profitable_trades": 79,
+        "slippage": 1605.77119,
+        "total_fees": 6471.7512620310235,
+        "trades": 189
+      },
+      "reversal5": {
+        "dp_fees": 2914.5999999999995,
+        "final_cash": 48433.2530181541,
+        "mean_position_notional": 8682.452319789472,
+        "net_return": -0.031334939636918024,
+        "profitable_trades": 92,
+        "slippage": 1652.17924,
+        "total_fees": 6590.007741846126,
+        "trades": 190
+      },
+      "ridge": {
+        "dp_fees": 2991.3,
+        "final_cash": 48930.84880938643,
+        "mean_position_notional": 9083.107899692308,
+        "net_return": -0.021383023812271418,
+        "profitable_trades": 96,
+        "slippage": 1774.14237,
+        "total_fees": 6937.988820613785,
+        "trades": 195
+      },
+      "tree": {
+        "dp_fees": 2960.62,
+        "final_cash": 52412.75620782653,
+        "mean_position_notional": 8991.42201349741,
+        "net_return": 0.04825512415653055,
+        "profitable_trades": 92,
+        "slippage": 1739.9690850000002,
+        "total_fees": 6831.024707173694,
+        "trades": 193
+      }
+    },
+    "validation": {
+      "equal_weight": {
+        "dp_fees": 7577.960000000001,
+        "final_cash": 40817.71501646559,
+        "mean_position_notional": 1730.4757568927125,
+        "net_return": -0.18364569967068822,
+        "profitable_trades": 195,
+        "slippage": 855.00425,
+        "total_fees": 9480.160733534434,
+        "trades": 494
+      },
+      "momentum20": {
+        "dp_fees": 2761.2,
+        "final_cash": 51459.07622190512,
+        "mean_position_notional": 8877.391088416667,
+        "net_return": 0.029181524438102402,
+        "profitable_trades": 90,
+        "slippage": 1601.824465,
+        "total_fees": 6324.369313095125,
+        "trades": 180
+      },
+      "reversal5": {
+        "dp_fees": 2837.9,
+        "final_cash": 45060.62044671488,
+        "mean_position_notional": 8723.654674540541,
+        "net_return": -0.09878759106570245,
+        "profitable_trades": 88,
+        "slippage": 1614.62221,
+        "total_fees": 6430.017343285343,
+        "trades": 185
+      },
+      "ridge": {
+        "dp_fees": 2868.58,
+        "final_cash": 47977.15061923395,
+        "mean_position_notional": 9089.774434090908,
+        "net_return": -0.040456987615321016,
+        "profitable_trades": 94,
+        "slippage": 1702.105525,
+        "total_fees": 6655.093855766202,
+        "trades": 187
+      },
+      "tree": {
+        "dp_fees": 2868.58,
+        "final_cash": 44640.341482738026,
+        "mean_position_notional": 8733.038133689839,
+        "net_return": -0.10719317034523945,
+        "profitable_trades": 86,
+        "slippage": 1633.650525,
+        "total_fees": 6503.057992262134,
+        "trades": 187
+      }
+    }
+  },
+  "sample_count": 4444,
+  "samples_over_5bps_return_difference": 231
+}

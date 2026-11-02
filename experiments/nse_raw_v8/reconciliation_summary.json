@@ -1,0 +1,14 @@
+{
+  "comparison_sha256": "bf7253dcc73b4e722cfb5459c08c65c41a295417b3ba082d67be7eb90ea15143",
+  "coverage_difference_rows": 0,
+  "dividend_candidates": 301,
+  "dividends_unparsed": 0,
+  "market_gate": "Raw prices acquired and checked; full corporate cashflows and historical fee/settlement assumptions still pending. Prior retrospective sample selection remains a limitation.",
+  "matched_vendor_rows": 47120,
+  "raw_dates": 1240,
+  "raw_panel_sha256": "889d08cfc3e0c4d4e2382528d75d7889d247822ffbc83ab854cc2deda7571c73",
+  "raw_rows": 47120,
+  "raw_symbols": 39,
+  "split_bonus_checks": 9,
+  "split_bonus_checks_within_tolerance": 9
+}
