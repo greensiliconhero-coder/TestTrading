@@ -1,0 +1,7 @@
+# Corrected-input five-day diagnostic v9
+
+Freeze before fitting: retain every v5 sample key and split, including purged rows. Replace eight features with raw NSE daily price/volume features and official NIFTY 50 context; replace labels with raw next-open to five-session-later-open returns. Original action-free 60-session windows remain retrospectively selected and are not deployable eligibility rules.
+
+Fit unchanged StandardScaler/Ridge(alpha=100) and HistGradientBoostingRegressor(max_iter=100,max_leaf_nodes=15,learning_rate=.05,l2_regularization=10,min_samples_leaf=100,early_stopping=False,random_state=31) on 2021–2023 only. Preserve models and exact samples. Recompute momentum20/reversal5 baselines. Evaluate validation 2024 first; lock highest-return active candidate only if positive and above passive NIFTYBEES. Otherwise cash. Then predict/evaluate already-seen 2025 development. This benchmark selection differs from v5 and is explicitly a development protocol, not a fresh holdout.
+
+Use v8 net-position replay: INR50,000, ranked position cap INR10,000, current v6 fees, primary one-session settlement and 5bps each-side slippage. Zero-session and 10bps are sensitivity only. No hyperparameter search, quota, or subsequent rule change. Save full order/equity logs. No live orders. Historical fees, settlement, distributions, point-in-time universe and causal action eligibility remain unresolved deployment gates.
